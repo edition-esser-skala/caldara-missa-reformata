@@ -56,3 +56,57 @@ ChristeOboeI = {
     g2 r4\fermata \bar "||" %75 finis
   }
 }
+
+KyrieBOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoKyrieB
+      \set Score.currentBarNumber = #76
+    r4 g''4.\fE g8 g4
+    r g f2
+    es4 d2 c4 \noBreak
+    d1\fermata \bar "|"
+    \tempoKyrieBFuga g,2 b \noBreak %80
+    es f,
+    a d4. c8
+    b4 a8 g a2\trill
+    g8 a h cis d4 b~
+    b a2 g8 f %85
+    e4 c'4. b8 a g
+    f4 f'8 e d a d4~
+    d cis d c?
+    b a8 g f4 b8 a
+    g4 c4. b8 a g %90
+    f4 f'4. es8 d4~
+    d c8 b c4 b8 a
+    b2 a4 r
+    R1*4 %97
+    g2 b
+    es f,
+    a d4. c8 %100
+    b4 a8 g a2\trill
+    g4 b2 a4
+    a g8 f e!4 c'~
+    c8 b a g f4 f'~
+    f8 es d c b f b4~ %105
+    b a b r
+    f2 a
+    d e,
+    g c4. d16 es
+    d8 c b4. c8 d c %110
+    h4 cis8 d e4 d~
+    d cis d d~
+    d8 c b a g4 c~
+    c8 b a g f4 b~
+    b8 a g4 fis d'~ %115
+    d8 c b a g4 r
+    r c4. b8 a g
+    f4 f'4. es8 d4~
+    d c8 b c2
+    d4 c8 b a4 b %120
+    c b a2\trill
+    g4 h c d
+    es d c2
+    h1\fermata \bar "|." %124
+  }
+}

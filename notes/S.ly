@@ -95,3 +95,106 @@ ChristeSopranoLyrics = \lyricmode {
   lei --
   son. %69 finis
 }
+
+KyrieBSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoKyrieB
+      \set Score.currentBarNumber = #76
+    r4 \mvTr b'4.\fE^\tuttiE b8 b4
+    r b d2
+    c4 d4. c16([ b] c4) \noBreak
+    d1\fermata \bar "|"
+    \tempoKyrieBFuga g,2 b \noBreak %80
+    es f,
+    a d4. c8
+    b4 a8[ g] a2\trill
+    g8 a h cis d4 b~
+    b a2( g8[ f]) %85
+    e4 c'4.( b8) a([ g)]
+    f4 f'8([ e)] d[ a] d4~
+    d cis d c?
+    b a8[ g] f4 b8[ a]
+    g4 c4. b8[ a g] %90
+    f4 f'4.( es8) d4~
+    d c8[ b] c4 b8[ a]
+    b2 a4 r
+    R1*4 %97
+    g2 b
+    es f,
+    a d4. c8 %100
+    b4 a8[ g] a2\trill
+    g4 b2 a4
+    a g8([ f)] e!4 c'~
+    c8[ b a g] f4 f'~
+    f8[ es d c] b[ f] b4~ %105
+    b a b r
+    f2 a
+    d e,
+    g c4. d16[ es]
+    d8[ c] b4. c8[ d c] %110
+    h4 cis8[ d] e4 d~
+    d cis d d~
+    d8[ c] b([ a)] g4 c~
+    c8[ b] a([ g)] f4 b~
+    b8[ a] g4 fis d'~ %115
+    d8[ c] b([ a)] g4 r
+    r c4.( b8) a([ g)]
+    f4 f'4. es8 d4~
+    d c8[ b] c2
+    d4 c8[ b] a4 b %120
+    c b a2\trill
+    g4 h c d
+    es d c2
+    h1\fermata \bar "|." %124
+  }
+}
+
+KyrieBSopranoLyrics = \lyricmode {
+  Ky -- ri -- e %76
+  e -- lei --
+  son, e -- lei --
+  son.
+  Ky -- ri -- %80
+  e e --
+  lei -- _ _
+  _ _ _
+  son, e -- le -- i -- son, e --
+  lei -- %85
+  son, e -- lei --
+  son, e -- lei -- _
+  _ son, e --
+  lei -- _ _ _
+  _ _ _ %90
+  son, e -- lei --
+  _ _ _
+  _ son,
+
+  Ky -- ri -- %98
+  e e --
+  lei -- _ _ %100
+  _ _ _
+  son, Ky -- ri --
+  e e -- lei -- _
+  son, e --
+  lei -- _ %105
+  _ son,
+  Ky -- ri --
+  e e --
+  lei -- _ _
+  _ _ _ %110
+  _ _ _ _
+  _ son, e --
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, e -- %115
+  lei -- son,
+  e -- lei --
+  son, e -- _ _
+  _ _
+  _ _ _ _ %120
+  _ _ lei --
+  son, e -- le -- i --
+  son, e -- lei --
+  son. %124 finis
+}

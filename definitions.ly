@@ -8,6 +8,8 @@
 
 tempoKyrie = \tempoMarkup "Adagio"
 tempoChriste = \tempoMarkup "[Tempo deest]"
+tempoKyrieB = \tempoMarkup "Adagio"
+  tempoKyrieBFuga = \tempoMarkup "Presto"
 
 
 \include "notes/ob1.ly"

@@ -171,3 +171,120 @@ ChristeBassFigures = \figuremode {
   <7 [_-]> <5 4> <\t _+>
   r2. %75 finis
 }
+
+KyrieBOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoKyrieB
+      \set Score.currentBarNumber = #76
+    r4 \mvTr es2\fE-\tuttiE es4
+    r es h2
+    c4 g es'2 \noBreak
+    d1\fermata \bar "|"
+    \clef treble \tempoKyrieBFuga g'2 b %80
+    es f,
+    a d4. c8
+    b4 a8 g a2\trill
+    g8 a h cis << {
+      d4 b?~
+      b a2 g8 f %85
+      e4 c'4. b8 a g
+      f4 f'8 e d a d4~
+      d cis d c?
+    } \\ {
+      d,2
+      f b %85
+      c, e
+      a4. g8 f4 e8 d
+      e2\trill d4 e8 fis
+    } >>
+    \clef "treble_8" g,2 b
+    es f, %90
+    a d4. c8
+    b4 a8 g a2
+    g8 a b c \clef bass d,2
+    f b
+    c, e %95
+    a4. g8 f4 e8 d
+    e2 d4 e8 fis
+    g4 es2 d4~
+    d c8 b a4 f'~
+    f8 es d c b4 b'8 a %100
+    g d g2 fis4
+    g2 f4. es8
+    d c b2 a4
+    c4. b8 a g f4
+    f'4. es8 d4 c8 b %105
+    f'4 f, b8 c d es
+    f4 \clef "treble_8" d'2 c4~
+    c b8 a g4 c~
+    c8 b a g f4 f'
+    b, \clef bass g2 f4~ %110
+    f e!8 d cis4 d
+    a2 d
+    g4. f8 es d c4
+    f4. es8 d c b4
+    es2 d4 r %115
+    g,2 b
+    es f,
+    a d4. c8
+    b4 a8 g a2
+    h4 c2 b4 %120
+    a g d'2
+    g,4 g c h
+    c g c2
+    g1\fermata \bar "|." %124 finis
+  }
+}
+
+KyrieBBassFigures = \figuremode {
+  r1 %76
+  r2 <6 5>
+  <_->4 q <7> <6>
+  <_+>1
+  r %80
+  r
+  r
+  r
+  r
+  r %85
+  r
+  r
+  r
+  <5>4 <6-> <5 4-> <\t 3>
+  <7> <6>8 <5> <5>2 %90
+  <6 3> <6>
+  <6> <7>4 <6\\>
+  r2 <5 [_!]>4 <6>
+  <5 4> <\t 3> <7> <6>8 <5>
+  <5>2 <6> %95
+  q4. q8 q2
+  <7>4 <6\\> <_+> <6!>
+  r2 <5 2!>4 <6>
+  <4 2-> <\t \t> <6> <5>
+  <\t>2 <5> %100
+  r4 <5> <6- 4 2> <6>
+  r2 <5 4>4 <\t 3>
+  <6 5> <6> <4! 2> <6>
+  <_!>2 <6>4 <5>
+  <\t>2 <6> %105
+  <4>4 <3>2.
+  r4 <5 3> <\t 2> <6>
+  <2>2 <6!>4 <5>
+  <\t>2 <5>
+  r4 <5>2 <6>4 %110
+  <4! 2> <6\\>8 <5> <6>2
+  <4>4 <_+>2.
+  r2 <6>4 <_->
+  <5>4. <\t>8 <6>4 <5>
+  <7> <6> <_+>2 %115
+  <5> <6>
+  <7>4 <6> <5>2
+  <6>4 <5> <6>4. <\t>8
+  <6>2 <7>4 <6!>
+  <6 5> <5 _!> <4+ 2> <6> %120
+  <6\\>2 <4>4 <_+>
+  r2 <_->4 <[6]>
+  <_-> \bo <[6]> \bc <[_-]>2
+  <_!>1 %124 finis
+}

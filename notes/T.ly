@@ -101,3 +101,96 @@ ChristeTenoreLyrics = \lyricmode {
   lei --
   son. %69 finis
 }
+
+KyrieBTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoKyrieB
+      \set Score.currentBarNumber = #76
+    r4 \mvTr es4.\fE^\tuttiE es8 es4
+    r es f2
+    es4 b! b( es) \noBreak
+    a,1\fermata \bar "|"
+    \tempoKyrieBFuga R1*9 %88
+    g2 b
+    es f, %90
+    a d4. c8
+    b4 a8[ g] a2
+    g8 a b c d4 b~
+    b a2( g8[ f])
+    e4 c'4.( b8) a[ g] %95
+    f4 f'8[ e] d[ a] d4~
+    d cis d c
+    b a8[ g] f!4 b8[ a]
+    g4 c4. b8[ a g]
+    f4 f'4.( es8) d4~ %100
+    d c8[ b] c4 b8[ a]
+    b2 c
+    d4 g,2 a4
+    g c4. b8 a4~
+    a b8[ c] d2( %105
+    c) d8 d d d
+    c4 d2 c4~
+    c b8([ a)] g4 c~
+    c8[ b a g] f4 f'~
+    f8 es d([ c)] b4( a) %110
+    g4. a8 a4 a
+    a2 a
+    r2 c4.( b8)
+    a([ g)] f4 b4.( a8)
+    g2 a4 r %115
+    r d4.( c8) b([ a)]
+    g2 f8[ g a b]
+    c2 d~
+    d c
+    g a4 g %120
+    fis g2 fis4
+    g d' es d
+    c d es2
+    d1\fermata \bar "|." %124 finis
+  }
+}
+
+KyrieBTenoreLyrics = \lyricmode {
+  Ky -- ri -- e %76
+  e -- lei --
+  son, e -- lei --
+  son.
+
+  Ky -- ri -- %89
+  e e -- %90
+  lei -- _ _
+  _ _ _
+  son, e -- le -- i -- son, Ky --
+  ri --
+  e e -- lei -- %95
+  _ _ _ _
+  _ son, e --
+  lei -- _ _ _
+  _ _ _
+  son, e -- lei -- %100
+  _ _ _
+  _ _
+  _ _ _
+  son, e -- _ _
+  _ lei -- %105
+  son, e -- le -- i --
+  son, Ky -- ri --
+  e __ e -- lei --
+  son, Ky --
+  ri -- e __ e -- %110
+  le -- i -- son, e --
+  lei -- son,
+  e --
+  lei -- son, e --
+  lei -- son, %115
+  e -- lei --
+  son, e --
+  _ _
+  _
+  _ _ _ %120
+  lei -- _ _
+  son, e -- le -- i --
+  son, e -- lei --
+  son. %124 finis
+}

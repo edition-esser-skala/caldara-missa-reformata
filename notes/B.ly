@@ -93,3 +93,86 @@ ChristeBassoLyrics = \lyricmode {
   lei --
   son. \x %69 finis
 }
+
+KyrieBBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoKyrieB
+      \set Score.currentBarNumber = #76
+    r4 \mvTr es4.\fE^\tuttiE es8 es4
+    r es h2
+    c4 g es'2 \noBreak
+    d1\fermata \bar "|"
+    \tempoKyrieBFuga R1*13 %92
+    r2 d
+    f b
+    c, e %95
+    a4. g8 f4 e8[ d]
+    e2 d8 d e fis
+    g4 es2 d4~
+    d c8[ b] a4 f'~
+    f8[ es d c] b4 b'8[ a] %100
+    g[ d] g2 fis4
+    g g f4. es8
+    d[ c] b2 a4
+    c4. b8 a[ g] f4
+    f'4. es8 d4 c8[ b] %105
+    f'2 b,8 c d es
+    f4 r r2
+    R1*2
+    r4 g2 f4~ %110
+    f e!8([ d)] cis4( d)
+    a2 d
+    g4. f8 es[ d] c4
+    f4. es8 d[ c] b4
+    es2 d %115
+    g, b
+    es f,
+    a d4. c8
+    b4 a8[ g] a2
+    h4 c2 b4 %120
+    a g d'2
+    g,4 g c h
+    c g c2
+    g1\fermata \bar "|." %124 finis
+  }
+}
+
+KyrieBBassoLyrics = \lyricmode {
+  Ky -- ri -- e %76
+  e -- lei --
+  son, e -- lei --
+  son.
+
+  Ky -- %93
+  ri -- e
+  e -- lei -- %95
+  _ _ _ _
+  _ son, e -- le -- i --
+  son, e -- lei --
+  _ _ _
+  _ _ %100
+  _ _ _
+  son, e -- lei -- _
+  _ _ son,
+  e -- _ _ _
+  _ _ _ _ %105
+  lei -- son, e -- le -- i --
+  son,
+
+  Ky -- ri -- %110
+  e __ e --
+  lei -- son,
+  e -- _ _ _
+  _ _ _ _
+  lei -- son, %115
+  Ky -- ri --
+  e e --
+  lei -- _ _
+  _ _ _
+  _ _ _ %120
+  _ _ _
+  son, e -- le -- i --
+  son, e -- lei --
+  son. %124 finis
+}
