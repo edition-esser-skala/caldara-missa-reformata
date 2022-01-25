@@ -17,3 +17,64 @@ KyrieViolinoI = {
     b8.[ g16 b8. d16] <g b, d, g,>2\fermata \bar "||" %11 finis
   }
 }
+
+ChristeViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoChriste
+      \set Score.currentBarNumber = #12
+    R2.*2
+    g''4\fE d b'~
+    b a8 g f e %15
+    f4 a8 g f e16 d
+    e4 e2\trill
+    d4 d g
+    c, c f
+    b, es2~ %20
+    es4 d8 c b a
+    b4 a2\trill
+    g r4
+    R2.*5 %28
+    r4 d'\fE g
+    c, c f %30
+    b, b es
+    es( d) r
+    r r b\pE
+    b r r
+    r r f %35
+    f r c'
+    c( b) r
+    r r f'
+    g r f~\fE
+    f b, g'~ %40
+    g f8 es d c
+    d4. es8 f4~
+    f b8 g es4
+    es d8 c d4
+    c c4.\trill b8 %45
+    b2 r4
+    r r c\p
+    c( b) r
+    r r c
+    c r f, %50
+    f( e4.) e8
+    f4 r f'~
+    f e r
+    r r a~
+    a g r %55
+    r r a,
+    a r r
+    r r \mvDl <g' b, d, g,>\ff
+    <fis a, d,> r r
+    R2.*3 %62
+    r4 a\f d
+    d g,8.( a16) b4
+    b( a) r %65
+    R2.*5 %70
+    g4\f d b'~
+    b a8 g fis e
+    fis4 d g~
+    g8 a fis4.\trill g8
+    g2 r4\fermata \bar "||" %75 finis
+  }
+}

@@ -7,6 +7,7 @@
 
 
 tempoKyrie = \tempoMarkup "Adagio"
+tempoChriste = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/ob1.ly"

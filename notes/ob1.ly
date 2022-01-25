@@ -17,3 +17,42 @@ KyrieOboeI = {
     b8.[ g16 b8. d16] g2\fermata \bar "||" %11 finis
   }
 }
+
+ChristeOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoChriste
+      \set Score.currentBarNumber = #12
+    R2.*2
+    g''4\fE d b'~
+    b a8 g f e %15
+    f4 a8 g f e16 d
+    e4 e2\trill
+    d4 d g
+    c, c f
+    b, es2~ %20
+    es4 d8 c b a
+    b4 a2\trill
+    g r4
+    R2.*5 %28
+    r4 d'\fE g
+    c, c f %30
+    b, b es
+    es( d) r
+    R2.*6 %38
+    r4 r f~\fE
+    f b, g'~ %40
+    g f8 es d c
+    d4. es8 f4~
+    f b8 g es4
+    es d8 c d4
+    c c4.\trill b8 %45
+    b2 r4
+    R2.*24 %70
+    g'4\f d b'~
+    b a8 g fis e
+    fis4 d g~
+    g8 a fis4.\trill g8
+    g2 r4\fermata \bar "||" %75 finis
+  }
+}
