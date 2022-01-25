@@ -5,7 +5,7 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "1" "Kyrie"
     \addTocEntry
     \paper { indent = 3\cm }
     \score {
@@ -15,76 +15,64 @@
             \set GrandStaff.instrumentName = "Oboe"
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxOboeI
+              \KyrieOboeI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxOboeII
+              \KyrieOboeII
             }
           >>
         >>
-        \new StaffGroup <<
-          \new Staff <<
-            \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
-            % \transpose c c
-            \partCombine \xxxClarinoI \xxxClarinoII
-          >>
-        >>
-        \new Staff {
-          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
-          % \transpose c c
-          \xxxTimpani
-        }
         \new StaffGroup <<
           \new GrandStaff \with { \smallGroupDistance } <<
             \set GrandStaff.instrumentName = "Violino"
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxViolinoI
+              \KyrieViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxViolinoII
+              \KyrieViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "Viola"
-            \xxxViola
+            \KyrieViola
           }
         >>
         \new ChoirStaff <<
           \new Staff {
             \incipitSoprano
-            \new Voice = "Soprano" { \dynamicUp \xxxSoprano }
+            \new Voice = "Soprano" { \dynamicUp \KyrieSoprano }
           }
-          \new Lyrics \lyricsto Soprano \xxxSopranoLyrics
+          \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
           \new Staff {
             \incipitAlto
-            \new Voice = "Alto" { \dynamicUp \xxxAlto }
+            \new Voice = "Alto" { \dynamicUp \KyrieAlto }
           }
-          \new Lyrics \lyricsto Alto \xxxAltoLyrics
+          \new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
           \new Staff {
             \incipitTenore
-            \new Voice = "Tenore" { \dynamicUp \xxxTenore }
+            \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
           }
-          \new Lyrics \lyricsto Tenore \xxxTenoreLyrics
+          \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \xxxBasso }
+            \new Voice = "Basso" { \dynamicUp \KyrieBasso }
           }
-          \new Lyrics \lyricsto Basso \xxxBassoLyrics
+          \new Lyrics \lyricsto Basso \KyrieBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
             % \transpose c c,
-            \xxxOrgano
+            \KyrieOrgano
           }
         >>
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \KyrieBassFigures }
       >>
       \layout { }
       \midi { \tempo 4 = 90 }
