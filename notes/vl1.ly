@@ -265,3 +265,48 @@ QuiTollisViolinoI = {
     \time 2/1 f2 e! d1\fermata \bar "||" %111 finis
   }
 }
+
+QuoniamViolinoI = {
+  \relative c' {
+    \clef treble
+    \key b \lydian \time 6/8 \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    R2.
+    \mvTr f'8.\fE-\markup \remark "staccato" g16 a8 b a-! a-!
+    a-! g-! c a g8.[\trill g16]
+    f f f g g f es8 es, es'~ %115
+    es16 es es f f es d8 d, d'~
+    d16 d d es es d c8 c, c'~
+    c16 c c d d c b b b c c b
+    a f a c es8 r16 d c8.[\trill c16]
+    b4 r8 r4 r8 %120
+    R2.*3
+    r4 r8 c\pE r r
+    b r r g r r %125
+    f r r f r r
+    es r r es r r
+    a r r b r r
+    c4 r8 r4 r8
+    f8.\fE g16 a8 b a a %130
+    a g c a g8.[\trill g16]
+    f4 r8 r4 r8
+    R2.
+    r4 r8 d8.\fE es16 f8
+    g16 a b8-! b-! b-! a-! r %135
+    R2.
+    r4 r8 r16 g\p g a a g
+    fis4 r8 r4 r8
+    r16 d\fE d g g f e!4.
+    r16 es es f f es \appoggiatura es8 d4 r8 %140
+    r4 r8 f8.\f g16 a8
+    b r r r4 r8
+    f8.\p g16 a8 b r r
+    b, r r a r r
+    b r r b r r %145
+    c r r r16 f\f f( es) es( d)
+    d4.~ d16 g g( f) f( es)
+    es4.~ es16 f f( es) es( d)
+    d16. es32 c8.[\trill c16] b4 r8\fermata \bar "||" %149 finis
+  }
+}

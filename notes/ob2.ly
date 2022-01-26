@@ -213,3 +213,31 @@ QuiTollisOboeII = {
     \time 2/1 f2 e! d1\fermata \bar "||" %111 finis
   }
 }
+
+QuoniamOboeII = {
+  \relative c' {
+    \clef treble
+    \key b \lydian \time 6/8 \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    \mvTr b'8.\fE-\markup \remark "staccato" c16 d8 es d d
+    d c8.[\trill c16] d e f8-! f-!
+    f-! e-! f~ f e8.[\trill e16]
+    f8 a, d c4.~ %115
+    c16  c c d d c b4.~
+    b16 b b c c b a4.~
+    a16 a a b b a g4.
+    c,8 r a' b b8.[ a16]
+    b4 r8 r4 r8 %120
+    R2.*10 %130
+    c8.\fE d16 e8 f f8.[ e16]
+    f4 r8 r4 r8
+    R2.
+    r4 r8 b,8.\fE c16 d8
+    es d8-! d-! d-! c-! r %135
+    R2.*11 %136
+    r16 b\f b( as) as( g) g4.~
+    g16 c c( b) b( a) a8 a4
+    b16. c32 a8.[\trill a16] b4 r8\fermata \bar "||" %149 finis
+  }
+}

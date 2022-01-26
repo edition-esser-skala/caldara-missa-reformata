@@ -551,3 +551,91 @@ QuiTollisBassFigures = \figuremode {
   <5 \t> <\t 3> <7 5 _!>2 %110
   <6 _+>4 <\t 4> <5! \t> <\t _+> <_+>1 %111 finis
 }
+
+QuoniamOrgano = {
+  \relative c {
+    \clef bass
+    \key b \lydian \time 6/8 \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    \mvTr b'8\fE-\soloE b,4 c8 b16 c d es
+    f8 f,4 b'8 f16 g a b
+    c8 c, a' b c c,
+    f4 b8~ b16 b b c c b %115
+    a8 a, a'~ a16 a a b^\critnote b a
+    g8 g, g'~ g16 g g a^\critnote a g
+    f8 f, f'~ f e! c
+    f r r16 f g8 es f
+    b,4 r8 c\pE b16 c d es %120
+    f8 f, es' d b h
+    c4. f,8 f' es
+    d b d es4 f8
+    g4 es8 f r d
+    g g, g' c c, c' %125
+    f, f, f' b b, b'
+    es, es, es' a a, a'
+    d d, d' g, g, g'
+    c,4 f8 b, c4
+    f,4\fE f'8 b, f'16 g a b %130
+    c8 c,4 d8 b c
+    f r f\pE b, r f'
+    b, b' a g g, g'
+    c, f f, b\fE r b'
+    es, b16 c d es f8 f, f'\pE %135
+    fis d fis g4 r8
+    g g, g' c c, c'
+    d d, d' g, d d,
+    g\fE h g c e! c
+    f a f b r b\pE %140
+    es, b16 c d es f8 f, f'
+    b, d b es e4
+    f8 a f b b, b'
+    es, es, es' f f, f'
+    b b, b' g g, g' %145
+    f a, f b f' f,
+    b d\fE b es4 r8
+    es c es f a f
+    b, f' f, b4^\critnote r8\fermata \bar "||" %149 finis
+  }
+}
+
+QuoniamBassFigures = \figuremode {
+  r4. <_-> %112
+  <6 4>8 <5 3>4 r4.
+  <6 4>8 <5 _!> <6> <7>4.
+  r4 <6>8 <4- 2>4. %115
+  <7 5->8 <6 \t>4 <2>4.
+  <7 5>8 <6->4 <[6- 4] 2>4.
+  <7- 5>8 <6>4 <4 2> <_!>8
+  r4 r16 <7-> r8 <6 5>4
+  r4. <6 _-> %120
+  <6 4>8 <5 3> <\t \t> <6> <7> <\t>
+  <6 4> <5 _!> <7> <4> <3>4
+  <6>4. <9>8 <8> <7- 5>
+  <6- 4> <5 3> <7> <4> <3>4
+  <7>4. <[7 _-]> %125
+  <7-> <7>
+  q <7 [5-]>
+  <7> q
+  <7 _!> <7>8 <_!>4
+  r4. <5> %130
+  <6 4>8 <5 3>4. <6 5>4
+  <8>4 <7->4. <[7-]>8
+  r2.
+  <7 [_-]>8 <7-> r2
+  r4. <6 4>8 <5 3>4 %135
+  \bo <[6]>8 <_+> \bc <[5]> r4.
+  <8 _!>4 <7! \t>8 <[_-]>4.
+  <7 _+>4. \bo <[_-]>8 <4> \bc <[_+]>
+  <_!>4. <7- _!>
+  <7->2. %140
+  <5->4. <6 4>8 <5 3>4
+  r4. <6>8 <7 5>4
+  r2.
+  <5>4. q
+  r <6-> %145
+  <7->8 <6>4. <5 3>8 <\t \t>
+  r4. <7>
+  <6> <7->
+  r8 <5 3> <\t \t> r4. %149 finis
+}

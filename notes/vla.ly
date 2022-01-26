@@ -261,3 +261,48 @@ QuiTollisViola = {
     \time 2/1 a1 a\fermata \bar "||" %111 finis
   }
 }
+
+QuoniamViola = {
+  \relative c' {
+    \clef alto
+    \key b \lydian \time 6/8 \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    \mvTr f8.\fE-\markup \remark "staccato" f16 b8 g g8. g16
+    f8 r f f8. g16 a b
+    c8 c, a' b c c,
+    f16 a a a f f g g g g g g %115
+    g g f f f f f f f f f f
+    f f es es es es es es es es es es
+    es es d d d d f f e e c c
+    c8 r r16 c b8 es f
+    f4 r8 r4 r8 %120
+    R2.*3
+    r4 r8 c\pE r d
+    g g, g' c, c, c' %125
+    f f, f' b, f b
+    es es, es' a, c a
+    d d, d' g, b g
+    c4 r8 r4 r8
+    a'8.\fE b16 c8 d c c %130
+    f, e g f b b
+    a4 r8 r4 r8
+    R2.
+    r4 r8 f\fE r f
+    es b16 c d es f8 f, r %135
+    R2.
+    g'8\p g, g' c, c, c'
+    d d, d' g d d,
+    g\fE h g c g' c,
+    f c f b, r b\pE %140
+    es, b'16 c d es f8 f, f'
+    b, d b es e4
+    f8 a f b b, b'
+    es, es, es' f f, f'
+    b b, b' g g, g' %145
+    f a, c b r f'
+    f b,\f b b16 es es( d) d( c)
+    c8 r r c r f
+    f f8.[ f16] f4 r8\fermata \bar "||" %149 finis
+  }
+}

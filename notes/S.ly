@@ -289,8 +289,7 @@ GloriaSopranoLyrics = \lyricmode {
 }
 
 
-% Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
-% tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
+
 % Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
 
 DomineFiliSoprano = {
@@ -392,4 +391,73 @@ QuiTollisSopranoLyrics = \lyricmode {
   _
   _ %110
   _ bis. %111 finis
+}
+
+QuoniamSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \lydian \time 6/8 \autoBeamOff \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    R2.*9 %120
+    \mvTr f8.\pE^\soloE g16 a8 b a a
+    a g b b a4
+    b8. f16 f8 r r c'
+    c b b b8. a16 a8
+    b4.~ b16[ c c b b a] %125
+    a4.~ a16[ b b a a g]
+    g4.~ g16[ a a g g f]
+    f4 f'8~ f16[ g g f f e!]
+    e4 f8~ f16 d e4
+    f r8 r4 r8 %130
+    R2.
+    f8. g16 es8 d d c
+    b b r d g f
+    es4 es8 d4.
+    r4 r8 r r a %135
+    d d c b8. a16 g8
+    h4. c~
+    c8[ d16 c] b([ a)] b8( a4)
+    g4. r4 r8
+    r4 r8 d'8. c16 d8 %140
+    es d d d c r
+    d d d es d4
+    c r8 b c d
+    g, a b a8. g16 a8
+    f'([ d)] f es4.~ %145
+    es16[ f f es es d] d16.[( es32]) c4
+    b r8 r4 r8
+    R2.
+    R\fermata \bar "||" %149 finis
+  }
+}
+
+QuoniamSopranoLyrics = \lyricmode {
+  Quo -- ni -- am tu so -- lus %121
+  san -- ctus, tu so -- lus
+  Do -- mi -- nus, tu
+  so -- lus al -- tis -- si -- mus,
+  Je -- %125
+  _
+  _
+  _ _
+  _ _ su Chri --
+  ste. %130
+
+  Quo -- ni -- am tu so -- lus
+  san -- ctus, tu so -- lus
+  Do -- mi -- nus,
+  tu %135
+  so -- lus al -- tis -- si -- mus,
+  Je -- _
+  su Chri --
+  ste.
+  Quo -- ni -- am %140
+  tu so -- lus san -- ctus,
+  tu so -- lus Do -- mi --
+  nus, tu so -- lus,
+  so -- lus al -- tis -- si -- mus,
+  Je -- su, Je -- %145
+  su Chri --
+  ste. %147 finis
 }

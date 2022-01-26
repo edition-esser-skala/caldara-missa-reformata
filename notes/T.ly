@@ -372,3 +372,74 @@ QuiTollisTenoreLyrics = \lyricmode {
   _ _ %110
   _ bis. %111 finis
 }
+
+QuoniamTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \lydian \time 6/8 \autoBeamOff \tempoQuoniam
+      \set Staff.timeSignatureFraction = 3/8
+      \set Score.currentBarNumber = #112
+    R2.*8 %119
+    \mvTr b8.\pE^\soloE c16 d8 es d d %120
+    d c4 r8 r f
+    f e!4 f8. c16 c8
+    r r f f es es
+    es8. d16 d8 r r f~
+    f16[ g g f f es] es4.~ %125
+    es16[ f f es es d] d4.~
+    d16[ es es d d c] c4.~
+    c16[ d d c c b] b4.~
+    b8[ g a]~ a16 b g4
+    f r8 r4 r8 %130
+    R2.
+    r4 r8 f'8. g16 es8
+    d8 d c b b b
+    b a a b8. f16 f8
+    R2. %135
+    r4 r8 r r d'
+    g g f! es8. d16 c8
+    a fis4 g8.([ a16] fis8)
+    g4 r8 r4 r8
+    r4 r8 b8. a16 b8 %140
+    b b b b a r
+    b b b c b4
+    a r8 r4 r8
+    es' f g c, d es
+    d8. c16 d8 b([ g)] b %145
+    a a8.([ g32 a)] b16.([ c32] a4)
+    b r8 r4 r8
+    R2.
+    R\fermata \bar "||" %149 finis
+  }
+}
+
+QuoniamTenoreLyrics = \lyricmode {
+  Quo -- ni -- am tu so -- lus %120
+  san -- ctus, tu
+  so -- lus Do -- mi -- nus,
+  tu so -- lus al --
+  tis -- si -- mus, Je --
+  _ %125
+  _
+  _
+  _
+  su Chri --
+  ste. %130
+
+  Quo -- ni -- am
+  tu so -- lus san -- ctus, tu
+  so -- lus al -- tis -- si -- mus,
+  %135
+  tu
+  so -- lus al -- tis -- si -- mus,
+  Je -- su Chri --
+  ste.
+  Quo -- ni -- am %140
+  tu so -- lus san -- ctus,
+  tu so -- lus Do -- mi --
+  nus,
+  tu so -- lus, so -- lus al --
+  tis -- si -- mus, Je -- su, %145
+  Je -- su __ Chri --
+  ste. %147 finis
+}
