@@ -198,3 +198,198 @@ KyrieBSopranoLyrics = \lyricmode {
   son, e -- lei --
   son. %124 finis
 }
+
+GloriaSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoGloria
+    R1*12 %12
+    \mvTr g'8\pE^\solo a16 b a8 d b g a d
+    b([ c16 b] a8[ g] fis8.) e16 d4\fermata
+    \mvTr b'8\fE^\tutti b b4 b8 b b b %15
+    b4 r r2
+    R1
+    r2 r4 \mvTr a\fE^\tutti
+    a r r2
+    R1 %20
+    r2 \mvTr a8\fE^\tutti a b4
+    a8 a b^\critnote b a4 \mvTr c~\pE^\solo
+    c8 a d4. c16 d b4~
+    b8 g c b a[ b16 a] b4~
+    b8[ c] a4 b \mvTr c\fE^\tutti %25
+    d r r2
+    R1
+    r4 r8 \mvTr b\pE^\soloE es16[ f d es] c[ d b c]
+    a4. c8 f,4 d'8 d
+    d([ c)] c b a4 r %30
+    R1
+    \tempoAdoramus r4 \mvTr d2\fE^\tutti d4
+    d1~
+    d4 c b!2
+    a4. a8 a2 %35
+    r4 a2 a4
+    a2. g4
+    f!2. e8[ fis]
+    gis2 a8[ h] c4~
+    c b8[ a] b2~ %40
+    b2. a8[ g]
+    a2. g4
+    a1\fermata
+    \tempoGlorificamus R1
+    r8 \mvTr d\pE^\solo d d d[ c16 b] a[ b c d] %45
+    b8. a16 g4 r8 c c c
+    a16[ g a8]~ a16[ b c a] f[ e f g] f[ g a f]
+    d8[ d']~ d16[ es f d] es[ d es f] es[ f d es]
+    c2~ c8[ d16 es] d[ es c d]
+    b[ d c b] a8.\trill g16 g4 r %50
+    R1*13 %63
+    R1\fermata \bar "||" %64 finis
+  }
+}
+
+GloriaSopranoLyrics = \lyricmode {
+  Glo -- ri -- a in ex -- cel -- sis De -- o, %13
+  glo -- ri -- a,
+  et in ter -- ra, in ter -- ra %15
+  pax,
+
+  pax,
+  pax,
+  %20
+  et in ter --
+  ra, in ter -- ra pax, pax __
+  ho -- mi -- ni -- bus bo --
+  nae vo -- lun -- ta -- _
+  _ tis, pax, %25
+  pax.
+
+  Lau -- da -- _
+  _ mus te, be -- ne --
+  di -- ci -- mus te. %30
+
+  Ad -- o --
+  ra --
+  _ _
+  _ mus te, %35
+  ad -- o --
+  ra -- _
+  _ _
+  _ _ _
+  _ _ %40
+  _
+  _ mus
+  te.
+
+  Glo -- ri -- fi -- ca -- _ %45
+  _ mus te, glo -- ri -- fi --
+  ca -- _ _
+  _ _ _
+  _ _
+  _ _ mus te. %5 finis
+}
+
+
+% Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
+% tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
+% Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
+
+DomineFiliSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    R\breve*3 %67
+    r1 \mvTr d'\fE^\tuttiE
+    d2 d d c4( b)
+    a2 b c b4( a) %70
+    g2 a b b~
+    b c d c4( b)
+    a2 b1 a2
+    b1 r
+    R\breve %75
+    b1 a2 h
+    c a r1
+    r2 c1 d2
+    e! c r c
+    a h c b?4 a %80
+    b2 a4 g a1
+    g r2 f'
+    d e f es4 d
+    es2 d4 c d2 c~
+    c d1 c2~ %85
+    c b a4 g f2
+    d'4 c b1 a2
+    g\breve
+    a\fermata \bar "||" %89 finis
+  }
+}
+
+DomineFiliSopranoLyrics = \lyricmode {
+  Do -- %68
+  mi -- ne Fi -- li __
+  u -- ni -- ge -- ni -- %70
+  te, Je -- su, Je --
+  su, Je -- su __
+  Chri -- _ _
+  ste,
+  %75
+  Do -- mi -- ne
+  De -- us,
+  A -- gnus
+  De -- i, Fi --
+  li -- us Pa -- _ _ %80
+  _ _ _ _
+  tris, Fi --
+  li -- us Pa -- _ _
+  _ _ _ _ _
+  _ _ %85
+  _ _ _ _
+  _ _ _ _
+  _
+  tris. %89 finis
+}
+
+QuiTollisSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 \mvTr c'\fE^\tuttiE d2
+    d r8 c c c
+    c4 c r8 c c c \noBreak
+    c2 h\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      r2 \mvTr es\pE^\solo es es( d4 c) d2 \noBreak
+    r des des des( c4 h) c2~ %95
+    c h1 c1.
+    R\breve.*7 \noBreak %103
+    \time 9/2 R2*9\fermata \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4 \mvTr c2\fE^\tuttiE c4 %105
+    c2. b4
+    r b2 b4
+    b as8[( g)] as2~
+    as2. g4
+    f1~ %110
+    \time 2/1 f2 e! d1\fermata \bar "||" %111 finis
+  }
+}
+
+QuiTollisSopranoLyrics = \lyricmode {
+  Qui tol -- %90
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca -- ta
+  mun -- di:
+  Mi -- se -- re -- re,
+  mi -- se -- re -- re __ %95
+  no -- bis.
+
+  Mi -- se -- %105
+  re -- re,
+  mi -- se --
+  re -- re no --
+  _
+  _ %110
+  _ bis. %111 finis
+}

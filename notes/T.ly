@@ -194,3 +194,181 @@ KyrieBTenoreLyrics = \lyricmode {
   son, e -- lei --
   son. %124 finis
 }
+
+GloriaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoGloria
+    R1*13 %13
+    R1\fermata
+    \mvTr d8\fE^\tuttiE d es4 d8 d es es %15
+    d4 r r2
+    R1
+    r2 r4 \mvTr cis\fE^\tutti
+    d r r2
+    R1 %20
+    r2 \mvTr c!8\fE^\tuttiE c d4
+    c8 c d d c4 r
+    \mvTr f4.\pE^\solo d8 g4. f16 g
+    es4. c8 f es d8[( c16 b]
+    c2) b4 \mvTr a\fE^\tutti %25
+    b r r2
+    R1*5 %31
+    \tempoAdoramus r2 r4 \mvTr b~\fE^\tutti
+    b b h2~
+    h4 c8[ d] e2~
+    e4 e e( d) %35
+    r fis2 fis4
+    dis?2 h
+    c4 h8[ a] g4. a8
+    h[ c] d2 c4
+    d2 d %40
+    e e
+    c( d4.) d8
+    cis1\fermata
+    \tempoGlorificamus R1*13 %56
+    \mvTr c4\pE^\soloE c8 b a([ b)] c4
+    d8 d d c16([ b)] c4 f,
+    r b8 d g,4~ g16[ c b c]
+    a4~ a16[ d c d] b4~ b16[ es d es] %60
+    c4~ c16[ f es f] d8[ es] f b,
+    c4. c8 b4 r
+    R1
+    R\fermata \bar "||" %64 finis
+  }
+}
+
+GloriaTenoreLyrics = \lyricmode {
+  Et in ter -- ra, in ter -- ra %15
+  pax,
+
+  pax,
+  pax,
+  %20
+  et in ter --
+  ra, in ter -- ra pax,
+  pax ho -- mi -- ni -- bus
+  bo -- nae vo -- lun -- ta --
+  tis, pax, %25
+  pax.
+
+  Ad -- %32
+  o -- ra --
+  _ _
+  mus te, __ %35
+  ad -- o --
+  ra -- _
+  _ _ _ _
+  _ _ _
+  _ mus, %40
+  ad -- o --
+  ra -- mus
+  te.
+
+  Do -- mi -- ne De -- us, %57
+  De -- us, Rex coe -- le -- stis,
+  De -- us Pa --
+  _ _ %60
+  _ _ ter o --
+  mni -- po -- tens. %62 finis
+}
+
+DomineFiliTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    r1 \mvTr d\fE^\tuttiE
+    d2 d d c4( b)
+    a2 b c b4 a
+    g2 a b1
+    r2 b1 a4( g)
+    f2 g a g %70
+    c2. c4 f,2 d'~
+    d c b es~
+    es d c1
+    d b
+    a2 b c a %75
+    r c1 d2
+    e! c r1
+    r2 c a h
+    c b4 a b2 a4 g
+    a2 g4 f g2 a %80
+    d1 c2 \once \tieDashed d~
+    d c4 b a1
+    r2 c a b
+    c b4 a b2 a4 g
+    a2 g1 a2 %85
+    f g c1
+    b4 c d2 g, a4 b
+    c\breve
+    c\fermata \bar "||" %89 finis
+  }
+}
+
+DomineFiliTenoreLyrics = \lyricmode {
+  Do -- %65
+  mi -- ne Fi -- li __
+  u -- ni -- ge -- _ _
+  _ ni -- te,
+  Je -- su, __
+  Je -- su Chri -- ste, %70
+  Je -- su Chri -- ste, __
+  Je -- su, Je --
+  su Chri --
+  ste, Do --
+  mi -- ne De -- us, %75
+  A -- gnus
+  De -- i,
+  Fi -- li -- us
+  Pa -- _ _ _ _ _
+  _ _ _ _ _ %80
+  _ _ _
+  _ _ tris,
+  Fi -- li -- us
+  Pa -- _ _ _ _ _
+  _ _ _ %85
+  _ _ _
+  _ _ _ _ _ _
+  _
+  tris. %89 finis
+}
+
+QuiTollisTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 \mvTr es\fE^\tuttiE f2
+    f r8 e e e
+    es4 es r8 es es es \noBreak
+    es2 d\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      R\breve.*10 \noBreak %103
+    \time 9/2 R2*9\fermata \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4 \mvTr es2\fE^\tuttiE es4 %105
+    es2 des
+    r4 des2 des4
+    c2 c
+    d!2. g,8.[ a16]
+    b2 h %110
+    \time 2/1 a1 a\fermata \bar "||" %111 finis
+  }
+}
+
+QuiTollisTenoreLyrics = \lyricmode {
+  Qui tol -- %90
+  lis pec -- ca -- ta
+  mun -- di, pec -- ca -- ta
+  mun -- di:
+
+  Mi -- se -- %105
+  re -- re,
+  mi -- se --
+  re -- re
+  no -- _
+  _ _ %110
+  _ bis. %111 finis
+}

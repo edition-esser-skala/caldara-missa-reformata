@@ -105,3 +105,111 @@ KyrieBOboeII = {
     d1\fermata \bar "|." %124 finis
   }
 }
+
+GloriaOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoGloria
+    \mvTr g'8\fE-\markup \remark "staccato" a16 b a8 d b g a d
+    b c16 b a8 g fis d d'4~
+    d8 e e, cis' d a a4
+    r8 a a4 r8 a b h
+    a cis d16 es c d b4 r8 d %5
+    es16 f d es c d b c a8 b16 c d8 fis,
+    g d es d b'16 b[ a g] d'8 d,
+    g r r4 r2
+    R1
+    r2 r8 d'\ff g16 as f g %10
+    es4~ es16 f d es c4~ c16 a d c
+    b8 g' a, fis' g16 b,[ a g] d'8 d,
+    g4 r r2
+    R1\fermata
+    d8\fE d es4 d8 d es es %15
+    d4 r r2
+    R1
+    r2 r4 cis'-!\fE
+    d-! r r2
+    R1 %20
+    r2 a8\fE a b4
+    a8 a b b a4 r
+    R1*2
+    r2 r4 \parOn c-\parenthesize-!\fE %25
+    \parOff b-\parenthesize-! r r2
+    r8 g\fE c16 d b c a4~ a16 a b c
+    f,4 r r2
+    R1*3 %32
+    \tempoAdoramus r4 d'2\fE d4
+    d1~
+    d4 c b!2
+    a4. a8 a2 %35
+    r4 a2 a4
+    a2. g4
+    f!2. e8[ fis]
+    gis2 a8[ h] c4~
+    c b8[ a] b2~ %40
+    b2. a8[ g]
+    a2. g4
+    a1\fermata
+    \tempoGlorificamus R1*18 %61
+    r2 r8 f~\f f16 es g8~
+    g16 f a8~ a16 g b c \appoggiatura b8 a4 r16 d c d
+    b4 a8.\trill b16 b2\fermata \bar "||" %64 finis
+  }
+}
+
+DomineFiliOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/2 \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    r1 \mvTr d'\fE
+    d2 d d c4 b
+    a2 b c b4 a
+    g2 a b1
+    r2 b1 a4 g
+    f2 g a g %70
+    c2. c4 f,2 d'~
+    d c b es~
+    es d c1
+    d b
+    a2 b c a %75
+    r c1 d2
+    e! c r1
+    r2 c a h
+    c b4 a b2 a4 g
+    a2 g4 f g2 a %80
+    d1 c2 \once \tieDashed d~
+    d c4 b a1
+    r2 c a b
+    c b4 a b2 a4 g
+    a2 g1 a2 %85
+    f g c1
+    b4 c d2 g, a4 b
+    c\breve
+    c\fermata \bar "||" %89 finis
+  }
+}
+
+QuiTollisOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 es'\fE d2^\critnote
+    d r8 e e e
+    es2 r8 c c c \noBreak
+    c2 h\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      R\breve.*10 \noBreak %103
+    \time 9/2 << { \oneVoice R2*9\fermata } \\ { s1. \tempoMiserereB s s } >> \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4^\critnote as2\fE as4 \noBreak %105
+    f2 f
+    r4 f2 ges4
+    e!2 f
+    f2. es4
+    f1~ %110
+    \time 2/1 f2 e! d1\fermata \bar "||" %111 finis
+  }
+}

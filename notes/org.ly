@@ -288,3 +288,266 @@ KyrieBBassFigures = \figuremode {
   <_-> \bo <[6]> \bc <[_-]>2
   <_!>1 %124 finis
 }
+
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoGloria
+    \mvTr g8\fE-\solo g' fis d g b fis d
+    g g, c cis d c b a
+    g g' a a, d d' cis a
+    d f cis a d d, g gis
+    a g fis d g,4 r8 h' %5
+    c16 d b c a4~ a16 b g a fis8 d
+    es? b c d g,16 b'[ a g] d'8 d,
+    g4 r8 h\p c16 d b? c a4~
+    a16 b g a fis8 d g b, c d
+    g,16 b'[ a g] d'8 d, g\ff a h g %10
+    c16 d b c a4~ a16 b g a fis8 d
+    es b c d g,16 b'[ a g] d'8 d,
+    g, g'\p fis d g b fis d
+    g g, c cis d2\fermata
+    \mvTr b'8\fE-\tutti b, b b b b b b %15
+    b c \mvTr d\pE-\solo a b b'4 g8
+    c4. b16 c a4. f8
+    b g a a, d4 \mvTr a\fE-\tutti
+    d \mvTr a\pE-\solo \kneeBeam d,8 d'' cis a
+    d f cis a d d, g gis %20
+    a4 a, \mvTr f'8\fE-\tutti f, f f
+    f f f f f \mvTr f'16\pE-\solo g a8 f
+    \clef "treble_8" f'4. d8 g4. f16 g
+    es4. c8 f es d c16 b
+    \clef bass es,4 f b, \clef bass \mvTr f\fE-\tutti %25
+    b \mvTr f'\p-\soloE b, r8 g'\f
+    c16 d b! c a4~ a16 b g a f8 g16 a
+    b4 r8 g\p c b a4~
+    a8 g f a b b, r b
+    c4 r8 c d c b\fE g %30
+    c4 r8 cis d4 d,
+    \tempoAdoramus r2 r4 g'~-\tuttiE
+    g8 g g g f! f f f
+    e e e e e e e e
+    cis cis cis cis d2 %35
+    r4 c4. c8 c c
+    h h h h e e e e
+    a, a h h c c c c
+    h h h h a a a a
+    d d d d g g g g %40
+    cis, cis cis cis c c c c
+    f f f f b, b b b
+    a a a a a2\fermata
+    \tempoGlorificamus \mvTr a8\p-\solo h cis a d d' cis a
+    d d, fis d g, g' fis d %45
+    g, g' b g r c, es c
+    r f a f r f f, f'
+    r b, d b r c es c
+    r a c a r d fis d
+    r g d d, g g'16 f g8 f %50
+    es c16 d es8 c r f16 g a8 f
+    b, c d es f d4 b8
+    g g'4 es8 c a'4 f8
+    d b'4 g8 e c'4 a8
+    f f d f r g, b g %55
+    r c e c f g a b
+    c b c c, f4 r8 f
+    b4 r8 b f4 r8 es
+    d4 r8 d es4 r8 es
+    f4 r8 f g4 r8 g %60
+    a4 r8 a b c d g,
+    es c f f, b b\fE es c
+    f d g es f4 r16 b a b
+    g8 b f f, b2\fermata \bar "||" %64 finis
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  r4 \bo <[6]>8 <_+>4. <6>8 \bc <[_+]>
+  r4 <6 _->8 <\t _!> <5 _+> <\t \t> <6> <6\\>
+  r <[6]> <_+>2 \bo <[6]>8 <_+>
+  r4 <6>8 \bc <[_+]>4. <6 [_-]>8 <\t _!>
+  <5 _+> <\t \t> <6> <_+>2 <6>8 %5
+  <[_-]>4 <5-> <6\\> <6>8 <_+>
+  r8 \bo <[6 \l]> <6 _-> <_+> r4 \bc <[_+ \l]>
+  r4. <6>8 <_-> <\t> <5->4
+  <6\\> <[6]>8 <_+> r \bo <[6 \l]> <6 _-> <_+>
+  r4 \bc <[_+ \l]> <5 _!> <6> %10
+  <5 _->8 <\t \t> <5- 3>4 <6\\>8 <8> <[6]> <_+>
+  <5> \bo <[6 \l]> \bc <[6 _-]> <_+> r4 <[_+]>
+  r8 <2> \bo <[6]> <_+>4. <6>8 \bc <[_+]>
+  r4 <6 _->8 <\t _!> <_+>2
+  <5>4 <6 4-> <5 3> <6 4-> %15
+  <5 3>4 \bo <[6]>8 \bc q4 <5>8 <6>4
+  <5 _!>2 <5>4 <6>
+  r <_+>2 q4
+  r q2 \bo <[6 \l]>8 <_+>
+  r4 <6>8 <_+>4. \bc <[6 _-]>8 <6 _!>8 %20
+  <_+>2. <6 4>4
+  <5 3> <6 4> <5 3>2
+  \bo <[5]>4 \bc <[6]>2.
+  <5>4 <6>8 \bo <[_-]>4. \bc <[6]>4
+  <6 5>1 %25
+  r2.. <_!>8
+  <_->4 <5-> <6>2
+  r2 <[_-]>4 <5->
+  <6>4. <[5-]>2 q8
+  \bo <9 7 [_-]>8 <8 6 \t>4 \bc <7 5 [_!]>8 <_+>4 <[6]> %30
+  \bo <9 7 [_-]>8 <8 6 \t>4 \bc <7 5 [_!]>8 <6 4>4 <[5] _+>
+  r1
+  r2 <6 4! 2+>
+  <7 [5!] _+>4 <6 4> <5- \t> <\t 3>
+  <6 5>2 <9>4 <8> %35
+  r4 <6 4+ 2+>4. <\t \t \t>
+  <7 [5+] _+>2 \bo <[9] 4>4 \bc <[8] 3>
+  <6! 5> <6 5!> <9 4!> <8 3>
+  <6\\>2 <5 4>4 <\t 3>
+  <7 _+>2 <9 _->4 <8> %40
+  <7>2 <7 3>
+  <9>4 <8> <7> <6>
+  <_+>1
+  <_+>2. \bo <[6]>8 \bc <[_+]>
+  r4 <6>8 <[_+]>4. <6>8 <[_+]> %45
+  r2 r8 <_->4.
+  r8 <5 _!> <\t \t>4 r8 <5 3> <\t \t>4
+  r4 <6>4. <_->8 <6>4
+  r8 <[7 5-]>2 <7 _+>4.
+  r8 <5> <_+>4 <5 3> <\t \t> %50
+  <6>1
+  r
+  r4. <6>8 <_-> <6>4 q8
+  <5> q4 q8 <6> <5>4 <6>8
+  <5>4 <5 3>8 <\t \t> r2 %55
+  r8 <7> <\t>4. <[6]>
+  \bo <[6] 4>4 \bc <[5] 3>2.
+  r2.. <4 2>8
+  <6>2.. <6>8
+  <5>4. <6>8 <5>4. <6->8 %60
+  <5->4. <6>8 <5> <[6 _-]> <6>4
+  <6 5>2. \bo <[9]>16 <8> <_->8
+  <9>16 <8> r8 <9>16 <8> <7>8 <4> \bc <[3]>4.
+  r1 %64 finis
+}
+
+DomineFiliOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/2 \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    << {
+      r1 d'
+      d2 d d c4 b
+      a2 b c b4 a
+    } \\ {
+      \mvTr g1\fE-\tuttiE g2 g
+      g f4 es d2 es
+      f es4 d c2 d
+    } >>
+    es d4 c b1
+    r2 b1 c2
+    d c4 b a2 b %70
+    c1 d
+    es d2 es
+    f\breve
+    b,1 \clef "treble_8" b'
+    a2 b \clef bass f1 %75
+    d2 es f d
+    c f1 g2
+    a f \clef "treble_8" a h
+    c \clef bass f, d e!
+    f e4 d e2 f %80
+    d e f d
+    b c d1
+    \clef "treble_8" b'2 c a b
+    c b4 a b2 \clef bass c,
+    a b c a %85
+    b g a1
+    b \once \tieDashed c~
+    c\breve
+    f,\fermata \bar "||" %89 finis
+  }
+}
+
+DomineFiliBassFigures = \figuremode {
+  r\breve %65
+  r
+  r
+  <5>2 q <[6]>1
+  r2 <[5]>1 <6 _->2
+  <5> <7 _->4 <\t \t> <6>2 q %70
+  <_->1 <6>
+  <7>2 <6> q q
+  <7- 3> <6 4> <5 \t> <\t 3>
+  r1 <3>2 <4->
+  \bo <[6]> \bc <[3]>1. %75
+  <6>2 <[6 5]>1 <6!>2
+  <_!> <5> <6> <6!>
+  <6>1 <[6]>2 <7>
+  <_!>1 <6->2 <5>
+  r <5! 3>4 <\t \t> <6>1 %80
+  <6->2 <\t 3> <9> <3>
+  <6 5>1 <5>
+  <5>2 <5 _!> <6> <4->4 <3>
+  <_->2 <5>4 <\t> r2 <[6] _!>4 <5 \t>
+  <6>2 <[6]> <9 _-> <3> %85
+  <9> <6!> <6>1
+  <7>2 <6> <7 3> <6 4>
+  <5 \t>1 <\t 3>
+  r\breve %89 finis
+}
+
+QuiTollisOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 \mvTr c\fE-\tuttiE c2
+    h r8 b b b
+    a2 r8 as as as \noBreak
+    g1\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      \mvTr es'1.\p-\solo b \noBreak
+    g as %95
+    f2 g1 c2 r r
+    f es d es d c
+    as1. g2 g g
+    c c c f f f
+    b, b b es d c %100
+    d d d g, b g
+    c r c d r e!
+    f r f g r c, \noBreak
+    \time 9/2 f r f \tempoMiserereB h,1. c\fermata \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4 \mvTr as2\fE-\tuttiE as4 \noBreak %105
+    a2 b
+    r4 b2 b4
+    c1
+    h2 b~
+    b4. a8 gis2 %110
+    \time 2/1 a1 d\fermata \bar "||" %111 finis
+  }
+}
+
+QuiTollisBassFigures = \figuremode {
+  r4 <_-> <6- 4 2>2 %90
+  <7->2 r8 <6 4! 2>4.
+  <6 5->2 r8 <6\\ 5->4.
+  <6 4>2 <5 _!>
+  <5>1. <6 4>2 <5 3>1
+  <6 5->1. <9 4->2 <8 3>1 %95
+  <[6] _->2 <_!>1 <_->1.
+  <_->1 <5->2 r1 <[_-]>2
+  <5->1 <6>2 <_!>1.
+  <7- _!> q
+  <7-> <5 3>2 <\t \t> <6! 5 _-> %100
+  <5 4> <\t _+>1 r1.
+  <_!> <6>1 <[6 5]>2
+  <_->1. <7>1 <7 _!>2
+  <9 _->1 <[8 \t]>2 <7 5>1 <6>2 <_!>1.
+  r4 <5->2. %105
+  <6 5->2 <9 _->4 <8 \t>
+  r \bo <5 [_-]>2 \bc <6- [\t]>4
+  <7- _!>2 <6- 4>
+  <7- _!> <\t \t>4 <6 4->
+  <5 \t> <\t 3> <7 5 _!>2 %110
+  <6 _+>4 <\t 4> <5! \t> <\t _+> <_+>1 %111 finis
+}

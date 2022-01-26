@@ -135,3 +135,129 @@ KyrieBViola = {
     g1\fermata \bar "|." %124 finis
   }
 }
+
+GloriaViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoGloria
+    d4\fE r8 fis d d d fis
+    g d es e a, fis' g fis
+    g b cis, e f4 r8 cis
+    d4 r8 cis d4 r8 e
+    e4 r8 fis g4 r8 g %5
+    g4 r8 a fis4 r8 a
+    g4 r8 a r16 b a g d'8 d,
+    g,4 r8 g'\p g4 r8 a
+    a4 r8 a r g r a
+    r16 b a g d'8 d, g,4 r8 d'\ff %10
+    es16 f d es c8 a'16 g fis8 g a fis
+    g d es a, b16 b'[ a g] d'8 d,
+    g4 r r2
+    R1\fermata
+    b,8\fE b b4 b8 b b b %15
+    b4 r r2
+    R1
+    r2 r4 \parOn a'-\parenthesize-!\fE
+    a-! a,-!\pE \parOff a-\parenthesize-! r
+    R1 %20
+    r2 c8\fE c b4
+    c8 c b b c4 r
+    R1*2
+    r2 r4 \parOn a'-\parenthesize-!\fE %25
+    f-! \parOff f-\parenthesize-!\p f r8 h\fE
+    c4 r8 f, f4 r8 f
+    f4 r r2
+    R1
+    r2 r4 r8 g\f %30
+    g4 r8 e! d2
+    \tempoAdoramus r2 r4 b~
+    b8 b b b h h h a
+    gis gis e' e e e e e
+    e e e2 d4 %35
+    r dis4. dis8 dis dis
+    dis dis dis dis h h h h
+    c c h a g g g a
+    h c d d d d c c
+    d d d d d d d d %40
+    e e e e e e e e
+    c c c c d d d d
+    e e e e e2\fermata
+    \tempoGlorificamus R1*6 %49
+    r2 r8 g16\p f! g8 f %50
+    es? c16 d es?8 c r f16 g a8 f
+    b, c d es f d4 b8
+    g g'4 es8 c a'4 f8
+    d b'4 g8 e c'4 a8
+    f f d f r g, b g %55
+    r c e c f,^\critnote g a b
+    c b c c, r f f'4
+    r8 b, d4 r8 f, c'4
+    r8 b f'4 r8 b, b'4
+    r8 a c4 r8 g, g'4 %60
+    r8 a c a, b c d g,
+    es' c f f, b b\fE es c
+    f d g es f4 r16 b a b
+    g8 b f f, b2\fermata \bar "||" %64 finis
+  }
+}
+
+DomineFiliViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/2 \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    R\breve*3 %67
+    g'1\fE g2 g
+    g f4 e d2 es
+    f es4 d c2 d %70
+    es d4 c b1
+    es f2 g
+    f1 f
+    f d2 es
+    f d r f~ %75
+    f g a f
+    r f d e!
+    f2. g4 a1
+    g2 a f g
+    c, d c f~ %80
+    f g1 f2~
+    f e d1
+    R\breve
+    r2 f d e!
+    f es4 d es2 d4 c %85
+    d2 e f4 g a2~
+    a g4 f e2 f~
+    f e4 d e1
+    f\breve\fermata \bar "||" %89 finis
+  }
+}
+
+QuiTollisViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 g'\fE as2
+    as r8 g g g
+    c,2 r8 fis fis fis \noBreak
+    g2 g\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      R\breve.*4 %97
+    r1*3/2 r2 \parOn g-\parenthesize-!\mp g-!
+    g-! g-! g-! f-! f-! f-!
+    f-! f-! \parOff b,-\parenthesize-! b b es %100
+    d d d d1.
+    r2 r c\p f, r b
+    as r c b r b \noBreak %103
+    \time 9/2 as r f \tempoMiserereB h1. c\fermata \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4 es2\fE es4 \noBreak %105
+    es2 des
+    r4 des2 des4
+    c2 c
+    d!4. c8 b!2~
+    b h %110
+    \time 2/1 a1 a\fermata \bar "||" %111 finis
+  }
+}

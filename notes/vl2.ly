@@ -128,3 +128,139 @@ KyrieBViolinoII = {
     d1\fermata \bar "|." %124 finis
   }
 }
+
+GloriaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoGloria
+    \mvTr g'8\fE-\markup \remark "staccato" a16 b a8 d b g a d
+    b c16 b a8 g fis d d'4~
+    d8 e e, cis' d a a4
+    r8 a a4 r8 a b h
+    a cis d16 es c d b4 r8 d %5
+    es16 f d es c d b c a8 b16 c d8 fis,
+    g d es d <g, d' b' g'>16 b'[ a g] d'8 d,
+    g d'\p g16 as f g \once \tieDashed es4~ es16 f d es
+    c4~ c16 a d c b8 g' a, fis'
+    <g b, d, g,>16 b,[ a g] d'8 d, g d'\ff g16 as f g %10
+    es4~ es16 f d es c4~ c16 a d c
+    b8 g' a, fis' <g b, d, g,>16 b,[ a g] d'8 d,
+    g4 r r2
+    R1\fermata
+    d8\fE d es4 d8 d es es %15
+    d4 r r2
+    R1
+    r2 r4 \parOn cis'-\parenthesize-!\fE
+    d-! cis,-!\p \parOff d-\parenthesize-! r
+    R1 %20
+    r2 a'8\fE a b4
+    a8 a b b a4 r
+    R1*2
+    r2 r4 c-!\fE %25
+    b-! a-!\p b r
+    r8 g\fE c16 d b c a4~ a16 a b c
+    f,4 r r2
+    R1
+    r2 r4 b'8\f b %30
+    b( a) a( g) g4( fis)
+    \tempoAdoramus r2 r4 g,~
+    g8 g g g gis a h h
+    h h a a a a g g
+    g g f e f2 %35
+    r4 fis4. fis8 fis fis
+    fis fis fis fis e e e e~
+    e e d d d d c c
+    d d d d e e e e
+    fis g a a a a g g %40
+    g g g g g g g g
+    g g f e d d d d
+    cis cis cis cis cis2\fermata
+    \tempoGlorificamus r4 r8 a'4\mf a a8~
+    a a4 a a fis8~ %45
+    fis g4 g g g8~
+    g f4 f c' a8
+    b16\p a b c b c a b g2~
+    g8 a16 b a b g a fis8. g16 a8 g16 fis
+    g b a g fis8.\trill g16 g4 r %50
+    r2 f4. g16 a
+    b4 b8 b a8. g16 f4
+    r8 b g c c4. a8
+    d d4 b8 c g4 c8
+    f4. g16 a d,8 d b c16 d %55
+    g,8 a16 b e,8 f16 g c,8 e f d'
+    a4 g8.\trill f16 f c' b c a4
+    r16 d c d b4 r16 a g a f4
+    r16 d' c d b4 r16 b a b g4
+    r16 a g a f4 r16 b a b g4 %60
+    r16 c b c a4 r16 d c d b4
+    r2 r8 f~\f f16 es g8~
+    g16 f a8~ a16 g b c \appoggiatura b8 a4 r16 d c d
+    b8 d, c8.\trill b16 b2\fermata \bar "||" %64 finis
+  }
+}
+
+DomineFiliViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/2 \tempoDomineFili
+      \set Staff.timeSignatureFraction = 2/2
+      \set Score.currentBarNumber = #65
+    r1 \mvTr d'\fE
+    d2 d d c4 b
+    a2 b c b4 a
+    g2 a b1
+    r2 b1 a4 g
+    f2 g a g %70
+    c2. c4 f,2 d'~
+    d c b es~
+    es d c1
+    d b
+    a2 b c a %75
+    r c1 d2
+    e! c r1
+    r2 c a h
+    c b4 a b2 a4 g
+    a2 g4 f g2 a %80
+    d1 c2 \once \tieDashed d~
+    d c4 b a1
+    r2 c a b
+    c b4 a b2 a4 g
+    a2 g1 a2 %85
+    f g c1
+    b4 c d2 g, a4 b
+    c\breve
+    c\fermata \bar "||" %89 finis
+  }
+}
+
+QuiTollisViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #90
+    r4 es'\fE d2^\critnote
+    d r8 e e e
+    es2 r8 c c c \noBreak
+    c2 h\fermata \bar "||"
+    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+      r2 b,\p b b1 b2 \noBreak
+    r b b c as1~ %95
+    as2 g2. g4 g1.
+    R\breve.
+    r2 c'-!\mp c-! h-! h-! h-!
+    b-! b-! b-! \parOn a-\parenthesize-! a-! a-!
+    as-! as-! \parOff as-\parenthesize-! g g g %100
+    g fis2.\trill fis4 g1.
+    r2 r g,\p d' r g
+    f r f f r e! \noBreak %103
+    \time 9/2 c r c \tempoMiserereB d1. c\fermata \bar "||"
+    \time 4/4 \set Staff.timeSignatureFraction = 4/4
+      r4 as'2\fE as4 \noBreak %105
+    f2 f
+    r4 f2 ges4
+    e!2 f
+    f2. es4~
+    es d4. cis8 d4 %110
+    \time 2/1 cis d2 cis4 d1\fermata \bar "||" %111 finis
+  }
+}

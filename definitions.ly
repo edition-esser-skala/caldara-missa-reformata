@@ -11,6 +11,14 @@ tempoChriste = \tempoMarkup "[Tempo deest]"
 tempoKyrieB = \tempoMarkup "Adagio"
   tempoKyrieBFuga = \tempoMarkup "Presto"
 
+tempoGloria = \tempoMarkup "Allegro"
+  tempoAdoramus = \tempoMarkup "Adagio"
+  tempoGlorificamus = \tempoMarkup "Allegro"
+tempoDomineFili = \tempoMarkup "[Tempo deest]"
+tempoQuiTollis = \tempoMarkup "Adagio"
+  tempoMiserereA = \tempoMarkup "Larghetto"
+  tempoMiserereB = \tempoMarkup "Adagio"
+
 
 \include "notes/ob1.ly"
 \include "notes/ob2.ly"
