@@ -349,3 +349,31 @@ CumSanctoViola = {
     d1\fermata \bar "|." %184 finis
   }
 }
+
+CredoViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    d4-!\fE d-! r
+    \time 6/4 d-! d-! r r r d\p
+    es r d d r r
+    c r d d r es
+    a, r r r2 r4 %5
+    R1.
+    r2 r4 r \startDeleted \parOn f'-\parenthesize-!\fE a-!
+    r f-! \parOff f-\parenthesize-! r \stopDeleted r r
+    R1.*2 %10
+    r2 r4 r \startDeleted b-!\fE a-!
+    r \parOn d,-\parenthesize-! \parOff d-\parenthesize-! es d d
+    d \stopDeleted r b' r e, a
+    a2 r4 r2 r4
+    R1.*2 %16
+    r4 \startDeleted a\fE g r f g
+    r \stopDeleted r r r2 r4
+    R1.*19 %37
+    r4 \startDeleted b\fE a r d, d
+    b' a2 fis2.\fermata \bar "||" %39 finis
+  }
+}

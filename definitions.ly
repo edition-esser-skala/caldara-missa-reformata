@@ -6,6 +6,23 @@
 \include "ees.ly"
 
 
+startDeleted = {
+  \once \override Staff.BarLine.color = #white
+  \once \override Staff.BarLine.layer = #10000
+  \once \override Staff.BarLine.thick-thickness = #10
+  \once \override Staff.BarLine.allow-span-bar = ##f
+  \noBreak \mark \markup { \fontsize #-2 \musicglyph #'"pedal.*" } \bar "." \noBreak
+}
+
+stopDeleted = {
+  \once \override Staff.BarLine.color = #white
+  \once \override Staff.BarLine.layer = #10000
+  \once \override Staff.BarLine.thick-thickness = #10
+  \once \override Staff.BarLine.allow-span-bar = ##f
+  \noBreak \bar "." \noBreak
+}
+
+
 tempoKyrie = \tempoMarkup "Adagio"
 tempoChriste = \tempoMarkup "[Tempo deest]"
 tempoKyrieB = \tempoMarkup "Adagio"
@@ -19,7 +36,9 @@ tempoQuiTollis = \tempoMarkup "Adagio"
   tempoMiserereA = \tempoMarkup "Larghetto"
   tempoMiserereB = \tempoMarkup "Adagio"
 tempoQuoniam = \tempoMarkup "Allegro"
-tempoCumSancto= \tempoMarkup "Allegro"
+tempoCumSancto = \tempoMarkup "Allegro"
+
+tempoCredo = \tempoMarkup "Vivace"
 
 
 \include "notes/ob1.ly"

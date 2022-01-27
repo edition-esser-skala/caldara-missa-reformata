@@ -353,3 +353,48 @@ CumSanctoViolinoI = {
     g1\fermata \bar "||" %184 finis
   }
 }
+
+CredoViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    b''4-!\fE a8-! fis d fis
+    \time 6/4 g4-! a8-! es d c b4\p a g8( b)
+    a4 a8( g) fis( a) g( b) c( d16 es) d8( b)
+    \appoggiatura a g4 a a g g4.\trill g8
+    fis4 r r r2 r4 %5
+    R1.
+    r2 r4 r \startDeleted f'-!\fE f-!
+    r f8( g) a4 f\p \stopDeleted d b
+    g' es c fis d fis
+    g2.~ g~ %10
+    g4 g fis8.\trill g16 g4 \startDeleted g-!\f a-!
+    r g-! fis-! g8 c, a2\trill
+    g4 \stopDeleted g' f! e! a g
+    f4. e8 d4 r2 r4
+    R1.*2 %16
+    r4 \startDeleted f\fE g r a g
+    r \stopDeleted r r r2 r4
+    R1.*2 %20
+    <e cis e, a,>4\pE r r <f a, d,> r r
+    <d d, g,> r r g f e
+    <f c f,> r r <f b, d,> r r
+    <f c f,> r r <e cis e, a,> r r
+    <d g, g,> r <a' cis, e, a,> f8 a, f a d,4 %25
+    r2 r4 f'4.\fE g8 a4
+    f8. g16 \appoggiatura f4 e2\trill f r4
+    R1.
+    r4 g\fE g g8 f g as g f
+    es d es\p g f es d4 r r %30
+    R1.*2
+    r8 g, c d es4 r8 c f g a4
+    r8 f b c d4 d c2
+    d4 r r8 a, b( a g f es d) %35
+    c4 r r b''8( a g f es d)
+    es4 d c b! a2
+    g4 \startDeleted g'\fE a r g fis
+    g8 b e,2\trill d2.\fermata \bar "||" %39 finis
+  }
+}

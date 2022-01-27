@@ -521,3 +521,67 @@ CumSanctoTenoreLyrics = \lyricmode {
   a --
   men. %184 finis
 }
+
+CredoTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 3/4 \autoBeamOff \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    \mvTr d4\fE^\tuttiE d r
+    \time 6/4 d d r r2 r4
+    R1.*2
+    \mvTr a4\pE^\solo d c b8[ a g a b g] %5
+    c[ b] c4. b8 a[ g f g] a([ f])
+    b([ g)] a2\trill b4 \startDeleted \mvTr d-!\fE^\tuttiE c-!
+    r d-! c-! r \stopDeleted r r
+    R1.*2 %10
+    r2 r4 r \startDeleted \mvTr d\fE^\tuttiE d
+    r d d b8 c a2
+    << \context Voice = "Tenore" { \oneVoice g2 } \\ { s4 \stopDeleted s } >> r4 r2 r4
+    r r \mvTr d'~\pE^\soloE d cis2
+    d a4 r2 r4 %15
+    R1.
+    r4 \startDeleted \mvTr f'\fE^\tuttiE c r f e
+    r \stopDeleted \mvTr f\pE^\soloE e d e2
+    cis4.( h?8) a4 d c?2
+    b4. a8 a4.( b8) g4. a8 %20
+    a2 r4 d d c!
+    b8([ a)] g2 c4 c b
+    a4. g8 f4 r c' e
+    f e d cis2 d4~
+    d8 e cis2 d r4 %25
+    R1.*12 %37
+    r4 \startDeleted \mvTr d\fE^\tuttiE d r d d
+    d8 g e2 fis?2.\fermata \bar "||" %39 finis
+  }
+}
+
+CredoTenoreLyrics = \lyricmode {
+  Cre -- do,
+  cre -- do.
+
+  Fa -- cto -- rem coe -- %5
+  _ _ _ _ li __
+  et __ ter -- rae. Cre -- do,
+  cre -- do.
+
+  Cre -- do, %11
+  cre -- do, cre -- do, cre --
+  do.
+  Je -- sum
+  Chri -- stum. %15
+
+  Cre -- do, cre -- do.
+  Et ex Pa -- tre
+  na -- tum an -- te
+  o -- mni -- a __ sae -- cu -- %20
+  la. De -- um de
+  De -- o, lu -- men de
+  lu -- mi -- ne, De -- um
+  ve -- rum de De -- _
+  o ve -- ro. %25
+
+  Cre -- do, cre -- do, %38
+  cre -- do, cre -- do. %39 finis
+}

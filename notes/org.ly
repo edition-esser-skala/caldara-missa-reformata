@@ -720,3 +720,93 @@ CumSanctoBassFigures = \figuremode {
   r4 <5 _+>8 <\t \t> <6>4 <4>8 <_+>
   r1 %184 finis
 }
+
+CredoOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    \mvTr g'4-!\fE-\tuttiE fis-! r
+    \time 6/4 g d r \mvTr b'\pE-\solo a g~
+    g fis d g a b
+    c fis,2 g4 es2
+    d4 fis d g r g %5
+    c2 b4 a8 g f g a f
+    b es, f4 f, b \startDeleted \mvTr b'\fE-\tutti a
+    r b f r \stopDeleted \mvTr b\pE-\solo g
+    es c2 d4 fis d
+    g, g' b es, d c %10
+    d8 c d4 d, g \startDeleted \mvTr g'\fE-\tuttiE fis
+    r g d es8 c d4 d,
+    g4 \stopDeleted r g-\soloE a r a
+    d f\pE d a' a, a'
+    d,4. e8 fis4 g4. g8 f?4 %15
+    e8 d c4 d8 e f b, c4 c,
+    f \startDeleted \mvTr f'\fE-\tutti e r f c
+    \mvTr f4~\pE-\soloE \stopDeleted f8 g8 a4 b g gis
+    a a4. g8 f4 e2
+    d c!4 b2. %20
+    a d
+    g4 g f e4. d8 c4
+    f2. b4 a g
+    f2 g4 a4. g8 f4
+    g a a, d2. %25
+    e4 d e f8\fE c a c f,4
+    a' g c, f f, f'~\pE
+    f es d c f2
+    g r4 h2\fE r4
+    c2 r4 g\pE h g %30
+    c, es c f2 r4
+    g2 as4 f g g,
+    c r c f r f
+    b, r b es2.
+    d4. fis8 d4 g8( f es d c b) %35
+    a2. g4 r g
+    c b c d d, d'
+    g, \startDeleted \mvTr g'\fE-\tutti fis r g d
+    b'8 g a4 a, d2.\fermata \bar "||" %39 finis
+  }
+}
+
+CredoBassFigures = \figuremode {
+  r4 <6>2
+  r4 <6>2 q4 <6\\>2
+  \bo <[6- 4] 2>4 <6> <_+> r <6\\> \bc <[6 \l]>
+  <_-> \bo <[6]> \bc <[5]>2 <6>
+  <[_+]>1. %5
+  <_->2. <[6]>
+  r1 r4 <[6]>
+  r1.
+  r4 \bo <5 [_-]> \bc <6 [\t]> <_+>2.
+  r <5 3>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff %10
+  <5 4> <\t \t> <\t _+> r2 \bo <[6 \l]>4
+  r2 <_+>4. \bc <[6 _-]>8 <_+>2
+  r2. <5! 4>4 <\t _+>2
+  r2. <5 4>4 <\t _+>2
+  <5 _!>2 <6 [5]>4 r2 <3>8 <4!> %15
+  <6>2 <6->4 r2.
+  r2 <[6]>1
+  r <6>4 <6 _!>
+  <_+>2. <6>4 <6!>2
+  <6-> <6>4 <7> <6>2 %20
+  <_+>1.
+  r2. <[6]>
+  r1 <[6]>4 <6>
+  r2. \bo <[_+]>2 \bc <[6]>4
+  r <_+>2 r2. %25
+  <6>4 <6> <\t> <5 3>2 \bassFigureExtendersOn q4 \bassFigureExtendersOff
+  <6> <6> <7 _!> <5 3>2 <6>4
+  <4!> <6> <6!> <_-> <6 _-> <5 \t>
+  <_!>2. <[6]>
+  <_-> <_!> %30
+  <_-> <5 _->4 <6 \t>2
+  <5 _!>4 <6- \t> <6> <[7-]> <5 4> <\t _!>
+  <_->1.
+  r2. <7>4 <6>2
+  <_+>2. <5 3>2 \bassFigureExtendersOn q8 q \bassFigureExtendersOff %35
+  <6\\>2. <_->2 <6- _!>4
+  <_-> <6> <_-> \bo <[6] 4> \bc <[5] _+>2
+  r2 \bo <[6]>2. <_+>4
+  <6>8 \bc <[6!]> <_+>2 q2. %39 finis
+}

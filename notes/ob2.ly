@@ -284,3 +284,33 @@ CumSanctoOboeII = {
     g1\fermata \bar "|." %184 finis
   }
 }
+
+CredoOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+    \override Staff.TimeSignature.style = #'single-digit
+    g''4-!\fE d-! r
+    \time 6/4 d4-! fis-! r r2 r4
+    R1.*4 %6
+    r2 r4 r \startDeleted d-!\fE c-!
+    r d c r \stopDeleted r r
+    R1.*2 %10
+    r2 r4 r \startDeleted d-!\fE d-!
+    r \parOn b-\parenthesize-! \parOff a-\parenthesize-! g8 a fis2\trill
+    g4 \stopDeleted r r r2 r4
+    R1.*3 %16
+    r4 \startDeleted c8\fE d e4 r c e
+    r \stopDeleted r r r2 r4
+    R1.*7 %25
+    r2 r4 a,4.\fE b8 c4
+    c b2 a r4
+    R1.
+    r2 r4 r d\fE d
+    c r r r2 r4 %30
+    R1.*7 %37
+    r4 \startDeleted d\fE d r b a
+    d8 e cis4.\trill d8 d2.\fermata \bar "||" %39 finis
+  }
+}

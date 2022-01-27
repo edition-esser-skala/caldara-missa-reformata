@@ -456,3 +456,52 @@ CumSanctoAltoLyrics = \lyricmode {
   _ _ _ _ _
   men. %184 finis
 }
+
+CredoAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \autoBeamOff \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    \mvTr g'4\fE^\tuttiE a r
+    \time 6/4 g fis r r2 r4
+    R1.*2
+    r2 r4 \mvTr d\pE^\solo g f! %5
+    es8[ d c d es c] f[ es] f4 es
+    d c2\trill b4 \startDeleted \mvTr f'-!\fE^\tuttiE f-!
+    r f-! f-! r \stopDeleted r r
+    R1.*2 %10
+    r2 r4 r \startDeleted \mvTr g4\fE^\tuttiE a
+    r g fis es8 es d2
+    << \context Voice = "Alto" { \oneVoice d2 } \\ { s4 \stopDeleted s } >> r4 r2 r4
+    r \mvTr d\pE^\soloE f e( a) g
+    f4. e8 d4 r2 r4 %15
+    R1.
+    r4 \startDeleted \mvTr a'\fE^\tuttiE g r a g
+    r \stopDeleted r r r2 r4
+    R1.*19 %37
+    r4 \startDeleted \mvTr g\fE^\tuttiE a r g fis
+    g8 b a2 a2.\fermata \bar "||" %39 finis
+  }
+}
+
+CredoAltoLyrics = \lyricmode {
+  Cre -- do,
+  cre -- do.
+
+  Fa -- cto -- rem %5
+  coe -- _ _ li
+  et ter -- rae. Cre -- do,
+  cre -- do.
+
+  Cre -- do, %11
+  cre -- do, cre -- do, cre --
+  do.
+  Et in u -- num
+  Do -- mi -- num. %15
+
+  Cre -- do, cre -- do.
+
+  Cre -- do, cre -- do, %38
+  cre -- do, cre -- do. %39 finis
+}

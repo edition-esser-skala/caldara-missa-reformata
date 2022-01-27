@@ -457,3 +457,74 @@ CumSanctoBassoLyrics = \lyricmode {
   glo -- ri -- a De -- i Pa -- tris, a --
   men. %184 finis
 }
+
+CredoBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 3/4 \autoBeamOff \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    \mvTr g'4\fE^\tuttiE fis r
+    \time 6/4 g d r r2 r4
+    R1.*4 %6
+    r2 r4 r \startDeleted \mvTr b'\fE^\tuttiE a
+    r b f r \stopDeleted \mvTr b\pE^\solo g
+    es4. c'8 a4 fis4. e?8 d4
+    r g b es,( d) c %10
+    d8([ c] d4.) d8 g,4 \startDeleted \mvTr g'\fE^\tuttiE fis
+    r g d es8 c d2
+    << \context Voice = "Basso" { \oneVoice g,2 } \\ { s4 \stopDeleted s } >> r4 r2 r4
+    R1.
+    r2 r4 \mvTr g'4.\pE^\soloE g8 f!4 %15
+    e8([ d)] c4 d8([ e)] f8.([ b,16)] c4. c8
+    f,4 \startDeleted \mvTr f'\fE^\tuttiE e r f c
+    r \stopDeleted r r r2 r4
+    R1.*2 %20
+    \mvTr a'4\pE^\soloE a g f8([ e)] d2
+    g4 g f e4. d8 c4
+    r f a b a g
+    f2 g4 a8[ b a g] f4
+    g a2 d, r4 %25
+    R1.*6 %31
+    r2 r4 r r g
+    es c c' a8 g f4 f
+    d( b) b' es, es es
+    d fis d g8([ f es d c b] %35
+    a4) a a' b8([ a g f es d]
+    c4) b c d2.
+    g,4 \startDeleted \mvTr g'\fE^\tuttiE fis r g d
+    b'8 g a2 d,2.\fermata \bar "||" %39 finis
+  }
+}
+
+CredoBassoLyrics = \lyricmode {
+  Cre -- do,
+  cre -- do.
+
+  Cre -- do, %7
+  cre -- do. Vi -- si --
+  bi -- li -- um o -- mni -- um
+  et in -- vi -- si -- %10
+  bi -- li -- um. Cre -- do,
+  cre -- do, cre -- do, cre --
+  do.
+
+  Fi -- li -- um %15
+  De -- i u -- ni -- ge -- ni --
+  tum. Cre -- do, cre -- do.
+
+  De -- um de De -- o, %21
+  lu -- men de lu -- mi -- ne,
+  De -- um ve -- rum de
+  De -- _ _ _
+  o ve -- ro. %25
+
+  Qui %32
+  pro -- pter nos ho -- mi -- nes et
+  pro -- pter no -- stram sa --
+  lu -- tem de -- scen -- %35
+  dit, de -- scen --
+  dit de coe --
+  lis. Cre -- do, cre -- do,
+  cre -- do, cre -- do. %39 finis
+}

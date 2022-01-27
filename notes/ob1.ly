@@ -288,3 +288,33 @@ CumSanctoOboeI = {
     g1\fermata \bar "|." %184 finis
   }
 }
+
+CredoOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    b''4-!\fE a-! r
+    \time 6/4 g-! a-! r r2 r4
+    R1.*4 %6
+    r2 r4 r \startDeleted f-!\fE f-!
+    r f8( g) a4 r \stopDeleted r r
+    R1.*2 %10
+    r2 r4 r \startDeleted g-!\f a-!
+    r g-! fis-! g8 c, a2\trill
+    g4 \stopDeleted r r r2 r4
+    R1.*3 %16
+    r4 \startDeleted f'\fE g r a g
+    r \stopDeleted r r r2 r4
+    R1.*7 %25
+    r2 r4 f4.\fE g8 a4
+    f8. g16 \appoggiatura f4 e2\trill f r4
+    R1.
+    r4 g\fE g g8 f g as g f
+    es4 r r r2 r4 %30
+    R1.*7 %37
+    r4 \startDeleted g\fE a r g fis
+    g8 b e,4.\trill d8 d2.\fermata \bar "||" %39 finis
+  }
+}

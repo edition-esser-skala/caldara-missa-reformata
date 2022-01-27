@@ -352,3 +352,48 @@ CumSanctoViolinoII = {
     g1\fermata \bar "|." %184 finis
   }
 }
+
+CredoViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 3/4 \tempoCredo
+      \set Staff.timeSignatureFraction = 3/4
+      \override Staff.TimeSignature.style = #'single-digit
+    g''4-!\fE d8-! a fis d
+    \time 6/4 d'4-! fis8-! c d c b4\p a g8( b)
+    a4 a8( g) fis( a) g( b) c( d16 es) d8( b)
+    \appoggiatura a g4 a a g g4.\trill g8
+    fis4 r r r2 r4 %5
+    R1.
+    r2 r4 r \startDeleted d'-!\fE c-!
+    r d c d\p \stopDeleted b d
+    es g a a, a d
+    b2.~ b %10
+    a4 a4.\trill a8 g4 \startDeleted d'-!\fE d-!
+    r \parOn b-\parenthesize-! \parOff a-\parenthesize-! g8 a fis2\trill
+    g4~ \stopDeleted g d'~ d cis2
+    d4 a2 r r4
+    R1.*2 %16
+    r4 \startDeleted c8\fE d e4 r c e
+    r \stopDeleted r r r2 r4
+    R1.*2 %20
+    <e cis e, a,>4\pE r r <f a, d,> r r
+    <d d, g,> r r g f e
+    <f c f,> r r <f b, d,> r r
+    <f c f,> r r <e cis e, a,> r r
+    <d g, g,> r <a' cis, e, a,> f8 a, f a d,4 %25
+    r2 r4 a'4.\fE b8 c4
+    c b2 a r4
+    R1.
+    r2 r4 r d\fE d
+    c8 h c\p es d c h4 r r %30
+    R1.*2
+    r4 r r8 g f4 r r8 c'
+    b4 r r8 f' g4 g8 fis g a
+    fis e d c b a g4 r g' %35
+    a8( g fis es d c) b4 r h
+    c g g g fis2
+    g4 \startDeleted d'\fE d r b a
+    d8 e cis2\trill d2.\fermata \bar "||" %39 finis
+  }
+}
