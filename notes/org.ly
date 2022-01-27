@@ -810,3 +810,34 @@ CredoBassFigures = \figuremode {
   r2 \bo <[6]>2. <_+>4
   <6>8 \bc <[6!]> <_+>2 q2. %39 finis
 }
+
+EtIncarnatusOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #40
+    r4 \mvTr b2\fE-\tutti b4
+    as2 g
+    \mvTr g4\pE-\soloE r g r
+    c g' c, c'~
+    c8 b! as g fis2
+    g r4 \mvTr g\fE-\tutti %45
+    g g c,2
+    d g
+    cis, d
+    g,1\fermata \bar "||" %49 finis
+  }
+}
+
+EtIncarnatusBassFigures = \figuremode {
+  r1 %40
+  <6 4 2>2 <7 _!>
+  q q
+  <_->4 <_!> <_-> <5 _->
+  r8 <\t \t> <5- 3> <\t \t> <7- [_!]>2
+  <_!>1 %45
+  r2 <9 _->4 <8 \t>
+  \bo <9- [_+]> \bc <8 [\t]> <9> <8>
+  <7 3>2 <5 4>4 <\t _+>
+  r1 %49 finis
+}

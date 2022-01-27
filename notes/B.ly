@@ -528,3 +528,34 @@ CredoBassoLyrics = \lyricmode {
   lis. Cre -- do, cre -- do,
   cre -- do, cre -- do. %39 finis
 }
+
+EtIncarnatusBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #40
+    r4 \mvTr b2\fE^\tuttiE b8 b
+    as4. as8 g2
+    R1
+    r2 r4 \mvTr c'~\pE^\soloE
+    c8 b! as g fis4. fis8
+    g2 r4 \mvTr g\fE^\tuttiE %45
+    g g c,2
+    d g
+    cis, d4. d8
+    g,1\fermata \bar "||" %49 finis
+  }
+}
+
+EtIncarnatusBassoLyrics = \lyricmode {
+  Et in -- car -- %40
+  na -- tus est
+
+  ex __
+  Ma -- ri -- a Vir -- gi --
+  ne, et %45
+  ho -- mo fa --
+  _ _
+  _ _ ctus
+  est. %49 finis
+}

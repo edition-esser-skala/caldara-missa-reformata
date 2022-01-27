@@ -377,3 +377,21 @@ CredoViola = {
     b' a2 fis2.\fermata \bar "||" %39 finis
   }
 }
+
+EtIncarnatusViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #40
+    r4 b2\fE b4
+    b4. b8 d2
+    g4\pE r h r
+    c r c, r
+    R1
+    r2 r4 d\fE %45
+    d d2 c8 b!
+    a2 b8 c d4
+    e!2 d
+    d1\fermata \bar "||" %49 finis
+  }
+}

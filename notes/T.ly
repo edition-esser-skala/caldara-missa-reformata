@@ -585,3 +585,34 @@ CredoTenoreLyrics = \lyricmode {
   Cre -- do, cre -- do, %38
   cre -- do, cre -- do. %39 finis
 }
+
+EtIncarnatusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #40
+    r4 \mvTr b2\fE^\tuttiE b8 b
+    b4. b8 h2
+    r4 \mvTr h\pE^\solo d c8 h
+    c4 h r2
+    R1
+    r2 r4 \mvTr h\fE^\tuttiE %45
+    h h es2~
+    es4 d8[ c] b2~
+    b a4.\trill a8
+    g1\fermata \bar "||" %49 finis
+  }
+}
+
+EtIncarnatusTenoreLyrics = \lyricmode {
+  Et in -- car -- %40
+  na -- tus est
+  de Spi -- ri -- tu
+  San -- cto,
+
+  et %45
+  ho -- mo fa --
+  _ _
+  _ ctus
+  est. %49 finis
+}

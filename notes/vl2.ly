@@ -397,3 +397,21 @@ CredoViolinoII = {
     d8 e cis2\trill d2.\fermata \bar "||" %39 finis
   }
 }
+
+EtIncarnatusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #40
+    r4 d'2\fE d4^\critnote
+    d4. d8 h2
+    d4\pE r d r
+    g, r g r
+    g8 d'( c b!) a!4 r
+    r2 r4 h\fE %45
+    h h es2~
+    es4 d8 c b2~
+    b4. a16 g a4.\trill a8
+    g1\fermata \bar "||" %49 finis
+  }
+}
