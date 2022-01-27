@@ -306,3 +306,46 @@ QuoniamViola = {
     f f8.[ f16] f4 r8\fermata \bar "||" %149 finis
   }
 }
+
+CumSanctoViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    r8 g'\fE d fis g g d fis
+    g f16 es d8 c b g g' b
+    a d, e4 d r8 a'
+    f d cis a' f e16 d cis8 a
+    d c b g' fis g4 fis8
+    g g fis d g, g' fis d %155
+    g a b a g2~
+    g8 f! g a d, a' a a
+    a a a a a a16 g f8 e
+    d d4 c! b8 c d
+    g, b a4 r8 a' a4 %160
+    r8 d, d d d b b b'
+    e,! f16 g a8 a fis d r d
+    es4 r8 c d d d b
+    f' d d4 r8 d a4
+    r8 f'-! f-! f-! f-! f-! f-! g %165
+    f-! f-! f4 d8 d b g'
+    a a fis d r g d fis
+    g b a4 r8 b a a,
+    r g a a b b16 c d8 d
+    c es d4 r8 g-! g-! g-! %170
+    g-! g-! g-! g-! g4.-! f16 es
+    b!8 b16 c d8 b r b16 c d8 b
+    r b16 c d8 es16 f g8-! g-! g-! g-!
+    a! d, d d d2~
+    d1~ %175
+    d4 r8 d es4 d
+    es8 f g a!16 h c8 c, d d16 e?
+    fis4 r8 b g es r a
+    f d r g es c r f
+    d b r es a, d-! d-! d-! %180
+    d d d4 b8 d16 e? fis4
+    r8 b a4 r8 b a a
+    g g a a d, d d4
+    d1\fermata \bar "|." %184 finis
+  }
+}

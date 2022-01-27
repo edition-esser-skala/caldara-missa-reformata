@@ -378,3 +378,82 @@ QuiTollisBassoLyrics = \lyricmode {
   _ _ %110
   _ bis. %111 finis
 }
+
+CumSanctoBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    r8 \mvTr g'\fE^\tuttiE d fis g g d fis
+    g f16 es d8 c b g g' b
+    a d, e4 d r8 a'
+    f[ d] cis16[ a' g a] f8[ g] a[ h16 cis]
+    d8[ c] b[ a16 g] fis8 g4 fis8
+    g g([ fis)] d r b'[ a d,] %155
+    g[ a b a] g2~
+    g8[ f! g a] d,4 r
+    R1*2
+    r8 g d fis g g d fis %160
+    g f16 es d8 c b g g' b
+    a d, a4 d r8 g(
+    es) c r f( d) b r4
+    r8 b' f a b b f a
+    b a16 g f8 es d b b' g %165
+    a b f4 b, es
+    d r8 d( b) g r4
+    r8 g' d fis g g d fis
+    g f16 es d8 c b g g'([ f]
+    es) c r4 r2 %170
+    R1
+    r8 es b! d es es b d
+    es d16 c b8 as g g r g'(
+    fis) d r d' b[ g] fis16[ d' c d]
+    b8[ g fis d] g[ f16 es] d8[ c] %175
+    h g r g' es[ c] h16[ g' f g]
+    es8[ f] g[ a!16 h] c4 g8 g(
+    fis) d r g( es) c r f(
+    d) b r es( c) a r d(
+    b) g c2 b8[ a16 g] %180
+    d'8[ c] d4 g,8 g'( fis) d
+    r g d fis g g d fis
+    g f16 es d8 c b g d'4
+    g,1\fermata \bar "|." %184 finis
+  }
+}
+
+CumSanctoBassoLyrics = \lyricmode {
+  Cum San -- cto Spi -- ri -- tu in %150
+  glo -- ri -- a De -- i Pa -- tris, De -- i
+  Pa -- tris, a -- men, a --
+  _ _ _ _
+  _ _ _ _ _
+  men, a -- men, a -- %155
+  _ _
+  men,
+
+  cum San -- cto Spi -- ri -- tu in %160
+  glo -- ri -- a De -- i Pa -- tris, De -- i
+  Pa -- tris, a -- men, a --
+  men, a -- men,
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris, De -- i %165
+  Pa -- tris, a -- men, a --
+  men, a -- men,
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris, a --
+  men, %170
+
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris, a --
+  men, a -- _ _
+  _ _ _ %175
+  _ men, a -- _ _
+  _ _ _ men, a --
+  men, a -- men, a --
+  men, a -- men, a --
+  men, a -- _ %180
+  _ _ men, a -- men,
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris, a --
+  men. %184 finis
+}

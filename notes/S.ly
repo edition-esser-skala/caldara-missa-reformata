@@ -288,10 +288,6 @@ GloriaSopranoLyrics = \lyricmode {
   _ _ mus te. %5 finis
 }
 
-
-
-% Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
-
 DomineFiliSoprano = {
   \relative c' {
     \clef treble
@@ -460,4 +456,72 @@ QuoniamSopranoLyrics = \lyricmode {
   Je -- su, Je -- %145
   su Chri --
   ste. %147 finis
+}
+
+CumSanctoSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    R1*7 %156
+    r2 r8 \mvTr d'\fE^\tuttiE a cis
+    d d a cis d c16 b a8 g
+    f d d' es d g, a4
+    g r8 d' b[ g] fis16[ d' c d] %160
+    b8[ c] d[ e!16 fis] g8[ f? e d]
+    cis d4 cis8 d d([ b)] g
+    r c([ a)] f r f' b, d
+    f4. f8 f f f f16 es
+    d8. es16 f4 b,4. es8~ %165
+    es[ d] c4 b8 d4( c8)
+    d4 r d2~
+    d d~
+    d1
+    g,~ %170
+    g
+    b!~
+    b
+    d
+    d2. d4 %175
+    g,1~
+    g2. b!4
+    d4. d8 c2
+    b a
+    g( fis8) d g4~ %180
+    g fis g r8 d'
+    b[ g] fis16[ d' c d] b8[ g] fis16[ d' c d]
+    b8[ c] d[ e!16 fis] g8 b, a4
+    g1\fermata \bar "|." %184 finis
+  }
+}
+
+CumSanctoSopranoLyrics = \lyricmode {
+  Cum San -- cto %157
+  Spi -- ri -- tu in glo -- ri -- a De -- i
+  Pa -- tris, De -- i Pa -- tris, a --
+  men, a -- _ _ %160
+  _ _ _
+  _ _ _ men, a -- men,
+  a -- men, cum San -- cto
+  Spi -- ri -- tu in glo -- ri -- a
+  De -- i Pa -- tris, a -- %165
+  _ men, a --
+  men, cum __
+  San --
+
+  cto, __ %170
+
+  San --
+
+  cto
+  Spi -- ri -- %175
+  tu __
+  in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, a -- %180
+  _ men, a --
+  _ _ _ _
+  _ _ _ men, a --
+  men. %184 finis
 }

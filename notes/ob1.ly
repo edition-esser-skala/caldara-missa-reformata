@@ -245,3 +245,46 @@ QuoniamOboeI = {
     d16. es32 c8.[\trill c16] b4 r8\fermata \bar "||" %149 finis
   }
 }
+
+CumSanctoOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    r2 r8 g''\fE fis16( e d8)
+    r g fis d g16 a f? g e! f d e
+    cis8 d4 cis8 d16 e f g a8-! a-!
+    a-! a-! a a a a a a
+    a16 a g fis g8.(\trill fis32 g) a8 g es d
+    d d, r4 r2 %155
+    r8 g'-! g-! g-! g g g g
+    a a g f!16 e f8 d a cis
+    d d a cis d c16 b a8 g
+    f d d' es d g, a4
+    g r8 d' b g fis16 d' c d %160
+    b8 c d e!16 fis g8 f? e d
+    cis d4 cis8 d d b g
+    r c a f r f' f-! f-!
+    f f f f f f, f' f16 es
+    d16( c b8) r16 f' g a b8 f4 es8~ %165
+    es d c4 b8 b' g16 fis g a
+    fis8 d-! d-\parenthesize-! d-! d d d d
+    d4 r r2
+    r r8 g g g
+    g g g g g4 r %170
+    r2 r8 g es16( d c8)
+    r4 r8 f g b f b
+    es, b' d, b' es, d16 c b a! b c
+    d8-! d-! d d d d d d
+    d d d d d d d d %175
+    d g g g g g g g
+    g g g g g4 r
+    r b2 a4~
+    a g2 f!4~
+    f es d r8 d %180
+    g4 fis8. g16 g8 d16-! d-! d8 d
+    d d d d d d d d
+    d4 r8 fis g b, a8. g16
+    g1\fermata \bar "|." %184 finis
+  }
+}

@@ -309,3 +309,46 @@ QuoniamViolinoII = {
     b16. c32 a8.[\trill a16] b4 r8\fermata \bar "||" %149 finis
   }
 }
+
+CumSanctoViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    r2 r8 g''\fE fis16( e d8)
+    r g fis16( e d8) r4 r8 g,~
+    g f! g f16 e f( e d8) r16 a' h cis
+    d8 d, r4 d'8 c16 b a8 g
+    f16 d' d, d' d, d' c! b c8 b c8.(\trill b32 a)
+    b8 g, fis' d g, g' fis d %155
+    r g'-! g-! g-! g-! g-! g-! g-!
+    a a g8.(\trill f!32 e) f8 d r16 a cis e
+    d8 f r16 cis d e d8 a' r4
+    d,16 es d c b c a g fis8 g4 fis8
+    r g fis16( e d8) r g fis16( e d8) %160
+    r g fis16( e d8) r d' \once \slurDashed b16( a g8)
+    cis d4 cis8 d d4 g8~
+    g es c4 f, b8 g'
+    c, b a16( g f8) r b a16( g f8)
+    r b' a16( g f8) r16 f g a b8 b, %165
+    c b4 a8 b d4 c8
+    d4 r r16 d d, d' d, d' d, d'
+    d,4 r r16 d' d, d' d, d' d, d'
+    d,4 r r16 g' g, g' g, g' g, g'
+    g,4 r r16 g' f! g h, g' f g %170
+    es4 r8 d g16( f es8) r g,
+    f g r f' g-! g-! f-! f-!
+    es-! es-! d-! d-! es d16 c b a! b c
+    d4 r16 d fis d g4-! r16 d fis d
+    b'4-! r16 d, fis d b'4-! r16 d, fis d %175
+    g8 g,16 a h8 c16 d r8 g,16 a \once \slurDashed h( c d8)
+    r8 g,16 a! h8 c16 d es4 d8 c16 b?
+    a4 r r16 c-! c-! c c c c c
+    f4^\tenuto r r16 a, a a a a a a
+    d4^\tenuto r r16 d-! d-! d d d d d %180
+    d c d es d es d c b a g8 r d'
+    b g fis16 d' c d b8 g fis16 d' c d
+    b8 c d e!16 fis g8 b, a4
+    g1\fermata \bar "|." %184 finis
+  }
+}

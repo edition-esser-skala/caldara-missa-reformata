@@ -384,3 +384,75 @@ QuiTollisAltoLyrics = \lyricmode {
   _ _ _ %110
   _ _ _ bis. %111 finis
 }
+
+CumSanctoAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    R1*5 %154
+    r8 \mvTr g'\fE^\tuttiE d fis g g d fis %155
+    g f16 es d8 c b g g' b
+    a d, e!4 d r8 a'
+    f[ d] cis16[ a' g a] f8[ g] a[ h16 cis]
+    d8[ c] b[ a16 g] fis8 g4 fis8
+    g g([ fis)] d r b' a4~ %160
+    a8[ g] fis[ g16 a] b8.[ a16] g4~
+    g8[ f] e4 d r8 d(
+    es) es r c( d) d r b'(
+    a) f r f( d) b r f'
+    f f16 g a8 a f f f g %165
+    f f f4 f g
+    fis8 a([ fis)] d r g d fis
+    g b a a g g16 g a8 a
+    g g fis([ g16 a] d,4) d
+    r r8 d es[ c] h16[ g' f g] %170
+    es8[ f] g[ a16 h] c8[ c,] es[ f16 g]
+    f8[ es] d b' es, g b b
+    es, g b16([ as g f] es8) es16 es d8 b
+    r a' d, fis g g d fis
+    g f16 es d8 c b g r4 %175
+    r8 d'([ h)] g r es' d4
+    es8[ d16 c] h8[ c16 d] es[ d es f] g8[ a!16 b!]
+    a8 a b2 a4~
+    a g2 f!4~
+    f es d d %180
+    d2 d8 b' a4
+    r8 b a4 r8 b a4
+    g8[ a16 g] fis8[ g16 a] g[ d] g4 fis8
+    g1\fermata \bar "|." %184 finis
+  }
+}
+
+CumSanctoAltoLyrics = \lyricmode {
+  Cum San -- cto Spi -- ri -- tu in %155
+  glo -- ri -- a De -- i Pa -- tris, De -- i
+  Pa -- tris, a -- men, a --
+  _ _ _ _
+  _ _ _ _ _
+  men, a -- men, a -- _ %160
+  _ _ _
+  _ men, a --
+  men, a -- men, a --
+  men, a -- men, in
+  glo -- ri -- a De -- i Pa -- tris, De -- i %165
+  Pa -- tris, a -- men, a --
+  men, a -- men, cum San -- cto
+  Spi -- ri -- tu in glo -- ri -- a De -- i
+  Pa -- tris, a -- men,
+  a -- _ _ %170
+  _ _ _ _
+  _ men, cum San -- cto Spi -- ri --
+  tu in glo -- ri -- a Pa -- tris,
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris, %175
+  a -- men, a -- _
+  _ _ _ _
+  _ men, a -- _
+  _ _
+  _ _ men, %180
+  a -- men, a -- _
+  _ _ _ _
+  _ _ _ _ _
+  men. %184 finis
+}

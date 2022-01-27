@@ -639,3 +639,84 @@ QuoniamBassFigures = \figuremode {
   <6> <7->
   r8 <5 3> <\t \t> r4. %149 finis
 }
+
+CumSanctoOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    r8 \mvTr g'-!\fE-\tuttiE d-! fis-! g-! g-! d-! fis-!
+    g-! f16-! es-! d8-! c-! b-! g-! g'-! b-!
+    a-! d,-! e4-! d-! r8 a'
+    f d cis a' f e16 d cis8 a
+    d c b g' fis g4 fis8
+    g g fis d g, g' fis d %155
+    g a b a g2~
+    g8 f! g a d, d' cis a
+    d, d' cis a \clef "treble_8" d e f e
+    d4. c!4 b8 c d
+    g, \clef bass g[ d fis] g g d fis %160
+    g f16 es d8 c b g g' b,
+    a d a4 d r8 g
+    es c r f d b b' g
+    f b f a b b f a
+    b a16 g f8 es d b b' g %165
+    a b f f, b4 es
+    d r8 d b g fis d'
+    g, g' d fis g g d fis
+    g f16 es d8 c b g g' f
+    es c \clef "treble_8" g'[ h] c es, g h %170
+    c b16 as g8 f es c c'^\critnote es
+    d \clef bass es,[ b! d] es es b d
+    es d16 c b8 as g es g g'
+    fis d fis d b g' fis d
+    g, g' fis d g f16 es d8 c %175
+    h g g g' es c h16 g' f g
+    es8 f g f es c g' g
+    fis d r g es c r f
+    d b r es c a r d
+    b g c2 b8 a16 g %180
+    d'8 c d d, g g' fis d
+    g, g' d fis g g d fis
+    g f16 es d8 c b g d' d,
+    g1\fermata \bar "|." %184 finis
+  }
+}
+
+CumSanctoBassFigures = \figuremode {
+  r1 %150
+  r
+  r2.. <_+>8
+  <6>4 <[6]>8 <_+> <6>4 \bo <[6]>8 \bc <[_+]>
+  <_!> <4+ 2> <6> <6-> <6 5>4 <[6- 4] 2>8 <6>
+  r4 \bo <[6]>8 <_+>4. <6>8 \bc <[_+]> %155
+  <5 3>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff <5>4 <6!>
+  <4+>8 <6> <6 [5]> <_+> r4 <[6]>8 <_+>
+  r4 <[6]>8 <_+> <5 3>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff
+  <5>4 <6->8 <6 _-> <4+ 2> <6> <6 5 [_-]> <_+>
+  r4 <_+>8 <[6]>4. <_+>8 <[6]> %160
+  <10 9> \bo <[\tllur]>16 \bc <[6]> <_+>8 <\t> \bo <[6]>4. \bassFigureExtendersOn \bc q8 \bassFigureExtendersOff
+  <7 _+>4 <5 4>8 <\t _+> <[_+]>4. <_->8
+  <6> <[_-]>4. <6> <5>8
+  r4. <6>2 q8
+  r4 <5 3>8 <\t \t> <6>4. <6->8 %165
+  <6 5->4 <4>8 <3> r4 <7>8 <6>
+  <_+>2 \bo <[6]>4 \bc q8 <_+>
+  r4 \bo <[_+]>8 <6>4. <_+>8 \bc <[6]>
+  r4 <_+> <[6]> <_!>
+  \bo <[6]>8 \bc <[_-]> <_!> \bo <[6]> <_-> \bc <[6]> <_!> <[6]> %170
+  r4 <_!>8 <\t> \bo <[6]>4. \bassFigureExtendersOn \bc q8 \bassFigureExtendersOff
+  <6->8 <5>4 <6>2 q8
+  r4 <5 3>8 <\t \t> <[6-]>4 <5>
+  <[6]>8 <_+> <[6]> <_+> <6>4 <[6]>8 <_+>
+  r4 <[6]>8 <_+>r4 <_+>8 <\t> %175
+  \bo <[6]> \bc <[_!]>4. <6>8 <[_-]> <6>8. \bassFigureExtendersOn q16 \bassFigureExtendersOff
+  <6>4 <5 _!>8 <\t \t> <6>8 <[_-]> <5 _->4
+  <[6]>8 <_+>4 <_->8 <6 5> <\t \t>4.
+  <6 5>8 <[\t \t]>4 <5>8 <6 5 [_-]> <[\t \t \t]>4 <_!>8
+  <6 5> <[\t \t]> <5 _->4 <4+ 2> <6>8 <\t> %180
+  <5 4>4 <\t _+>2 <6>8 <_+>
+  r4 <_+>8 <[6]> r4 <_+>8 <[6]>
+  r4 <5 _+>8 <\t \t> <6>4 <4>8 <_+>
+  r1 %184 finis
+}

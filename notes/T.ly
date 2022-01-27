@@ -443,3 +443,81 @@ QuoniamTenoreLyrics = \lyricmode {
   Je -- su __ Chri --
   ste. %147 finis
 }
+
+CumSanctoTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #150
+    R1*2
+    r2 r8 \mvTr d\fE^\tuttiE a cis
+    d d a cis d c16 b a8 g
+    f d d' es d g, a4
+    g r8 d' b[ g] fis16[ d' c d] %155
+    b8[ c] d[ e16 fis] g8[ f e d]
+    cis d4 cis8 d d([ cis)] a
+    r f'[ e a,] d[ e f e]
+    d4. c!4 b8[ c d]
+    g, b a16[ b g a] b[ c b c] d4~ %160
+    d d d8.[ c16] b8[ a16 g]
+    a8 a a4 a r8 b(
+    g) c r a( f) b r4
+    r8 d([ c)] f, r b([ a)] f
+    r4 r8 c' d d16 d d8 b %165
+    c^\critnote b4 a8 b4 b8([ es)]
+    a,4 r r r8 d
+    b[ g] fis16[ d' c d] b8[ g] fis16[ d' c d]
+    b8[ c] d[ e16 fis] g8[ d h] g
+    r c g h c c g h %170
+    c b16 as g8 f es c c' es
+    d b! r b g[ es] f16[ b as b]
+    g8[ es] f[ g16 as] b4 b
+    r8 a([ fis)] d r b'([ a)] d,
+    r b'([ a)] fis r a'([ fis)] d %175
+    r d g, h c c g h
+    c b16 as g8 f es c r4
+    r8 d'([ b)] g r es'([ c)] a
+    r d([ b)] g r c([ a)] f!
+    r b([ g)] c a4 b %180
+    a2 g4 r8 fis'(
+    g) d d2 d4
+    d1
+    d\fermata \bar "|." %184 finis
+  }
+}
+
+CumSanctoTenoreLyrics = \lyricmode {
+  Cum San -- cto %152
+  Spi -- ri -- tu in glo -- ri -- a De -- i
+  Pa -- tris, De -- i Pa -- tris, a --
+  men, a -- _ _ %155
+  _ _ _
+  _ _ _ men, a -- men,
+  a -- _
+  _ _ _
+  men, a -- _ _ _ %160
+  men, a -- _
+  _ men, a -- men, a --
+  men, a -- men,
+  a -- men, a -- men,
+  in glo -- ri -- a De -- i %165
+  Pa -- tris, a -- men, a --
+  men, a --
+  _ _ _ _
+  _ _ _ men,
+  cum San -- cto Spi -- ri -- tu in %170
+  glo -- ri -- a De -- i Pa -- tris, a -- men,
+  a -- men, a -- _ _
+  _ _ _ men,
+  a -- men, a -- men,
+  a -- men, a -- men, %175
+  cum San -- cto Spi -- ri -- tu in
+  glo -- ri -- a De -- i Pa -- tris,
+  a -- men, a -- men,
+  a -- men, a -- men,
+  a -- men, a -- men, %180
+  a -- men, a --
+  men, a -- men,
+  a --
+  men. %184 finis
+}
