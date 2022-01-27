@@ -616,3 +616,43 @@ EtIncarnatusTenoreLyrics = \lyricmode {
   _ ctus
   est. %49 finis
 }
+
+CrucifixusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key es \lydian \time 6/2 \autoBeamOff \tempoCrucifixus
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #50
+    r2 \mvTr b\pE^\solo b c2.( d4) es2
+    es4 f d2. d4 es1 b2
+    R\breve.
+    r2 r d c4 es f2. es4
+    d( c) b2 b c d1
+    es2 b es~ es des4 c des b %55
+    c2. b4 c as b1.
+    h c1 c2~
+    c4 d h2. c4 c1 \once \tieDashed c2~
+    c b4 a! b g a2. g4 a2
+    r r c~ c b4 as b g %60
+    as2. g4 as f g2. f4 g2~
+    g f r \tempoEtSepultus r ges1
+    f2 f2. f4 es1.\fermata \bar "||" %63 finis
+  }
+}
+
+CrucifixusTenoreLyrics = \lyricmode {
+  Cru -- ci -- fi -- xus %50
+  e -- ti -- am pro no -- bis
+
+  sub Pon -- ti -- o Pi --
+  la -- to, pas -- _ _
+  _ sus, pas -- _ _ _ _ %55
+  _ _ _ _ _
+  sus et se --
+  _ pul -- tus est, pas --
+  _ _ _ _ _ _ sus,
+  pas -- _ _ _ _ %60
+  _ _ _ _ _ _ _
+  sus et
+  se -- pul -- tus est. %63 finis
+}

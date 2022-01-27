@@ -559,3 +559,43 @@ EtIncarnatusBassoLyrics = \lyricmode {
   _ _ ctus
   est. %49 finis
 }
+
+CrucifixusBasso = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 6/2 \autoBeamOff \tempoCrucifixus
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #50
+    r2 \mvTr es\pE^\solo es as1 es2
+    f2. es4 f b, es1 es2
+    r r d c4 es f2. d4
+    b2 b'1~ b2 a!1
+    b2 b, b'~ b as4 g as f
+    g2. f4 g es b1. %55
+    as es'
+    d c2 c as
+    f( g2.) g4 c1 r2
+    r1 r2 r r f
+    g a!1 b2 b, b %60
+    c d1 es2 a,!1
+    b2 b r \tempoEtSepultus r es es
+    b1 b2 es,1.\fermata \bar "||" %63 finis
+  }
+}
+
+CrucifixusBassoLyrics = \lyricmode {
+  Cru -- ci -- fi -- xus %50
+  e -- ti -- am pro no -- bis
+  sub Pon -- ti -- o Pi --
+  la -- _ _
+  _ to, pas -- _ _ _ _
+  _ _ _ _ _ %55
+  sus, pas --
+  _ sus et se --
+  pul -- tus est,
+  pas --
+  _ _ _ sus, pas -- %60
+  _ _ _ _
+  _ sus et se --
+  pul -- tus est. %63 finis
+}

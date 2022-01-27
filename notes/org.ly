@@ -841,3 +841,43 @@ EtIncarnatusBassFigures = \figuremode {
   <7 3>2 <5 4>4 <\t _+>
   r1 %49 finis
 }
+
+CrucifixusOrgano = {
+  \relative c {
+    \clef bass
+    \key es \lydian \time 6/2 \tempoCrucifixus
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #50
+    \mvTr es1.\pE-\solo as,1 es'2
+    f b,1 es es2
+    es d1 c2 f1
+    b,2 b'1~ b2 a!1
+    b2 b, b'~ b as4 g as f
+    g2. f4 g es b1. %55
+    as es'
+    d c1 as2
+    f g1 c c'2~
+    c b!4 a! b g a1 f2
+    g a1 b b,2 %60
+    c d1 es2 a,!1
+    b r2 \tempoEtSepultus r es1
+    b1. es,\fermata \bar "||" %63 finis
+  }
+}
+
+CrucifixusBassFigures = \figuremode {
+  r\breve. %50
+  <7 _->2 <7->1 <4->2 <3>1
+  <4! 2>2 <6>1 <5>2 <_->1
+  <7->2 <6>1 <4 2>2 <[6]>1
+  r1. <4 2>2 <6>1
+  <6>1. <5 4>2 <6 _->1 %55
+  <5>1. <4->2 <3>1
+  <6!>1. r1 <5>2
+  <7 _-> <5 _!>1 r1.
+  <5 2>2 <6 4!> <\t \t> <6>1.
+  <7>2 <5->1 \bo <[9]>2 \bc <[8]> <6> %60
+  <6-> <5->1 <9>2 <7 5>1
+  <6 4>2 <5 3> r1 <5 _->
+  <5 4>2 <\t 3>1 <[_!]>1. %63 finis
+}

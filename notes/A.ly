@@ -536,3 +536,43 @@ EtIncarnatusAltoLyrics = \lyricmode {
   _ _ ctus
   est. %49 finis
 }
+
+CrucifixusAlto = {
+  \relative c' {
+    \clef treble
+    \key es \lydian \time 6/2 \autoBeamOff \tempoCrucifixus
+      \set Staff.timeSignatureFraction = 3/2
+      \set Score.currentBarNumber = #50
+    r2 \mvTr g'\pE^\solo g as1 g2
+    as2. as4 as as as2 g g
+    f4 a b2. g4 es2 as4 g as2~
+    as4 b g f g f es g c,2 c'4 a
+    f1 f2 r1 r2
+    r r es f g1 %55
+    as2 es as~ as g4 f g es
+    f2. es4 f d es2 es es~
+    es4 f d2. c4 c1 c2
+    d e1 f2 c f~
+    f es4 d es c d1 g4 f %60
+    es1 f2~ f es4 d es2~
+    es d r \tempoEtSepultus r es es~
+    es4 c d2. es4 es1.\fermata \bar "||" %63 finis
+  }
+}
+
+CrucifixusAltoLyrics = \lyricmode {
+  Cru -- ci -- fi -- xus %50
+  e -- ti -- am pro no -- bis sub
+  Pon -- ti -- o Pi -- la -- _ _ _
+  _ _ _ _ _ _ _ _ _ _
+  _ to,
+  pas -- _ _ %55
+  _ sus, pas -- _ _ _ _
+  _ _ _ _ _ sus et __
+  se -- pul -- tus est, pas --
+  _ _ _ sus, pas --
+  _ _ _ _ _ _ _ %60
+  _ _ _ _ _
+  sus et se --
+  _ pul -- tus est. %63 finis
+}
