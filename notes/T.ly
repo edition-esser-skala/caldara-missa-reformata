@@ -656,3 +656,70 @@ CrucifixusTenoreLyrics = \lyricmode {
   sus et
   se -- pul -- tus est. %63 finis
 }
+
+EtResurrexitTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 \mvTr es\fE^\tuttiE es es f f f f
+    d d d d16 d es8 es r es
+    es4 es8 es es([ f16 es] d4)
+    c^\critnote r r2
+    R1*14 %81
+    \parTimeSig \time 3/4 r4 \startDeleted \mvTr d\fE^\tuttiE c \noBreak
+    r d c
+    r d f \noBreak
+    d8 es c2 %85
+    \time 4/4 d4 \stopDeleted r r2 \noBreak
+    R1
+    r4 \mvTr d8\pE^\solo c b c16([ d)] c8 b
+    a b16([ c)] b8 a g a16 b c4~
+    c16[ d b c] a4 g r %90
+    R1
+    \mvTr cis8\fE^\tutti cis d d d4 cis8 cis
+    f f f f f4 e
+    R1*2 %95
+    r4 r8 \mvTr d\pE^\solo c a f'4
+    e8 e a, d g,8. g16 c8 b
+    a8. g16 f8([ g16 a] b4.) b8
+    b8. a16 a4 r8 \mvTr d\fE^\tutti c c^\critnote
+    b d c c b d c c %100
+    b d c c b b c4
+    b r b2
+    c a
+    b4 g16 g g g c8 c c c
+    \tempoMortuorum a2 a\fermata \bar "||" %105 finis
+  }
+}
+
+EtResurrexitTenoreLyrics = \lyricmode {
+  Et re -- sur -- re -- xit, re -- sur -- %64
+  re -- xit ter -- ti -- a di -- e se -- %65
+  cun -- dum Scri -- ptu --
+  ras.
+
+  Cre -- do,
+  cre -- do,
+  cre -- do,
+  cre -- do, cre -- %85
+  do.
+
+  Qui ex Pa -- tre Fi -- li --
+  o -- que, Fi -- li -- o -- que pro -- ce --
+  _ dit, %90
+
+  si -- mul ad -- o -- ra -- tur et
+  con -- glo -- ri -- fi -- ca -- tur.
+
+  Et u -- nam san -- %96
+  ctam ca -- tho -- li -- cam et a -- po --
+  sto -- li -- cam __ Ec --
+  cle -- si -- am. Con -- fi -- te --
+  or u -- num ba -- ptis -- ma in re -- %100
+  mis -- si -- o -- nem pec -- ca -- to --
+  rum. Et
+  ex -- pe --
+  cto re -- sur -- re -- cti -- o -- nem mor -- tu --
+  o -- rum. %105 finis
+}

@@ -599,3 +599,72 @@ CrucifixusBassoLyrics = \lyricmode {
   _ sus et se --
   pul -- tus est. %63 finis
 }
+
+EtResurrexitBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 \mvTr c'\fE^\tuttiE c c f, f f f
+    b b b b16 b es,8 es r es %65
+    as4 as8 as d, d16 d g4
+    c, r r2
+    R1*14 %81
+    \parTimeSig \time 3/4 r4 \startDeleted \mvTr b'\fE^\tuttiE a \noBreak
+    r b f
+    r b f \noBreak
+    g8 es f2 %85
+    \time 4/4 b,4 \stopDeleted r r2
+    r4 \mvTr g'8\pE^\soloE g c,([ d)] es([ c)]
+    d4 d g8 f! es f16([ g)]
+    f8 es d es16([ f)] es8 d c d16 es
+    d8([ g c, d)] g,4 r %90
+    R1
+    \mvTr a'8\fE^\tuttiE a a a a4 a,8 a'
+    a a a a a4 a,
+    R1
+    r2 r4 r8 \mvTr a'\pE^\solo %95
+    d, d b'4 a8 a d, g
+    c,8. c16 f8 f e8. d16 c8([ d16 e]
+    f4.) f8 f8. e16 e4
+    r2 r8 \mvTr b'\fE^\tutti a f
+    b b a f b b, a' f %100
+    b b a f g g a4
+    b r b8 b g g
+    es16 es es es c8 c c16 c c c d8 d
+    g g es4. d8 c4
+    \tempoMortuorum d2 d\fermata \bar "||" %105 finis
+  }
+}
+
+EtResurrexitBassoLyrics = \lyricmode {
+  Et re -- sur -- re -- xit, re -- sur -- %64
+  re -- xit ter -- ti -- a di -- e se -- %65
+  cun -- dum, se -- cun -- dum Scri -- ptu --
+  ras.
+
+  Cre -- do,
+  cre -- do,
+  cre -- do,
+  cre -- do, cre -- %85
+  do.
+  Et vi -- vi -- fi --
+  can -- tem, qui ex Pa -- tre
+  Fi -- li -- o -- que, Fi -- li -- o -- que pro --
+  ce -- dit, %90
+
+  si -- mul ad -- o -- ra -- tur et
+  con -- glo -- ri -- fi -- ca -- tur.
+
+  Et %95
+  u -- nam san -- ctam ca -- tho -- li --
+  cam et a -- po -- sto -- li -- cam __
+  Ec -- cle -- si -- am.
+  Con -- fi -- te --
+  or u -- num ba -- ptis -- ma in re -- %100
+  mis -- si -- o -- nem pec -- ca -- to --
+  rum. Et ex -- pe -- cto
+  re -- sur -- re -- cti -- o -- nem, re -- sur -- re -- cti -- o -- nem
+  mor -- tu -- o -- _ _
+  _ rum. %105 finis
+}

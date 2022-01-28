@@ -22,6 +22,12 @@ stopDeleted = {
   \noBreak \bar "." \noBreak
 }
 
+parTimeSig = \once \override Staff.TimeSignature.stencil =
+  #(lambda (grob)
+    (parenthesize-stencil
+      (ly:time-signature::print grob)
+      0.1 0.4 0.4 0.1))
+
 
 tempoKyrie = \tempoMarkup "Adagio"
 tempoChriste = \tempoMarkup "[Tempo deest]"
@@ -42,6 +48,8 @@ tempoCredo = \tempoMarkup "Vivace"
 tempoEtIncarnatus = \tempoMarkup "[Tempo deest]"
 tempoCrucifixus = \tempoMarkup "[Tempo deest]"
   tempoEtSepultus = \tempoMarkup "Adagio"
+tempoEtResurrexit = \tempoMarkup "Allegro"
+  tempoMortuorum = \tempoMarkup "Adagio"
 
 
 \include "notes/ob1.ly"

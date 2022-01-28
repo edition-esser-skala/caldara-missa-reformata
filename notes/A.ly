@@ -576,3 +576,68 @@ CrucifixusAltoLyrics = \lyricmode {
   sus et se --
   _ pul -- tus est. %63 finis
 }
+
+EtResurrexitAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 \mvTr g'\fE^\tuttiE g g as as as as
+    f f f f16 f g8 g r g %65
+    as4 as8 as f f16 f g4
+    g r r2
+    R1*14 %81
+    \parTimeSig \time 3/4 r4 \startDeleted \mvTr f\fE^\tuttiE f \noBreak
+    r f f
+    r f a \noBreak
+    g8 g f2 %85
+    \time 4/4 f4 \stopDeleted \mvTr b8\pE^\soloE b a b16 a g8 a \noBreak
+    fis8. e16 d4 r2
+    R1*2
+    r8 g4 fis8 g([ a16 b)] a8 g %90
+    f8. g16 a8 f e8. d16 cis4
+    \mvTr a'8\fE^\tuttiE a a a a4 a8 a
+    a a a a a4 a
+    \mvTr a8\pE^\solo g f e16([ d)] b'4 b~
+    b a8([ g)] f4( e) %95
+    d r r2
+    R1*2
+    r4 \mvTr f\fE^\tutti f4. f8
+    f f f f f f f f %100
+    f f f a g g f4
+    f f2 g4~
+    g es2 f4
+    d16 d d d g8 f es4. es8
+    \tempoMortuorum d2 d\fermata \bar "||" %105 finis
+  }
+}
+
+EtResurrexitAltoLyrics = \lyricmode {
+  Et re -- sur -- re -- xit, re -- sur -- %64
+  re -- xit ter -- ti -- a di -- e se -- %65
+  cun -- dum, se -- cun -- dum Scri -- ptu --
+  ras.
+
+  Cre -- do,
+  cre -- do,
+  cre -- do,
+  cre -- do, cre -- %85
+  do. Et in Spi -- ri -- tum San -- ctum,
+  Do -- mi -- num,
+
+  qui cum Pa -- tre et %90
+  Fi -- li -- o, et Fi -- li -- o
+  si -- mul ad -- o -- ra -- tur et
+  con -- glo -- ri -- fi -- ca -- tur,
+  qui lo -- cu -- tus est per __
+  Pro -- phe -- %95
+  tas.
+
+  Con -- fi -- te -- %99
+  or u -- num ba -- ptis -- ma in re -- %100
+  mis -- si -- o -- nem pec -- ca -- to --
+  rum. Et ex --
+  pe -- cto
+  re -- sur -- re -- cti -- o -- nem mor -- tu --
+  o -- rum. %105 finis
+}

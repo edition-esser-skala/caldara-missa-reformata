@@ -881,3 +881,98 @@ CrucifixusBassFigures = \figuremode {
   <6 4>2 <5 3> r1 <5 _->
   <5 4>2 <\t 3>1 <[_!]>1. %63 finis
 }
+
+EtResurrexitOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    \mvTr c8\fE-\tuttiE c' c c f, f f f
+    b b b b es, es es es %65
+    as as as as d, d g g
+    c, c-\solo c c g g g g
+    c c'\p b! as g f es d
+    c b! as g f f' g g,
+    c b! a g fis d16 e fis8 d %70
+    g a b c d c16 b a8 g
+    d' e fis d\fE g a b g
+    c, d es c f g a f
+    b c\pE d b g c a f
+    b, b' g c a g a f %75
+    b a b g a g a f
+    g f g es f es f d
+    es4 d c8 b c f,
+    b4 r es8\fE g c, d16 es
+    f8 es d4 es8\pE d c d16 es \noBreak %80
+    f8 es d g es c f f,
+    \parTimeSig \time 3/4 << { b4 } \\ { \tiny b8[ c] } >> \startDeleted \mvTr b'4-!\fE-\tuttiE a-! \noBreak
+    r b-! f-!
+    r b f \noBreak
+    g8 es f4 f, %85
+    \time 4/4 b8[ c] \stopDeleted \mvTr d\pE-\soloE b c d es c \noBreak
+    d e16 fis g8 g, c d es c
+    d e fis d g f es d16 es
+    f8 es d c16 d es8 d c d16 es
+    d8 g, c d g, g' f! e! %90
+    d d' cis d a4 a,
+    \mvTr a'2\fE-\tutti a,~
+    a a8 h cis a
+    \mvTr d\pE-\solo e f4 g2
+    a b8 g r a %95
+    d, d b'4 a8 a d, g
+    c,4 f e8. d16 c8 e
+    f f, f'2 e8 c
+    f4 f, r8 \mvTr b'\fE-\tutti a f
+    b, b' a f b, b' a f %100
+    b, b' a f g g a f
+    b, b' a f b b g g
+    es es c2 d4
+    b es4. d8 c4 \noBreak
+    \tempoMortuorum d1\fermata \bar "||" %105 finis
+  }
+}
+
+EtResurrexitBassFigures = \figuremode {
+  <[_-]>2 <_-> %64
+  r1 %65
+  <[5-]>2 <7 [5-]>4 <_!>
+  <_!>2 <5 _!>
+  r <5 _!>4 <6>8 <6!>
+  r4 <5-> <_-> <6- 4>8 <5 _!>
+  <5 _-> <\t> <6\\> <8> <6>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %70
+  r4 <6> <_+> <6\\>8 <8>
+  <[_+]>2 <9>8 \bo <[7]> \bc <[6]>4
+  <9 [_-]>8 \bo <[7]> \bc <[6]>4 <7-> <6>
+  <9> <[6]> <7> <[6]>
+  r <6!> <6>2 %75
+  <9>4 <[6]> <7> <6>
+  <9>4 <[6-]> <7-> <6>
+  <3>8 <4> <6>4 <7 _-> <6 \t>
+  r2 <5 3>8 q <_->4
+  r <6> <5> <5 _-> %80
+  r1
+  r2 <6>4
+  r2.
+  r
+  r8 <[6]> <5 3>4 <\t \t> %85
+  r4 <[6]> \bo <6 [_-]> <5>8 \bc <6 [_-]>
+  <_+>2 \bo <6 [_-]>4 <5>8 \bc <6 [_-]>
+  <[_+]>2. <6>4
+  r <6> <5> <[6 _-]>
+  <7 _+> <6 5 [_-]>8 <_+> r4 <6>8 <6\\> %90
+  \bo <[_!]>4 \bc <[6]> <_+>2
+  <5 _+>4 <6 4> <\t \t> <5 _+>
+  <6 4>2 <\t \t>4 <6>8 <_+>
+  r4 <6> <5> <6>
+  <10+ 9>4 \bassFigureExtendersOn <10+ 8>8 <10+ 7> \bassFigureExtendersOff \bo <[5]>8 \bc <[_!]>4 <_+>8 %95
+  r2 \bo <[6 \l]>4. <7 _!>8
+  r4 <5>8 <6> q4. \bc <[6 5-]>8
+  r4 <3> <4 2> <6>
+  <5 4> <\t 3>2 <[6]>4
+  r <6>2 q4 %100
+  r q <6-> <[6 5-]>
+  r <6>2 <5>4
+  r <5 _-> <6 \t> <5>
+  r <5> <6> \bo <5 [_-]>8 \bc <6 [\t]>
+  <5 4>2 <\t _+> %105 finis
+}

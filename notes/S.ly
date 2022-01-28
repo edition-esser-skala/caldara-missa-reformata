@@ -597,24 +597,7 @@ CredoSopranoLyrics = \lyricmode {
   cre -- do, cre -- do. %39 finis
 }
 
-% Et re -- sur -- re -- xit ter -- ti -- a di -- e
-% se -- cun -- dum Scri -- ptu -- ras,
-% et a -- scen -- dit in coe -- lum,
-% se -- det ad dex -- te -- ram Pa -- tris.
-% Et i -- te -- rum ven -- tu -- rus est cum glo -- ri -- a
-% iu -- di -- ca -- re vi -- vos et mor -- tu -- os,
-% cu -- ius re -- gni non e -- rit fi -- nis.
-% Et in Spi -- ri -- tum San -- ctum,
-% Do -- mi -- num et vi -- vi -- fi -- can -- tem,
-% qui ex Pa -- tre Fi -- li -- o -- que pro -- ce -- dit.
-% Qui cum Pa -- tre et Fi -- li -- o
-% si -- mul ad -- o -- ra -- tur et con -- glo -- ri -- fi -- ca -- tur:
-% qui lo -- cu -- tus est per Pro -- phe -- tas.
-% Et u -- nam san -- ctam ca -- tho -- li -- cam
-% et a -- po -- sto -- li -- cam Ec -- cle -- si -- am.
-% Con -- fi -- te -- or u -- num ba -- ptis -- ma
-% in re -- mis -- si -- o -- nem pec -- ca -- to -- rum.
-% Et ex -- pe -- cto re -- sur -- re -- cti -- o -- nem mor -- tu -- o -- rum,
+
 % et vi -- tam ven -- tu -- ri sae -- cu -- li.
 % A -- men.
 
@@ -647,4 +630,93 @@ EtIncarnatusSopranoLyrics = \lyricmode {
   _ _ _
   _ ctus
   est. %49 finis
+}
+
+EtResurrexitSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 \mvTr c'\fE^\tuttiE c c c c c c
+    b b b b16 b b8 b r b %65
+    c4 c8 c c d16 c h4
+    c r r2
+    r4 \mvTr g8\fE^\solo g g4. a16[ h]
+    c4. d16[ es] f4 es8 d
+    es8([ d)] c4 d4. c8 %70
+    b!4 a8 g fis4 fis8 g
+    a4 d, r2
+    r2 r4 r8 f'
+    d8. es16 f4. es8 f16([ es)] d([ c)]
+    d4 e f8. c16 c4 %75
+    d4. g8 c,4. f8
+    b,4. es?8 a,4. d8
+    g,([ a)] b f es4. es8
+    d4 r r2
+    r4 b'8 d g, a16 b c8 b \noBreak %80
+    a g16 f b4. c8 a4
+    \parTimeSig \time 3/4 b \startDeleted \mvTr b\fE^\tuttiE c \noBreak
+    r b a
+    r b a \noBreak
+    b8 c a2 %85
+    \time 4/4 b4 \stopDeleted r r2 \noBreak
+    R1*3
+    r2 r8 \mvTr d4\pE^\solo cis8 %90
+    d([ e16 f)] e8 d cis8. d16 e4
+    \mvTr e8\fE^\tutti e f f f4 e8 e
+    d d d d d4 cis
+    r2 \mvTr d8\pE^\soloE c b a16([ g)]
+    cis2 d8 h cis4 %95
+    d r r2
+    R1*2
+    r2 r8 \mvTr b\fE^\tuttiE c f
+    d b c f d b c f %100
+    d b c f es es es4
+    d f8 f b, a g16 g g g
+    g8 g g16 g g g a8 a d d
+    b4. a8 g4. a8
+    \tempoMortuorum g2 fis\fermata \bar "||" %105 finis
+  }
+}
+
+EtResurrexitSopranoLyrics = \lyricmode {
+  Et re -- sur -- re -- xit, re -- sur -- %64
+  re -- xit ter -- ti -- a di -- e se -- %65
+  cun -- dum, se -- cun -- dum Scri -- ptu --
+  ras.
+  Et a -- scen -- _
+  _ _ _ dit in
+  coe -- lum, se -- det, %70
+  se -- det ad dex -- te -- ram
+  Pa -- tris.
+  Et
+  i -- te -- rum ven -- tu -- rus
+  est cum glo -- ri -- a %75
+  iu -- di -- ca -- re,
+  iu -- di -- ca -- re
+  vi -- vos et mor -- tu --
+  os,
+  cu -- ius re -- gni non e -- rit %80
+  fi -- nis, non e -- rit fi --
+  nis. Cre -- do,
+  cre -- do,
+  cre -- do,
+  cre -- do, cre -- %85
+  do.
+
+  Qui cum %90
+  Pa -- tre et Fi -- li -- o
+  si -- mul ad -- o -- ra -- tur et
+  con -- glo -- ri -- fi -- ca -- tur,
+  qui lo -- cu -- tus
+  est per Pro -- phe -- %95
+  tas.
+
+  Con -- fi -- te -- %99
+  or u -- num ba -- ptis -- ma in re -- %100
+  mis -- si -- o -- nem pec -- ca -- to --
+  rum. Et ex -- pe -- cto re -- sur -- re -- cti --
+  o -- nem, re -- sur -- re -- cti -- o -- nem mor -- tu --
+  o -- _ _ _
+  _ rum. %105 finis
 }

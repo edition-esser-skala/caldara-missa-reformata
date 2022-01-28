@@ -332,3 +332,33 @@ EtIncarnatusOboeII = {
     g1\fermata \bar "||" %49 finis
   }
 }
+
+EtResurrexitOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 c'16\fE d es c es c r8 as16 b c as c as
+    r8 b16 c d b d b r8 es16 f g es g es %65
+    r8 c16 d es c es c r8 d16 c h c d h
+    r8 es,16 f g es g s r8 d16 es f d f d
+    es8 r r4 r2
+    R1*13 %81
+    \parTimeSig \time 3/4 r4 \startDeleted b'-!\fE c-! \noBreak
+    r b-! a-!
+    r b c \noBreak
+    b8 es c4.\trill b8 %85
+    \time 4/4 b4 \stopDeleted r r2 \noBreak
+    R1*5 %91
+    r4 d16\f d, f a d8 d cis4
+    r16 d, f a f8 f f4 e
+    R1*5 %98
+    r2 r8 b'\fE c16 f, a c
+    d d c b c f, a c d d c b c f, a c %100
+    d d c b c f, g a b8 b c c
+    f,4 r16 c' b a d4 r16 d c b
+    es4 r16 es d c a'4 r16 a g f
+    b4 r16 b, a g es' g, a b c8 a
+    \tempoMortuorum g4. g8 fis?2\fermata \bar "||" %105 finis
+  }
+}

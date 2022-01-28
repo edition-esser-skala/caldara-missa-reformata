@@ -416,3 +416,51 @@ EtIncarnatusViolinoI = {
     g1\fermata \bar "||" %49 finis
   }
 }
+
+EtResurrexitViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 es'16\fE f g es g es r8 f16 g as f as f
+    r8 d16 es f d f d r8 g16 as b g b g %65
+    r8 as16 b c as c as r8 f16 es d es f d
+    r8 c16 d es c es c r8 h16 c d h d h
+    r8 c\p b as g f es d
+    c b! as' g f as g h
+    c b a g fis d16 e fis8 d %70
+    g a b c d d, r g'\fE
+    fis8. g16 a4. \once \tieDashed g8~ g16 f es d
+    es2~ es8 f16 g f4~
+    f16 g es f d4 r2
+    R1 %75
+    r4 g~\p g8 c f,4
+    r es4~ es8 a d,4
+    r b2 a4
+    b r r es8\f g
+    c, d16 es f8 d,\pE es d c d16 es \noBreak %80
+    f8 es d g es c f4
+    \parTimeSig \time 3/4 r \startDeleted d'8.(\fE es16) f4 \noBreak
+    r d8.( es16) f4
+    r f8.( g16) a4 \noBreak
+    b8 c a4.\trill b8 %85
+    \time 4/4 b4 \stopDeleted r r2 \noBreak
+    r4 b8\p b a b16 a g8 a
+    fis8. e16 d4 r2
+    R1*3 %91
+    a'16\f a, cis e a8 f f4 e16 a, cis e
+    a8 a, d d d4 cis
+    R1
+    r2 r4 r8 e\pE %95
+    f a d,4 r8 c a h
+    c4 r8 a g c c,4
+    r8 c' a c d4 r8 e
+    f f, c' a f4 r8 f'\fE
+    f1~ %100
+    f2 es16 d es f es d es f
+    d d c b f'4 r16 f es d g4
+    r16 b a g c4 r16 c, b a f'4
+    r16 d c b g'4. f8 es4
+    \tempoMortuorum d4. d8 d2\fermata \bar "||" %105 finis
+  }
+}

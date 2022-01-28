@@ -395,3 +395,44 @@ EtIncarnatusViola = {
     d1\fermata \bar "||" %49 finis
   }
 }
+
+EtResurrexitViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #64
+    r8 g'\fE g g f f f f
+    f f f f es es es es %65
+    es es es es f f g4
+    g8 g g g g g g g
+    g4 r r2
+    R1*2 %70
+    r2 r4 r8 b,16\f c
+    d8 e fis d g a b g
+    c, d es c f g a f
+    b b,\pE d b g c a f
+    b b' g c a g a f %75
+    b a b g a g a f
+    g f g es f es f d
+    es4 d c8 b c f,
+    b4 r es8\fE g c, d16 es
+    f8 es d4 es8\pE d c d16 es \noBreak %80
+    f8 es d g es c f f,
+    \parTimeSig \time 3/4 b4 \startDeleted f'4-!\fE a-! \noBreak
+    r \parOn f-\parenthesize-! \parOff f-\parenthesize-!
+    r f f \noBreak
+    b,8 g' f2 %85
+    \time 4/4 f4 \stopDeleted r r2 \noBreak
+    R1*5
+    a8\fE a a a a4 a8 a
+    a a a a a4 a
+    R1*5
+    r2 r4 r8 a\fE
+    b f a a b f a a
+    b f a a g g f c
+    b4 r r b'8 b
+    g g es16 es es es c8 c a d
+    d d b b c d es4
+    \tempoMortuorum d2 d\fermata \bar "||"
+  }
+}
