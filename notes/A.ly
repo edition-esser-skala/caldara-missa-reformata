@@ -811,3 +811,133 @@ OsannaAltoLyrics = \lyricmode {
   sis, in ex --
   cel -- sis. %53 finis
 }
+
+AgnusAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/2 \autoBeamOff \tempoAgnus
+      \set Staff.timeSignatureFraction = 3/2
+    R\breve.*4
+    r1 r2 r \mvTr f\pE^\soloE f %5
+    f e a f e a
+    fis fis2.\trill e8[( fis)] g2 d g4 f?
+    e f g1~ g2 c, f~
+    f e1\trill f r2
+    R\breve.*6 %15
+    \time 9/2 R2*9\fermata \bar "||" %16 finis
+  }
+}
+
+AgnusAltoLyrics = \lyricmode {
+  A -- gnus %5
+  De -- i, qui tol -- lis pec --
+  ca -- _ ta mun -- di: Mi -- se --
+  re -- _ _ re no --
+  _ bis. %9 finis
+}
+
+DonaAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoDona
+      \set Score.currentBarNumber = #17
+    R1*4 %20
+    \mvTr g'2\fE^\tuttiE g,
+    g'8 g g g b2
+    a8 d4 c16[ b] a8[ h] c4~
+    c8[ b16 a] g8[ a] b4. a16[ g]
+    fis8[ g a fis] g[ a b g]~ %25
+    g[ fis16 e] fis8[ a] g2
+    fis8 b4 a16[ g] f8[ g] a4~
+    a8[ g16 f] es8[ f] g4. f16[ es]
+    d8[ c] b4 r g'~
+    g g, g'8 g g g %30
+    a8[( g f g] a4) g
+    g2 f4 r
+    a4. g16([ f!)] e!4 f8[ a]
+    gis4 a2 g4~
+    g8 f a2 g8([ f)] %35
+    e4 a, f'8[ g] a4~
+    a8[ e] a2 g4
+    a r b!2
+    a g
+    f8[ g a g]~ g[ f16 e] f8[ d] %40
+    e2 f4 \mvTr a~\pE^\solo
+    a g2 f4~
+    f e2 fis4
+    g8[ d] g4. b8[ a g]
+    fis4 g2 fis4 %45
+    r \mvTr g2\fE^\tutti g,4
+    g'8 g g g b2
+    a r4 g~
+    g8[ f16 es] d8[ es] f4 b~
+    b a b d,~ %50
+    d c r2
+    r b'
+    b, es8 es es es
+    g2 f
+    e!4. f8 g[ fis16 e] d4~ %55
+    d8[ es] f[ es16 d] c8[ d es f]
+    g[ f] es4 a,2
+    r4 g'2 g,4~
+    g g'8 g g g g4(
+    a8) d, a'2 g4 %60
+    r2 r4 g~
+    g f!2 es4~
+    es d d2
+    r4 g2 g4
+    g2~ g8[ a] h[ a16 h] %65
+    c4 g \tempoDonaB g2
+    g^\critnote r\fermata \bar "|." %67 FINIS
+  }
+}
+
+DonaAltoLyrics = \lyricmode {
+  Do -- na, %21
+  do -- na no -- bis pa --
+  cem, pa -- _ _ _
+  _ _ _
+  _ _ %25
+  _ _
+  cem, pa -- _ _ _
+  _ _ _
+  _ cem, do --
+  na, do -- na no -- bis %30
+  pa -- cem,
+  do -- na,
+  do -- na pa -- _
+  _ _ _
+  cem, do -- na __ %35
+  no -- bis pa -- _
+  _ _
+  cem, do --
+  na pa --
+  _ _ %40
+  _ cem, do --
+  na pa --
+  _ cem,
+  do -- _ _
+  na, do -- na, %45
+  do -- na,
+  do -- na no -- bis pa --
+  cem, pa --
+  _ _ _
+  _ cem, do -- %50
+  do --
+  na,
+  na, do -- na no -- bis
+  pa -- cem,
+  pa -- _ _ _ %55
+  _ _
+  _ _ cem,
+  do -- na, __
+  do -- na no -- bis pa --
+  cem, do -- na, %60
+  do --
+  na pa --
+  _ cem,
+  do -- na,
+  do -- _ %65
+  _ na pa --
+  cem. %67 FINIS
+}

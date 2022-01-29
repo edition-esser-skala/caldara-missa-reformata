@@ -555,3 +555,80 @@ OsannaViolinoII = {
     \time 6/4 \tempoOsannaB g2. g2 r4\fermata \bar "|." %53 finis
   }
 }
+
+AgnusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/2 \tempoAgnus
+      \set Staff.timeSignatureFraction = 3/2
+    r2 b'\pE b a1 a2
+    g fis1 g2 g2. g4
+    fis2 fis2.\trill e8 fis g2 d g~
+    g4 f e2 a, a'4 g f1
+    e2 e2.\trill d4 d1 r2 %5
+    R\breve.*4
+    r2 c' b a4 g f2 r %10
+    r1 r2 r r a
+    b( a) a b( a) r
+    r1 r2 r r a
+    b b g c,1 r2
+    R\breve. %15
+    r2 r fis? \tempoAgnusB  g a g fis1.\fermata \bar "||"
+  }
+}
+
+DonaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoDona
+      \set Score.currentBarNumber = #17
+    R1*4 %20
+    g'2\fE g,
+    g'8 g g g b2
+    a8 d4 c16 b a8 h c4~
+    c8 b16 a g8 a b4. a16 g
+    fis8 g a fis g a b g~ %25
+    g fis16 e fis8 a g2
+    fis8 b4 a16 g f8 g a4~
+    a8 g16 f es8 f g4. f16 es
+    d8 c b4 d'8 d d d
+    es2 d4 g~ %30
+    g8 f16 es d8 e f4. es16 d
+    c8 d es4. d16 c b8 c
+    d2 c8 b a4
+    h c f, c'~
+    c d8 c b c d4 %35
+    r8 e d cis d a d4~
+    d cis d8 d d d
+    e4.^\critnote f8 d4 e
+    c! d h cis
+    a4. b8 a2~ %40
+    a d,4 r
+    b'2\pE a
+    g f8 g a4
+    d, d'8 c b d c b
+    a4 b a2 %45
+    g r
+    r r4 d'~\fE
+    d8 c16 b a8 b c4. b16 a
+    g8 a b2 f4~
+    f r f'2 %50
+    f, f'8 f f f
+    g2 f
+    r4 b,2 a4
+    r d4. c16 b a8 b
+    c4. b16 a g8 a b4~ %55
+    b8 a16 g f!8 g a b c d
+    es d4 c8 d2
+    R1
+    r2 d
+    d, d'8 d d d %60
+    es2 d
+    c b
+    a! g
+    es'2. d8 c
+    d g, g' f16 e d2~ %65
+    d4 c8 h \tempoDonaB c4 h8 a
+    h2 r\fermata \bar "|." %67 FINIS
+  }
+}

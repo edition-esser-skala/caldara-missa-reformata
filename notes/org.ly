@@ -1201,3 +1201,171 @@ OsannaBassFigures = \figuremode {
   r4 \bo <[_-]> <_!>
   <_->2. \bc <[_!]> %53 finis
 }
+
+AgnusOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 6/2 \tempoAgnus
+      \set Staff.timeSignatureFraction = 3/2
+    \mvTr g2\pE-\solo g' g~ g fis d
+    g d1 es1.
+    d2 r d g1 f!2
+    e a g f2. e4 d2
+    g, a1 d2 f d %5
+    a' a, a' d, a cis
+    d r d g, r g
+    c r c f, r f
+    b c c, f a g
+    f a g f1 f'2 %10
+    g f1 g2 f1
+    g2 f1 g2 f1
+    g2 es e f1 f2
+    g2 es e f1 f2
+    g1 f2 es1. %15
+    \time 9/2 d2 fis d \tempoAgnusB cis1. d\fermata \bar "||" %16 finis
+  }
+}
+
+AgnusBassFigures = \figuremode {
+  r1 <6->2 <[6- 4] 2> <6> <_+>
+  r <_+>1 <7>2 <6>1
+  <_+>1. <_!>1 <4!>2
+  <6\\> \bo <[_+ \l]> <\t> <6>1.
+  <6 5>2 <_+>1 r2 \bc <[6 \l]>1 %5
+  <6 4>2 <5 _+> <\t \t>1 <_+>2 <6>
+  <_+>1 q2 <_!>1 <\t>2
+  r1. <9>1 <8>2
+  <6 5> <4> <3> r <6> q
+  r q q r1. %10
+  <6->2 <6>1 <6->2 <6>1
+  <6->2 <6>1 <6->2 <6>1
+  <6->2 <5> <6 5> <5 3>1 <\t \t>2
+  <6-> <5> <6 5> r1.
+  <6->1 <6>2 <7> <6>1 %15
+  <_+>2 <[6]> <_+> <7 5>1. <[_+]> %16 finis
+}
+
+DonaOrgano = {
+  \relative c {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoDona
+      \set Score.currentBarNumber = #17
+    \mvTr d''2\fE-\tuttiE d,
+    d'8 d d d es2
+    d8-\critnote g4 f16 es d8 e f4~
+    f8 e16 d c8 d es4. d16 c %20
+    << {
+      b8 c d4. c8 b4~
+      b8 g b c d g, g'4~
+      g f4. es16 d c8 d
+      es4. d16 c b8 g c4
+    } \\ {
+      g2 g,
+      g'8 g g g b2
+      a8 d4 c16 b a8 h c4~
+      c8 b16 a g8 a b4. a16 g
+    } >>
+    \clef "treble_8" d2 d, %25
+    d'8 d d d es2
+    d8 g4 f16 es d8 e f4~
+    f8 es16 d c8 d es4. d16 c
+    \clef bass g2 g,
+    g'8 g g g b2 %30
+    a8 d4 c16 b a8 h c4~
+    c8 b16 a g8 a b4. a16 g
+    fis8 d g2 f4
+    e a d, e
+    f2 g %35
+    a a,
+    a'8 a a a b2
+    a8 g f d g f e c!
+    f e d b e d cis a
+    d e f g a4 d, %40
+    a2 r8 \mvTr d\pE-\solo f d
+    g f e c f e d b
+    e d cis a d4 c
+    b!4. a8 g4 c
+    d d, d'4. c8 %45
+    b a g4 \clef treble << {
+      es'''2-\critnote
+      d8[ g]
+    } \\ {
+      \mvTr g,4\fE-\tutti g,
+      g'8[ g]
+    } >> \clef bass g,4. f16 es d8 e
+    f4. es16 d c8 d es4~
+    es8 d16 c b8 c d c d b
+    f'2 b, %50
+    \clef "treble_8" f'^\critnote \clef bass b
+    b, b'8 b b b
+    d2 c
+    r4 b4. a16 g f8 g
+    a4. g16 f e8 fis g4~ %55
+    g8 f16 es d8 es f4. es16 d
+    c8 d es4 d2
+    g g,
+    g'8 g g g g,2
+    d' b'4. a8 %60
+    g4 a8 g fis d g f
+    e! c f e d b es d
+    c4 d g,2
+    c1
+    g %65
+    c2 \tempoDonaB g'~
+    g r\fermata \bar "|." %67 FINIS
+  }
+}
+
+DonaBassFigures = \figuremode {
+  r1 %17
+  r
+  r
+  r %20
+  r
+  r
+  r
+  r
+  <7 _+>8 <6 4> <5 _+>4 <6 4>2 %25
+  <5 4>4 <\t _+> <7> <6>
+  <_+>8 <5 3>4 <\t \t>4. <5 3>4
+  r8 <\t \t> <5 _->4 <5 3>4. <\t \t>8
+  r1
+  <6- [3]>2 <6> %30
+  <7>8 <5 3>4 <\t \t>8 <6> <\t> <[4]> <_->
+  r <\t \t> \bo <[6-]> <\t> <4-> \bc <[3]>4 <\t>8
+  <6 5>4 \bo <[9]>8 <8> \bc <[6!] 4 2>4 <6>
+  <7 [5!] _+>2 <6- 5>4 <6 5 _!>
+  <9>8 <8>4. <9 7>4 <8 6>8 <7 5> %35
+  <5 _+>4 <6 4>8 <5 _+> <6 [4]>2
+  <5 4>4 <\t _+> <7> <6>
+  <_+> \bo <[7]>8 \bc <[3]> <9 _->4 <3>
+  <9> <3> <9 5!> <6 5>
+  <9> <6>8 <[_-]> <_+>2 %40
+  <4>4 <_+>2 <[6]>4
+  <9> <3> <9> <3>
+  <9 [5!]> <3>8 <_+> <[9]>4 <4+ 2>
+  <6 3>4. <\t \t> \bo <[8 6] _->8 \bc <[7 5] \t>
+  <5 _+>4 <6 4> <5 4> <\t _+> %45
+  <6>1
+  r4 <5 3>4. <\t \t>8 <6> <\t>
+  <6>2 <5 _->8 <\t \t> <6>4
+  <5>8 <\t> <5> <\t> <6> <6 [_-]> <6>4
+  <5 4>4 <\t 3>2. %50
+  r2 <5 3>
+  <6 \t>4 <\t 4-> <5 \t> <\t 3>
+  <5> <6> \bo <7 [_-]> \bc <6 [\t]>
+  r <6> <5>8 <\t> <6>4
+  <5! 3>4. <\t \t>8 <6> <\t> <5 3>4 %55
+  r8 <\t \t> <6> <\t> <5 3>4. <\t \t>8
+  <_-> <6> <7> <6> <_+>2
+  r1
+  <6- 4>2 <5 3>
+  <4>4 <_+> <7> <6> %60
+  <6- 5> <5- 3> <6 5> <5 _->
+  <6 5> <_-> <6 5-> <5>
+  <6! 5 _-> <_+>2.
+  <9 _->2 <8 \t>
+  <5 4> <\t _!> %65
+  <9 _->4 <8 \t> <6- 4> <5 _!>8 <4 2>
+  <5 _!>1 %67 FINIS
+}

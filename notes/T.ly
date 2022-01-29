@@ -889,3 +889,125 @@ OsannaTenoreLyrics = \lyricmode {
   sis, in ex --
   cel -- sis. %53 finis
 }
+
+AgnusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 6/2 \autoBeamOff \tempoAgnus
+      \set Staff.timeSignatureFraction = 3/2
+    R\breve.*4
+    r1 r2 r \mvTr d\pE^\soloE d %5
+    d cis2. cis4 d2 cis r
+    r r d h h2.\trill a8([ h)]
+    c2 g c4 b a( g a2.) b4
+    g1.\trill f1 r2
+    R\breve.*6 %15
+    \time 9/2 R2*9\fermata \bar "||" %16 finis
+  }
+}
+
+AgnusTenoreLyrics = \lyricmode {
+  A -- gnus %5
+  De -- i, qui tol -- lis
+  pec -- ca -- _ ta
+  mun -- di: Mi -- se -- re -- re
+  no -- bis. %9 finis
+}
+
+DonaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoDona
+      \set Score.currentBarNumber = #17
+    R1*8 %24
+    \mvTr d2\fE^\tuttiE d, %25
+    d'8 d d d es2
+    d8 g4 f16[ es] d8[ e] f4~
+    f8[ es16 d] c8[ d] es4. d16[ c]
+    b8 g r4 d'8 d d d
+    es2 d4 g~ %30
+    g8[ f16 es] d8[ e] f4. es16[ d]
+    c8[ d] es4. d16[ c] b8[ c]
+    d2 c8[ b] a4
+    h c f, c'~
+    c d8([ c)] b([ c)] d4 %35
+    r8 e([ d cis] d) a d4~
+    d cis d8 d d d
+    e4.^\critnote f8 d4 e
+    c! d h cis
+    a4. b8 a2~ %40
+    a d,4 r
+    \mvTr b'2\pE^\solo a
+    g f8[ g] a4
+    d, d'8[ c] b[ d c b]
+    a4 b a2 %45
+    g r
+    r r4 \mvTr d'~\fE^\tutti
+    d8[ c16 b] a8[ b] c4. b16[ a]
+    g8[ a] b2 f4~
+    f r f'2 %50
+    f, f'8 f f f
+    g2 f
+    r4 b,2 a4
+    r d4. c16[ b] a8[ b]
+    c4. b16[ a] g8[ a] b4~ %55
+    b8[ a16 g] f!8[ g] a[ b c d]
+    es d4 c8 d2
+    R1
+    r2 d
+    d, d'8 d d d %60
+    es2 d
+    c b
+    a! g
+    es'2. d8([ c)]
+    d[ g,] g'[ f16 e] d2~ %65
+    d4 c8[( h)] \tempoDonaB c4( h8[ a)]
+    h2 r\fermata \bar "|." %67 FINIS
+  }
+}
+
+DonaTenoreLyrics = \lyricmode {
+  Do -- na, %25
+  do -- na no -- bis pa --
+  cem, pa -- _ _ _
+  _ _ _
+  _ cem, do -- na no -- bis
+  pa -- cem, pa -- %30
+  _ _ _
+  _ _ _ _
+  _ _ _
+  _ _ cem, do --
+  na __ no -- bis %35
+  pa -- cem, do --
+  na, do -- na no -- bis
+  pa -- _ _ _
+  _ _ _ _
+  _ _ _ %40
+  cem,
+  do -- na,
+  do -- _ _
+  _ _ _
+  _ \xE na pa -- %45
+  cem, \x
+  pa --
+  _ _ _
+  _ _ cem, __
+  do -- %50
+  na, do -- na no -- bis
+  pa -- cem,
+  do -- na
+  pa -- _ _
+  _ _ _ _ %55
+  _ _
+  _ _ _ cem,
+
+  do --
+  na, do -- na no -- bis %60
+  pa -- cem,
+  do -- na
+  pa -- cem,
+  do -- na __
+  no -- _ _ %65
+  bis pa --
+  cem. %67 FINIS
+}

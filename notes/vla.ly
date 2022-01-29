@@ -526,3 +526,75 @@ OsannaViola = {
     \time 6/4 \tempoOsannaB c2. h2 r4\fermata \bar "|." %53 finis
   }
 }
+
+AgnusViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 6/2 \tempoAgnus
+      \set Staff.timeSignatureFraction = 3/2
+    r2 d\pE b es a, d
+    d r a g c es
+    a, r a g g' d
+    e! e e f2. g4 a2
+    b a a a1 r2 %5
+    R\breve.*4
+    r1 r2 r r a %10
+    b a a b a1
+    r1 r2 r r a
+    b b g c,1 r2
+    R\breve.*2 %15
+    r2 r d \tempoAgnusB cis1. d\fermata \bar "||" %16 finis
+  }
+}
+
+DonaViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoDona
+      \set Score.currentBarNumber = #17
+    R1*8 %24
+    d2\fE d, %25
+    d'8 d d d es2
+    d8 g4 f16 es d8 e f4~
+    f8 es16 d c8 d es4. d16 c
+    b8 g d'4 r g~
+    g g, g'8 g g g %30
+    a8 g f g a4 g
+    g2 f4 r
+    a4. g16 f! e!4 f8 a
+    gis4 a2 g4~
+    g8 f a2 g8 f %35
+    e4 a, f'8 g a4~
+    a8 e a2 g4
+    a r b!2
+    a g
+    f8 g a g~ g f16 e f8 d %40
+    e2 f4 a~\pE
+    a g2 f4~
+    f e2 fis4
+    g8 d g4. b8 a g
+    fis4 g2 fis4 %45
+    r g2\fE g,4
+    g'8 g g g b2
+    a r4 g~
+    g8 f16 es d8 es f4 b~
+    b a b d,~ %50
+    d c r2
+    r b'
+    b, es8 es es es
+    g2 f
+    e!4. f8 g fis16 e d4~ %55
+    d8 es f es16 d c8 d es f
+    g f es4 a,2
+    r4 g'2 g,4~
+    g g'8 g g g g4
+    a8 d, a'2 g4 %60
+    r2 r4 g~
+    g f!2 es4~
+    es d d2
+    r4 g2 g4
+    g2~ g8 a h a16 h %65
+    c4 g \tempoDonaB g2
+    g^\critnote r\fermata \bar "|." %67 FINIS
+  }
+}

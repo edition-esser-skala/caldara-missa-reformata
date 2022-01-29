@@ -460,3 +460,60 @@ OsannaOboeI = {
     \time 6/4 \tempoOsannaB es2.\trill d2 r4\fermata \bar "|." %53 finis
   }
 }
+
+DonaOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoDona
+      \set Score.currentBarNumber = #17
+    d'2\fE d,
+    d'8 d d d es2
+    d8 g4 f16 es d8 e f4~
+    f8 e16 d c8 d es4. d16 c %20
+    b8 c d4. c8 b4~
+    b8 g b c d g, g'4~
+    g f4. es16 d c8 d
+    es4. d16 c b8 g c4~
+    c8 b a c b c d c16 b %25
+    a8 d, d'2 c4
+    d r8 d4 c16 b a8 h
+    c4. b16 a g8 a b c
+    d4 d2 d,4
+    b'8 b b b d2 %30
+    c4 f c r8 es~
+    es d16 c b8 c d4 c~
+    c b a d~
+    d c b!2
+    a4 f'2 e8 d %35
+    cis g' f e d e f4
+    e2 d
+    cis4 a'2 g4~
+    g f2 e4~
+    e d cis d~ %40
+    d cis d2
+    R1*3
+    d2\fE d, %45
+    d'8 d d d es2
+    d8 g4 f16 es d8 e f4~
+    f8 e16 d c8 d es4. d16 c
+    b8 c d4. a8 b d
+    c2 d4 b~ %50
+    b a r2
+    r4 es'2 d4
+    r2 r4 es~
+    es8 d16 c b8 c d4. c16 b
+    a8 h c4. b?16 a g8 a %55
+    b4. a16 g f8 g a b
+    c b16 a g4 fis d'~
+    d d, d'8 d d d
+    es2 d4 g,~
+    g fis r d'~ %60
+    d c2 b4~
+    b as2 g4~
+    g fis g d'~
+    d c8 h c2~
+    c4 h8 a h d g f %65
+    es c es4~ \tempoDonaB es d8 c
+    d2 r\fermata \bar "|." %67 FINIS
+  }
+}
