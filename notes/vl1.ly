@@ -464,3 +464,97 @@ EtResurrexitViolinoI = {
     \tempoMortuorum d4. d8 d2\fermata \bar "||" %105 finis
   }
 }
+
+EtVitamViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    r4 g'\fE es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g
+    a8 d, d'4. e16 f g4~
+    g8 f e d16 cis d4 c~
+    c8 b16 a b4~ b8 c16 d es8 g, %110
+    fis es' d c b16 a b c d8 c16 b
+    a2 d,4 r
+    R1
+    r4 g es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g %115
+    a8 d4 cis8 d4 r
+    r d4. es16 f g8 b,
+    a b c d c4 f,
+    d'4. c16 b c8 f, e8. c'16
+    f,4 f'2 es8 f16 es %120
+    d4. c16 b c4 d
+    es2~ es8 d c4
+    b r r2
+    r r8 b16 c d8 c16 b
+    c8 f, f'4. es4 f16 es %125
+    d2~ d8 a d c
+    b4 es a, a~
+    a8 b16 c d4. e!16 fis? g4~
+    g8 f e4 d r
+    R1 %130
+    r4 g, es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g
+    a8 d, d'2 c4~
+    c b a2
+    g4 d' es d %135
+    d r r2\fermata \bar "|." %136 finis
+  }
+}
+
+SanctusViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoSanctus
+    R1
+    r4 a''2\fE b8 a
+    g2. a8 g
+    f2~ f4. es16 d
+    es2 d %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    g8\fE d g b a d b a <g b, d, g,>4-! <fis a, d,>-! \noBreak
+    <g b, d, g,>8 f16 es d8 es d c b d16 c b8 c b a %10
+    g4 r r r2 r4
+    R1.*2
+    r4 r g'\fE es d g8 d
+    es4 d g8.\p d16 es8( d) d4 r %15
+    R1.*2
+    r2 r4 r r f\fE
+    g f b8 f g4 f b8\p f
+    g8. a16 b8 d,\pp es( c) d4 d\f b %20
+    g2.~ g8 a b c d e!
+    fis8. e16 d4 r8 a' g a fis4.\trill g8
+    \time 3/4 g4 d b
+    \time 6/4 g2.~ g8 a b c d e!
+    fis8. e16 d4 r8 a' g a fis4.\trill g8 %25
+    \time 3/4 g4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+OsannaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/4 \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r g''\fE-! es-! d g8 d %40
+    es4-! d-! g8.(\p d16) es4 d r
+    R1.*2
+    r2 r4 r r f-!\fE
+    g-! f-! b8 f g4 f b8\p f %45
+    g8. a16 b8 d,\pp es( c) d4 d\f b
+    g2.~ g8 a b c d e!
+    fis8. e16 d4 r8 a' g a fis4.\trill g8
+    \time 3/4 g4 d b
+    \time 6/4 g2.~ g8 a b c d e! %50
+    fis8. e16 d4 r8 a' g a fis4.\trill g8
+    \time 3/4 g4 es d
+    \time 6/4 \tempoOsannaB es2.\trill d2 r4 \fermata \bar "|." %53 finis
+  }
+}

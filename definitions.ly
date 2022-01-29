@@ -50,6 +50,14 @@ tempoCrucifixus = \tempoMarkup "[Tempo deest]"
   tempoEtSepultus = \tempoMarkup "Adagio"
 tempoEtResurrexit = \tempoMarkup "Allegro"
   tempoMortuorum = \tempoMarkup "Adagio"
+tempoEtVitam = \tempoMarkup "[Allegro]"
+
+tempoSanctus = \tempoMarkup "Andante"
+  tempoPleni = \tempoMarkup "Allegro"
+tempoBenedictus = \tempoMarkup "Andante"
+  tempoBenedictusB = \tempoMarkup "Adagio"
+tempoOsanna = \tempoMarkup "Allegro"
+  tempoOsannaB = \tempoMarkup "Adagio"
 
 
 \include "notes/ob1.ly"

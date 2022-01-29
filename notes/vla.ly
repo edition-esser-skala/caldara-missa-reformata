@@ -436,3 +436,93 @@ EtResurrexitViola = {
     \tempoMortuorum d2 d\fermata \bar "||"
   }
 }
+
+EtVitamViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    R1*4 %109
+    r4 g\fE es'4. d16 c %110
+    d8 g, fis8.^\critnote d'16 g,8 g16 a b8 a16 g
+    a8 d, d'4. e16 f! g4~
+    g8 f e d16 cis d4 c~
+    c8 b16 a b4. c16 d es4
+    fis,8 g a4 d8 e16 f? e8 d %115
+    cis a b a a4 fis~
+    fis8 g16 a b4. a8 g a16 b
+    c8 d es d16 es f4 c
+    r2 r4 c
+    a'4. g16 f g8 c, c'4~ %120
+    c b8 b a4. b16 a
+    g4. a16 g f8 f f4
+    f r r2
+    R1
+    r8 f16 g a8 g16 f g8 c, c'4~ %125
+    c8 b4 c16 b a2
+    g fis
+    r4 d b'4. a16 g
+    a8 d, cis8. a'16 d,4 g~
+    g8 a16 b c8 b a b c b16 a %130
+    b8 g g,4. a16 h? c8 d16 es
+    d2. g4~
+    g f! es2
+    d8 fis g2 fis4
+    g g g fis %135
+    g r r2\fermata \bar "|." %136 finis
+  }
+}
+
+SanctusViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 4/4 \tempoSanctus
+    R1
+    r2 r4 d~\fE
+    d es8 d c2~
+    c4 d8 c b4 d
+    g, c f,2 %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    r4 d'\fE d d d d \noBreak
+    d d fis d d r %10
+    R1.*3
+    r4 r g\fE g g h
+    g g h\p g g r %15
+    R1.*2
+    r2 r4 r r b\fE
+    b b b b b f\p
+    b f r r2 r4 %20
+    r d\fE g c, c a
+    a a c8 a b es a,4 d
+    \time 3/4 d r r
+    \time 6/4 r d g c, c a
+    a a c8 a b es a,4 d %25
+    \time 3/4 d r r\fermata \bar "||" %26 finis
+  }
+}
+
+OsannaViola = {
+  \relative c' {
+    \clef alto
+    \key g \dorian \time 6/4 \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r g'\fE g g h %40
+    g g h\pE g g r
+    R1.*2
+    r2 r4 r r b\fE
+    b b b b b f\pE %45
+    b f r r2 r4
+    r d\fE g c, c a
+    a a c8 a b es a,4 d
+    \time 3/4 d r r
+    \time 6/4 r d g c, c a %50
+    a a c8 a b es a,4 d
+    \time 3/4 d c h
+    \time 6/4 \tempoOsannaB c2. h2 r4\fermata \bar "|." %53 finis
+  }
+}

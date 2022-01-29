@@ -362,3 +362,97 @@ EtResurrexitOboeII = {
     \tempoMortuorum g4. g8 fis?2\fermata \bar "||" %105 finis
   }
 }
+
+EtVitamOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    r4 g'\fE es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g
+    a8 d, d'4. e16 f g4~
+    g8 f e d16 cis d4 c~
+    c8 b16 a b4~ b8 c16 d es8 g, %110
+    fis es' d c b16 a b c d8 c16 b
+    a2 d,4 r
+    R1
+    r4 g es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g %115
+    a8 d4 cis8 d4 r
+    r d4. es16 f g8 b,
+    a b c d c4 f,
+    d'4. c16 b c8 f, e8. c'16
+    f,4 f'2 es8 f16 es %120
+    d4. c16 b c4 d
+    es2~ es8 d c4
+    b r r2
+    r r8 b16 c d8 c16 b
+    c8 f, f'4. es4 f16 es %125
+    d2~ d8 a d c
+    b4 es a, a~
+    a8 b16 c d4. e!16 fis? g4~
+    g8 f e4 d r
+    R1 %130
+    r4 g, es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16 a b8 a16 g
+    a8 d, d'2 c4~
+    c b a2
+    g4 d' es d %135
+    d r r2\fermata \bar "|." %136 finis
+  }
+}
+
+SanctusOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoSanctus
+    r4 d'2\fE es8 d
+    c2. d8 c
+    h2 b4 c8 b
+    a2 b8 f \once \tieDashed b4~
+    b a b2 %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    g'4-!\fE g, r g'8 d g b a d \noBreak
+    b a g4-! fis-! g8 f16 es d8 es d c %10
+    b4 g r r2 r4
+    R1.*2
+    r4 r d'\fE c h d
+    c h r r2 r4 %15
+    R1.*2
+    r2 r4 r r d\fE
+    es d d es d b8\p d
+    es4 d r r2 r4%20
+    r b\fE es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8
+    \time 3/4 g4 r r
+    \time 6/4 r b es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8 %25
+    \time 3/4 g4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+OsannaOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/4 \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r d'\fE-! c-! h d %40
+    c-! h-! r r2 r4
+    R1.*2
+    r2 r4 r r d\fE
+    es d d es d b8\p d %45
+    es4 d r r2 r4
+    r b\fE es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8
+    \time 3/4 g4 r r
+    \time 6/4 r b es es,8 f g a b c %50
+    a8. g16 fis4 r8 d' b c a4.\trill g8 %25
+    \time 3/4 g4 g g
+    \time 6/4 \tempoOsannaB g2. g2 r4\fermata \bar "|." %53 finis
+  }
+}

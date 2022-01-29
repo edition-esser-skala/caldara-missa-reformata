@@ -462,3 +462,96 @@ EtResurrexitViolinoII = {
     \tempoMortuorum g4. g8 fis?2\fermata \bar "||" %105 finis
   }
 }
+
+EtVitamViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    R1*2
+    r4 d\fE b'4. a16 g
+    a8 d, cis8.^\critnote a'16 d,8 d es d16 c?
+    d8 g, g'4. a16 b c4~ %110
+    c8 b a g16 fis g8 g g4~
+    g8 f16 e f4. g16 a b8 d,
+    cis b' a g fis4 g
+    fis8 d4 es16 f g2
+    a8 b c b16 a b8 a g f! %115
+    e! f e4 d r
+    d4. e16 fis g4. f16 es
+    f8 g a b b4 a
+    b r r2
+    R1 %120
+    r8 g16 a b8 a16 g a8 d, d'4~
+    d8 es16 d c8 b a b4 a8
+    b4 r8 b4 c16 d es4~
+    es8 d c b16 a b8 f b4~
+    b a r2 %125
+    r8 g16 a b8 a16 g a8 d, d'4~
+    d c d2
+    R1
+    r2 r4 g,
+    es'4. d16 c d8 g, fis8.^\critnote d'16 %130
+    g,4 d'2 c4~
+    c8 b! a4 g16 a b c d4~
+    d8 c16 b a4 b c8 b
+    a4 b8 d es es d4
+    d d c a %135
+    h r r2\fermata \bar "|." %136 finis
+  }
+}
+
+SanctusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoSanctus
+    r4 d'2\fE es8 d
+    c2. d8 c
+    h2 b4 c8 b
+    a2 b8 f \once \tieDashed b4~
+    b a b2 %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    <g' b, d, g,>4-!\fE g, r g'8 d g b a d \noBreak
+    b a <g b, d, g,>4-! <fis a, d,>-! <g b, d, g,>8 f16 es d8 es d c %10
+    b4 g r r2 r4
+    R1.*2
+    r4 r d'\fE c h d
+    c h d8.\p h16 c8( h) h4 r %15
+    R1.*2
+    r2 r4 r r d\fE
+    es d d es d b8\p d
+    es4 d8 b\pp c( a) b4 r r %20
+    r b\fE es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8
+    \time 3/4 g4 r r
+    \time 6/4 r b es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8 %25
+    \time 3/4 g4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+OsannaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/4 \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r d'\fE-! c-! h d %40
+    c-! h-! d\pE c h r
+    R1.*2
+    r2 r4 r r d\fE-\parenthesize-!
+    es-! d-! d es d b8\pE d %45
+    es4 d8 b\pp c( a) b4 r r
+    r b\fE es es,8 f g a b c
+    a8. g16 fis4 r8 d' b c a4.\trill g8
+    \time 3/4 g4 r r
+    \time 6/4 r b es es,8 f g a b c %50
+    a8. g16 fis4 r8 d' b c a4.\trill g8
+    \time 3/4 g4 g g
+    \time 6/4 \tempoOsannaB g2. g2 r4\fermata \bar "|." %53 finis
+  }
+}

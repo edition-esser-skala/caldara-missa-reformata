@@ -976,3 +976,228 @@ EtResurrexitBassFigures = \figuremode {
   r <5> <6> \bo <5 [_-]>8 \bc <6 [\t]>
   <5 4>2 <\t _+> %105 finis
 }
+
+EtVitamOrgano = {
+  \relative c {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    r4 \mvTr g''\fE-\tuttiE es'4. d16 c
+    d8 g, fis8.^\critnote d'16 g,8 g16 a b8 a16 g
+    << {
+      a8 d, d'4. e16 f g4~
+      g8 f e d16 cis d4 c~
+      c8 b16 a
+    } \\ {
+      r4 d, b'4. a16 g
+      a8 d, cis8._\critnote a'16 d,8 d es d16 c?
+      d8[ g,]
+    } >> \clef "treble_8" g4 es'4. d16 c %110
+    d8 g, fis8.^\critnote d'16 g,8 g16 a b8 a16 g
+    a8 d, \clef bass d4 b'4. a16 g
+    a8 d, cis8.^\critnote a'16 d,8 d es d16 c
+    d8 g, g'4. a16 b c4~
+    c8 b a g16 fis g8 d g4~ %115
+    g8 f g a d,4 r8 d~
+    d e16 fis g4. f?8 es4~
+    es8 d c b f'4 f,
+    \clef treble << {
+      d'''4. c16 b c8 f, e8.^\critnote c'16
+      a4 f'4.
+    } \\ {
+      b,4-\critnote r r c,
+      a'4. g16 f g8
+    } >> \clef bass c,,16 d es8 d16 c %120
+    d8 g, g'2 f4
+    es2 f8 b, f' f,
+    b4 b g'4. f16 es
+    f8 b, a8.^\critnote f'16 b,2
+    f' c8 c16 d es8 d16 c %125
+    g'8 g, g'4 f8 d16 es f8 es16 d
+    es2 d8 d, r4
+    d'4. e16 fis g4. a16 b
+    cis,8 d a' g fis g16 a b8 a16 g
+    c8 c, c'4~ c8 b a fis %130
+    g g, h4 c2
+    g16 a b c d8 c b a g4
+    d'8 d16 es f!8 es16 d g4 a8 g
+    fis d g b, c a d d,
+    g4 b c d %135
+    g, r r2\fermata \bar "|." %136 finis
+  }
+}
+
+EtVitamBassFigures = \figuremode {
+  r1 %106
+  r
+  r
+  r
+  r2 <5>4 <6> %110
+  \bo <[7] _+>4 \bc <[6]>8 <_+> r4 <[6]>
+  <7>4 <5> q <6>
+  <7 _+>8 <[6-]> <6> <_+> <_+>4 <6!>
+  <7 _+> <5> <6-> <_->
+  <4+>8 <6> <6\\>2 \bo <[8 6]>8 \bc <[7! 5]> %115
+  <4+> <6> <6 5> <_+> q4. q8
+  r4 <5 3>4. <\t \t>8 <5>4
+  <6 4 2>8 <6> <[6 _-]>4 <4> <3>
+  r1
+  r2 r8 <5 4> <6>4 %120
+  <7>8 <\t> <3>4 <4 2> <6>
+  <7> <6> <7->8 <3> <4> <3>
+  r2. <6->4
+  <7->4 <6>2.
+  <5 4>4 <\t 3> <5 4>8 <[\t _-]> <6>4 %125
+  <5 4>8 <\t 3>4. <6>8 <5> <6>4
+  <7> <6> <_+>2
+  <7 _+>4. <\t \t>8 <5 3>4. <\t \t>8
+  \bo <[6 5]> \bc <[_! \l]> <_+>4 <[6]> <6>
+  <_->2 <4+ 2>8 <6> <6\\> <[6]> %130
+  r4 <6 5!> <9 _-> <8 \t>
+  <4>8 <6> <_+>4 <[6]>8 <6\\>4.
+  <5 4>4 <6> <6- 5> <5->
+  <6 5>8 <[_+]>4 <[6]>8 <6 5 [_-]>4 \bo <[_+]>
+  r <6> <_-> <_+> %135
+  \bc <[_!]>1 %136 finis
+}
+
+SanctusOrgano = {
+  \relative c {
+    \clef treble
+    \key g \dorian \time 4/4 \tempoSanctus
+    r4 \mvTr d''2\fE-\tuttiE \clef bass g,,4~
+    g a8 g fis2
+    f4 g8 f e!2
+    es4 f8 es d4. c16 b
+    c2 b %5
+    \mvTr b\pE-\solo f'
+    c f4 g \noBreak
+    es2 d\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    \mvTr g,4\fE-\tutti g' fis g g, d' \noBreak
+    g g, d' g g, r %10
+    \mvTr g\pE-\solo r g a f! a
+    b h g c r c
+    d d2 es4 f2
+    g4 g, \mvTr g'\fE-\tutti g g, g'
+    g g, g'\p g g, r %15
+    e'!2-\soloE c4 f4. g8 a4
+    b r b b,4. c8 d4
+    es f f, b2 \mvTr b'4\fE-\tutti
+    b b, b'8 b b4 b, b'8\p b
+    b4 b, r r \clef treble d''\fE^\critnote b %20
+    g \clef bass g, es c r c
+    d8 e fis g a fis g c, d4 d,
+    \time 3/4 g \clef treble d'''^\critnote b
+    \time 6/4 g \clef bass g, es c r c
+    d8 e fis g a fis g c, d4 d, %25
+    \time 3/4 g r r\fermata \bar "||" %26 finis
+  }
+}
+
+SanctusBassFigures = \figuremode {
+  r2. <6->8 <5>
+  <4 2>4 <\t \t> <6 5>2
+  <4! 2>4 <\t \t> <6 5->2
+  <4 2>4 <\t \t> <6>2
+  <7 _->4 <6 \t>2. %5
+  r2 <5>
+  <4>4 <_-> <7-> <5>
+  <7> <6> <_+>2
+  r2 <6>2. <_+>4
+  r2 q1 %10
+  r2. \bo <[6]>2 <5->4
+  r <6> <_!> \bc <[_-]>2.
+  <7>4 <6!>2 <6>4 <6 [_-]>2
+  <_!>2. <6- 4>4 <5 _!>2
+  <6- 4>4 <5 _!>2 <6- 4>4 <5 _!>2 %15
+  <6>2 <7->2. <6 5->4
+  r2. r4. \bo <[6 _-]>8 <6>4
+  \bc <[7 \l]> r2 r2.
+  <6 4->4 <5 3>2 <6 4->4 <5 3>2
+  <6 4->4 <5 3>2 r2. %20
+  r2 <5>4 <_->2 <6 _!>4
+  <_+>2 <6\\>4 r8 <6 [_-]> <_+>2
+  r2.
+  r2 <5>4 <_->2 <6 _!>4
+  <_+>2 <6\\>4 r8 <6 [_-]> <_+>2 %25
+  r2. %26 finis
+}
+
+BenedictusOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoBenedictus
+      \set Score.currentBarNumber = #27
+    \mvTr c8\pE-\soloE d es c f,4 g
+    c8 d es c c' a fis d
+    g g, g' f es! g c, e
+    f f, f' es d c b d %30
+    es8. f16 g8 es as f g es
+    b' as b b, es f g es
+    f es f d g a h g
+    c,4 r8 c f4 r8 f,
+    g4 r8 g' c, es d c %35
+    \tempoBenedictusB g2 c\fermata \bar "||" %36 finis
+  }
+}
+
+BenedictusBassFigures = \figuremode {
+  r2 <_->4 <8 _!>8 <7 \t> %27
+  r2. <6>8 <[7 _+]>
+  <_!>4. <\t>8 <6> <\t> <[_-]> <6>
+  <_->4 <\t>8 <4! 2> <6>4. <[5-]>8 %30
+  r4 <[6]> <5>8 <[6] _-> <6>4
+  <5 4>4 <\t 3>2.
+  <6 _->2 <_!>4 <6>
+  <7- _!>4. <\t \t>8 <_->4. <\t>8
+  \bo <10! [9-]>4 \bc <\t [8]>8 <[7] _!> <5 3>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff %35
+  <4>4 <_!>2. %36 finis
+}
+
+OsannaOrgano = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 6/4 \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    \mvTr g4\pE-\solo r g a f! a
+    b h g c r c
+    d d2 es4 f2
+    g4 g, \mvTr g'\fE-\tutti g g, g' %40
+    g g, g'\p g g, r
+    e'!2-\soloE c4 f4. g8 a4
+    b r b b,4. c8 d4
+    es f f, b2 \mvTr b'4\fE-\tutti
+    b b, b'8 b b4 b, b'8\p b %45
+    b4 b, r r \clef treble d''\fE^\critnote b
+    g \clef bass g, es c r c
+    d8 e fis g a fis g c, d4 d,
+    \time 3/4 g \clef treble d'''^\critnote b
+    \time 6/4 g \clef bass g, es c r c %50
+    d8 e fis g a fis g c, d4 d,
+    \time 3/4 g c g'
+    \time 6/4 \tempoOsannaB c,2. g'2 r4\fermata \bar "|." %53 finis
+  }
+}
+
+OsannaBassFigures = \figuremode {
+  r2. <6>2 <5->4 %37
+  r <[6]> <_!> <[_-]>2.
+  <7>4 <6!>2 <6>4 <6 _->2
+  <_!>2. <6- 4>4 <5 _!>2 %40
+  <6- 4>4 <5 _!>2 <6- 4>4 <5 _!>2
+  <[6]>2 <7->2. <6 5->4
+  r2. r4. <[6 _-]>8 <6>4
+  <[7]> r2 r2.
+  <6 4->4 <5 3>2 <6 4->4 <5 3>2 %45
+  <6 4->4 <5 3>2 r2.
+  r2 <5>4 <_->2 <6 _!>4
+  <_+>2 <6\\>4 r8 <6 [_-]> <_+>2
+  r2.
+  r2 <5>4 <_->2 <6 _!>4 %50
+  <_+>2 <6\\>4 r8 <6 [_-]> <_+>2
+  r4 \bo <[_-]> <_!>
+  <_->2. \bc <[_!]> %53 finis
+}

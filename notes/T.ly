@@ -723,3 +723,169 @@ EtResurrexitTenoreLyrics = \lyricmode {
   cto re -- sur -- re -- cti -- o -- nem mor -- tu --
   o -- rum. %105 finis
 }
+
+EtVitamTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    R1*4 %109
+    r4 \mvTr g\fE^\tuttiE es'4. d16 c %110
+    d8 g, fis8.^\critnote d'16 g,8 g16[ a] b8[ a16 g]
+    a8[ d,] d'4. e16[ f!] g4~
+    g8[ f] e[ d16 cis] d4 c~
+    c8[ b16 a] b4. c16[ d] es4
+    fis,8[ g] a4 d8[ e16 f?] e8[ d] %115
+    cis[ a b a] a4 fis~
+    fis8[ g16 a] b4. a8 g[ a16 b]
+    c8[ d] es[ d16 es] f4 c
+    R1*2 %120
+    r8 g16([ a] b8[ a16 g] a8) d, d'4~
+    d8[ es16 d] c8[ b] a b4 a8
+    b4 r8 b4 c16[ d] es4~
+    es8[ d] c[ b16 a] b8[ f] b4~
+    b a r2 %125
+    r8 g16[ a] b8[ a16 g] a8[ d,] d'4~
+    d c d2
+    R1
+    r2 r4 g,
+    es'4. d16 c d8 g, fis8.^\critnote d'16 %130
+    g,4 d'2 c4~
+    c8[ b!] a4 g16[ a b c] d4~
+    d8[ c16 b] a4 b c8[ b]
+    a4 b8[ d] es es d4
+    d d c a %135
+    h r r2\fermata \bar "|." %136 finis
+  }
+}
+
+EtVitamTenoreLyrics = \lyricmode {
+  Et vi -- tam ven -- %110
+  tu -- ri sae -- cu -- li, a -- _
+  _ _ _ _
+  _ _ _
+  _ _ _
+  _ men, a -- _ %115
+  _ men, a --
+  _ _ _
+  _ _ _ men,
+
+  a -- men, a -- %121
+  _ _ _ _
+  men, a -- _ _
+  _ _ _
+  men, %125
+  a -- _ _ _
+  _ men,
+
+  et
+  vi -- tam ven -- tu -- ri sae -- cu -- %130
+  li, a -- _
+  _ _ _
+  _ men, a --
+  _ _ _ men, a --
+  men, a -- men, a -- %135
+  men. %136 finis
+}
+
+SanctusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    R1
+    r2 r4 \mvTr d~\fE^\tuttiE
+    d es8[ d] c2~
+    c4 d8[ c] b4 d
+    g, c f,2 %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    r4 \mvTr d'\fE^\tuttiE d d d d \noBreak
+    d d d d8([ c)] b4 r %10
+    \mvTr b8[\pE^\solo a b c] d[ c16 b] c8[ b c d es c]
+    d[ f g f es d] es[ d c g] c4~
+    c h h c d8([ es)] d([ c)]
+    h([ a)] g4 \mvTr h\fE^\tutti c h h8 h
+    c4 h h8\p h c4 h r %15
+    R1.*2
+    r2 r4 r r \mvTr d\fE^\tutti
+    es d d8 d es4 d d8\p d
+    es4 d r r2 r4 %20
+    r2 r4 r es\fE c
+    a4. b8[ c a] d[ es] d2
+    \time 3/4 d4 r r
+    \time 6/4 r2 r4 r es c
+    a4. b8[ c a] d[ es] d2 %25
+    \time 3/4 d4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+SanctusTenoreLyrics = \lyricmode {
+  San -- %2
+  _ _
+  _ _ _
+  _ _ ctus. %5
+
+  Ple -- ni, ple -- ni sunt %9
+  coe -- li et ter -- ra %10
+  glo -- _ _
+  _ _ _
+  ri -- a, glo -- ri -- a __
+  tu -- a. O -- san -- na in ex --
+  cel -- sis, in ex -- cel -- sis, %15
+
+  o -- %18
+  san -- na in ex -- cel -- sis, in ex --
+  cel -- sis, %20
+  in ex --
+  cel -- _ _ _
+  sis,
+  in ex --
+  cel -- _ _ _ %25
+  sis. %26 finis
+}
+
+OsannaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \dorian \time 6/4 \autoBeamOff \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    \mvTr b8[\pE^\solo a b c] d[ c16 b] c8[ b c d es c]
+    d4 g8([ f)] es d es[( d)] c4 c~
+    c h2\trill c4 d8([ es)] d([ c)]
+    h([ a)] g4 \mvTr h\fE^\tutti c h h8 h %40
+    c4 h h8\p h c4 h r
+    R1.*2
+    r2 r4 r r \mvTr d\fE^\tutti
+    es d d8 d es4 d d8\p d %45
+    es4 d r r2 r4
+    r2 r4 r es\fE c
+    a4. b8[ c a] d[ es] d2
+    \time 3/4 d4 r r
+    \time 6/4 r2 r4 r es c %50
+    a4. b8[ c a] d[ es] d2
+    \time 3/4 d4 c h
+    \time 6/4 \tempoOsannaB c2. h2 r4\fermata \bar "|." %53 finis
+  }
+}
+
+OsannaTenoreLyrics = \lyricmode {
+  O -- san -- _ %37
+  _ na in ex -- cel -- sis, o --
+  san -- na in __ ex --
+  cel -- sis, o -- san -- na in ex -- %40
+  cel -- sis, in ex -- cel -- sis,
+
+  o -- %44
+  san -- na in ex -- cel -- sis, in ex -- %45
+  cel -- sis,
+  in ex --
+  cel -- _ _ _
+  sis,
+  in ex -- %50
+  cel -- _ _ _
+  sis, in ex --
+  cel -- sis. %53 finis
+}

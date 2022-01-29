@@ -668,3 +668,198 @@ EtResurrexitBassoLyrics = \lyricmode {
   mor -- tu -- o -- _ _
   _ rum. %105 finis
 }
+
+EtVitamBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    R1*6 %111
+    r4 \mvTr d\fE^\tuttiE b'4. a16 g
+    a8 d, cis8.^\critnote a'16 d,8 d es[ d16 c]
+    d8[ g,] g'4. a16[ b] c4~
+    c8[ b] a[ g16 fis] g8[ d] g4~ %115
+    g8[ f g a] d,4 r8 d~
+    d[ e16 fis] g4. f?8 es4~
+    es8[ d c b] f'4 f,
+    R1
+    r2 r8 c'16[ d] es8[ d16 c] %120
+    d8[ g,] g'2 f4
+    es2 f8 b, f'4
+    b, b g'4. f16 es
+    f8 b, a8.^\critnote f'16 b,4 b(
+    f'2) c8 c16([ d] es8[ d16 c] %125
+    g'8) g, g'4 f8 d16[( es] f8[ es16 d]
+    es2) d4 r
+    d4. e16[ fis] g4. a16[ b]
+    cis,8[ d a' g] fis g16[( a] b8[ a16 g]
+    c8) c, c'4~ c8[ b] a[ g16 fis] %130
+    g8[ g,] h4 c2
+    g16[ a b c] d8[ c] b[ a] g4
+    d'8 d16[ es] f!8[ es16 d] g4 a8[ g]
+    fis[ d g b,] c a d4
+    g, b c d %135
+    g, r r2\fermata \bar "|." %136 finis
+  }
+}
+
+EtVitamBassoLyrics = \lyricmode {
+  Et vi -- tam ven -- %112
+  tu -- ri sae -- cu -- li, a -- _
+  _ _ _ _
+  _ _ _ %115
+  men, a --
+  _ _ _
+  _ men,
+
+  a -- _ %120
+  _ _ _
+  _ _ men, a --
+  men, et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a --
+  men, a -- %125
+  men, a -- men, a --
+  men,
+  a -- _ _ _
+  _ men, a --
+  men, a -- _ %130
+  _ _ _
+  _ _ _ _
+  men, a -- _ _ _
+  _ _ men, a --
+  men, a -- men, a -- %135
+  men. %136 finis
+}
+
+SanctusBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    r2 r4 \mvTr g'~\fE^\tuttiE
+    g a8[ g] fis2
+    f4 g8[ f] e!2
+    es4 f8[ es] d4. c16[ b]
+    c2 b %5
+    R1*2 \noBreak
+    R1\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    r4 \mvTr g'\fE^\tuttiE fis g g, d' \noBreak
+    g g, d' g g, r %10
+    R1.
+    r2 r4 \mvTr c8[\pE^\solo b c d es c]
+    d[ c d es f d] es4 f f
+    g g, \mvTr g'\fE^\tutti g g, g'8 g
+    g4 g, g'8\p g g4 g, r %15
+    R1.*2
+    r2 r4 r r \mvTr b'\fE^\tuttiE
+    b b, b'8 b b4 b, b'8\p b
+    b4 b, r r2 r4 %20
+    r g'\fE es c r c
+    d8[ e fis g a fis] g[ c,] d2
+    \time 3/4 g,4 r r
+    \time 6/4 r g' es c r c
+    d8[ e fis g a fis] g[ c,] d2 %25
+    \time 3/4 g,4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+SanctusBassoLyrics = \lyricmode {
+  San --
+  _ _
+  _ _ _
+  _ _ _ _
+  _ ctus. %5
+
+  Ple -- ni, ple -- ni sunt %9
+  coe -- li et ter -- ra %10
+
+  glo --
+  _ _ ri -- a
+  tu -- a. O -- san -- na in ex --
+  cel -- sis, in ex -- cel -- sis, %15
+
+  o -- %18
+  san -- na in ex -- cel -- sis, in ex --
+  cel -- sis, %20
+  o -- san -- na in
+  ex -- _ cel --
+  sis,
+  o -- san -- na in
+  ex -- _ cel -- %25
+  sis. %26 finis
+}
+
+BenedictusBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #27
+    r4 \mvTr c'8\pE^\solo g as4 g8 f
+    es8.([ d16)] c4 r2
+    r4 r8 g' es!([ g)] c, e
+    f4~ f16[ g es f] d8[ f b, d] %30
+    es4~ es16[ f g es] as4 g8[ f16 es]
+    b4. b8 es4 r8 es
+    f([ es)] f d g2~
+    g8[ as] b[ as16 g] as2~
+    as4 g8[ f] es4 d8 c %35
+    \tempoBenedictusB g'4. g8 c,2\fermata \bar "||" %36 finis
+  }
+}
+
+BenedictusBassoLyrics = \lyricmode {
+  Be -- ne -- di -- ctus, qui %27
+  ve -- nit
+  in no -- mi -- ne
+  Do -- _ %39
+  _ _ _
+  _ mi -- ni, qui
+  ve -- nit in no --
+  _ _
+  _ _ mi -- ne %35
+  Do -- mi -- ni. %36 finis
+}
+
+OsannaBasso = {
+  \relative c {
+    \clef bass
+    \key g \dorian \time 6/4 \autoBeamOff \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.
+    r2 r4 \mvTr c8[(\pE^\solo b c d es c])
+    d[( c d es f d]) es4 f f
+    g g, \mvTr g'\fE^\tuttiE g g, g'8 g %40
+    g4 g, g'8\p g g4 g, r
+    R1.*2
+    r2 r4 r r \mvTr b'\fE^\tutti
+    b b, b'8 b b4 b, b'8\pE b %45
+    b4 b, r r2 r4
+    r g'\fE es c2.
+    d8[ e fis g a fis] g[ c,] d2
+    \time 3/4 g,4 r r
+    \time 6/4 r g' es c2. %50
+    d8[ e fis g a fis] g[ c,] d2
+    \time 3/4 g,4 c g'
+    \time 6/4 \tempoOsannaB c,2. g'2 r4\fermata \bar "|." %53 finis
+  }
+}
+
+OsannaBassoLyrics = \lyricmode {
+  \xE O -- %38
+  san -- na in ex --
+  cel -- sis, \x o -- san -- na in ex -- %40
+  cel -- sis, in ex -- cel -- sis,
+
+  o -- %44
+  san -- na in ex -- cel -- sis, in ex -- %45
+  cel -- sis,
+  in ex -- cel --
+  _ _ _
+  sis,
+  in ex -- cel -- %50
+  _ _ _
+  sis, in ex --
+  cel -- sis. %53 finis
+}

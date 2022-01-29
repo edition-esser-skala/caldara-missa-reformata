@@ -641,3 +641,173 @@ EtResurrexitAltoLyrics = \lyricmode {
   re -- sur -- re -- cti -- o -- nem mor -- tu --
   o -- rum. %105 finis
 }
+
+EtVitamAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    R1*2
+    r4 \mvTr d\fE^\tutti b'4. a16 g
+    a8 d, cis8.^\critnote a'16 d,8 d es[ d16 c?]
+    d8[ g,] g'4. a16[ b] c4~ %110
+    c8[ b] a[ g16 fis] g8 g g4~
+    g8[ f16 e] f4. g16[ a] b8[ d,]
+    cis[ b' a g] fis4 g
+    fis8 d4 es16([ f)] g2
+    a8[ b] c[ b16 a] b8[ a g f!] %115
+    e![ f] e4 d r
+    d4. e16[ fis] g4. f16[ es]
+    f8[ g a b] b4 a
+    b r r c,
+    a'4. g16 f g8 c, c'4~ %120
+    c b8 b a4. b16[ a]
+    g4. a16[ g] f8 f f4
+    f r r2
+    R1
+    r8 f16[ g] a8[ g16 f] g8[ c,] c'4~ %125
+    c8 b4 c16[ b] a2
+    g fis
+    r4 d b'4. a16 g
+    a8 d, cis8. a'16 d,4 g~
+    g8[ a16 b] c8[ b] a[ b] c[ b16 a] %130
+    b8 g g,4. a16[ h?] c8[ d16 es]
+    d2. g4~
+    g f! es2
+    d8[ fis] g2 fis4
+    g g g fis %135
+    g r r2\fermata \bar "|." %136 finis
+  }
+}
+
+EtVitamAltoLyrics = \lyricmode {
+  Et vi -- tam ven -- %108
+  tu -- ri sae -- cu -- li, a -- _
+  _ _ _ _ %110
+  _ _ men, a --
+  _ _ _
+  _ _ _
+  _ _ men, a --
+  _ _ _ %115
+  _ _ men,
+  a -- _ _ _
+  _ _ _
+  men, et
+  vi -- tam ven -- tu -- ri sae -- %120
+  cu -- li, a -- _
+  _ _ _ men, a --
+  men,
+
+  a -- _ _ _ %125
+  _ _ _
+  _ men,
+  et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a --
+  _ _ _ %130
+  _ men, a -- _ _
+  _ _
+  _ _
+  _ _ _
+  men, a -- men, a -- %135
+  men. %136 finis
+}
+
+SanctusAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    R1
+    r4 \mvTr a'2\fE^\tuttiE b8[ a]
+    g2. a8[ g]
+    f2~ f4. es16[ d]
+    es2 d %5
+    r \mvTr a'4\pE^\solo g8 f
+    g4( c8[ b] a4) b \noBreak
+    g4. g8 fis2\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    r4 \mvTr g\fE^\tuttiE a g g fis \noBreak
+    g g fis g d r %10
+    R1.*3
+    r4 r \mvTr g\fE^\tutti g g g8 g
+    g4 g g8\p g g4 g r %15
+    r2 r4 c,^\solo f es
+    d d8[ c d es] f[ g f es] d4~
+    d8[ es] c2 b \mvTr f'4\fE^\tutti
+    g f f8 f g4 f f8\p f
+    g4 f r r2 r4 %20
+    r b\fE g es8[ f] g4 a
+    d,4. e8[ fis d] g[ a] fis2
+    \time 3/4 g4 r r
+    \time 6/4 r b g es8[ f] g4 a
+    d,4. e8[ fis d] g[ a] fis2 %25
+    \time 3/4 g4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+SanctusAltoLyrics = \lyricmode {
+  San -- _ %2
+  _ _
+  _ _
+  _ ctus %5
+  Do -- mi -- nus
+  De -- us
+  Sa -- ba -- oth.
+  Ple -- ni, ple -- ni sunt
+  coe -- li et ter -- ra. %10
+
+  O -- san -- na in ex -- %14
+  cel -- sis, in ex -- cel -- sis, %15
+  o -- san -- na
+  in ex -- _ _
+  cel -- sis, o --
+  san -- na in ex -- cel -- sis, in ex --
+  cel -- sis, %20
+  in ex -- cel -- _ _
+  _ _ _ _
+  sis,
+  in ex -- cel -- _ _
+  _ _ _ _ %25
+  sis. %26 finis
+}
+
+OsannaAlto = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/4 \autoBeamOff \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r \mvTr g'\fE^\tutti g g g8 g %40
+    g4 g g8\p g g4 g r
+    r2 r4 c,^\solo f es
+    d d8[ c d es] f[ g f es] d4~
+    d8[ es] c2\trill b \mvTr f'4\fE^\tutti
+    g f f8 f g4 f f8\p f %45
+    g4 f r r2 r4
+    r b\fE g es8[ f] g4 a
+    d,4. e8[ fis d] g[ a] fis2
+    \time 3/4 g4 r r
+    \time 6/4 r b g es8[ f] g4 a %50
+    d,4. e8[ fis d] g[ a] fis2
+    \time 3/4 g4 g g
+    \time 6/4 \tempoOsannaB g2. g2 r4\fermata \bar "|." %43 finis
+  }
+}
+
+OsannaAltoLyrics = \lyricmode {
+  O -- san -- na in ex -- %40
+  cel -- sis, in ex -- cel -- sis,
+  o -- san -- na
+  in ex -- _ _
+  cel -- sis, o --
+  san -- na in ex -- cel -- sis, in ex -- %45
+  cel -- sis,
+  in ex -- cel -- _ _
+  _ _ _ _
+  sis,
+  in ex -- cel -- _ _ %50
+  _ _ _ _
+  sis, in ex --
+  cel -- sis. %53 finis
+}

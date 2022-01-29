@@ -597,10 +597,6 @@ CredoSopranoLyrics = \lyricmode {
   cre -- do, cre -- do. %39 finis
 }
 
-
-% et vi -- tam ven -- tu -- ri sae -- cu -- li.
-% A -- men.
-
 EtIncarnatusSoprano = {
   \relative c' {
     \clef treble
@@ -719,4 +715,215 @@ EtResurrexitSopranoLyrics = \lyricmode {
   o -- nem, re -- sur -- re -- cti -- o -- nem mor -- tu --
   o -- _ _ _
   _ rum. %105 finis
+}
+
+EtVitamSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoEtVitam
+      \set Score.currentBarNumber = #106
+    r4 \mvTr g'\fE^\tuttiE es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16([ a] b8[ a16 g]
+    a8) d, d'4. e16[ f] g4~
+    g8[ f] e[ d16 cis] d4 c~
+    c8[ b16 a] b4~ b8[ c16 d] es8[ g,] %110
+    fis[ es' d c] b16[ a b c] d8[ c16 b]
+    a2 d,4 r
+    R1
+    r4 g es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16[ a] b8[ a16 g] %115
+    a8 d4 cis8 d4 r
+    r d4. es16[ f] g8[ b,]
+    a[ b c d] c4 f,
+    d'4. c16 b c8 f, e8. c'16
+    f,4 f'2 es8[ f16 es] %120
+    d4. c16[ b] c4 d
+    es2~ es8[ d] c4
+    b r r2
+    r r8 b16([ c] d8[ c16 b]
+    c8) f, f'4. es4 f16[ es] %125
+    d2~ d8[ a d c]
+    b4 es a, a~
+    a8[ b16 c] d4. e!16[ fis?] g4~
+    g8[ f] e4 d r
+    R1 %130
+    r4 g, es'4. d16 c
+    d8 g, fis8. d'16 g,8 g16[ a] b8[ a16 g]
+    a8[ d,] d'2 c4~
+    c b a2
+    g4 d' es d %135
+    d r r2\fermata \bar "|." %136 finis
+  }
+}
+
+EtVitamSopranoLyrics = \lyricmode {
+  Et vi -- tam ven -- %106
+  tu -- ri sae -- cu -- li, a --
+  men, a -- _ _
+  _ _ _
+  _ _ %110
+  _ _ _
+  _ men,
+
+  et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a -- _ %115
+  _ _ _ men,
+  a -- _ _
+  _ men, et
+  vi -- tam ven -- tu -- ri sae -- cu --
+  li, a -- _ %120
+  _ _ _ _
+  _ _
+  men,
+  a --
+  men, a -- _ _ %125
+  _
+  _ _ men, a --
+  _ _ _
+  _ men,
+  %130
+  et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a -- _
+  _ _ _
+  _ _
+  men, a -- men, a -- %135
+  men. %136 finis
+}
+
+SanctusSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 4/4 \autoBeamOff \tempoSanctus
+    r4 \mvTr d'2\fE^\tuttiE es8[ d]
+    c2. d8[ c]
+    h2 b4 c8[ b]
+    a2 b8[ f] \once \tieDashed b4~
+    b a b2 %5
+    \mvTr d4\pE^\solo c8 b c4 f~
+    f es4. es8 d4~ \noBreak
+    d c8. d16 d2\fermata \bar "||"
+    \time 6/4 \tempoPleni
+      \set Staff.timeSignatureFraction = 3/4
+    r4 \mvTr b\fE^\tutti d b b a \noBreak
+    b b a b8([ a)] g4 r %10
+    R1.*3
+    r4 r \mvTr d'\fE^\tutti es d g8 d
+    es4 d g8\p d es4 d r %15
+    g,^\solo c b! a4.( b8) c4
+    f, b8[ a b c] d[ es d c] b4~
+    b8[ c] a2 b \mvTr b4\fE^\tutti
+    b b b8 b b4 b b8\p b
+    b4 b r r d\fE b %20
+    g2.~ g8[ a b c d e!]
+    fis[ e] d4 c8 d b([ c]) a2
+    \time 3/4 g4 d' b
+    \time 6/4 g2.~ g8[ a b c d e!]
+    fis[ e] d4 c8 d b([ c]) a2 %25
+    \time 3/4 g4 r r\fermata \bar "||" %26 finis
+  }
+}
+
+SanctusSopranoLyrics = \lyricmode {
+  San -- _
+  _ _
+  _ _ _
+  _ _ _
+  _ ctus %5
+  Do -- mi -- nus De -- _
+  _ us Sa --
+  _ ba -- oth.
+  Ple -- ni, ple -- ni sunt
+  coe -- li et ter -- ra. %10
+
+  O -- san -- na in ex -- %14
+  cel -- sis, in ex -- cel -- sis, %15
+  o -- san -- na in __ ex --
+  cel -- _ _ _
+  _ sis, o --
+  san -- na in ex -- cel -- sis, in ex --
+  cel -- sis, in ex -- %20
+  cel --
+  _ _ sis, in ex -- cel --
+  sis, in ex --
+  cel --
+  _ _ sis, in ex -- cel -- %25
+  sis. %26 finis
+}
+
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Mi -- se -- re -- re no -- bis.
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Mi -- se -- re -- re no -- bis.
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Do -- na no -- bis pa -- cem.
+
+BenedictusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #27
+    R1
+    r4 \mvTr c'8\pE^\solo g es'4 d8 c
+    h8.([ a16)] g4 r r8 c
+    as([ c)] f, a b4~ b16[ c as b] %30
+    g8[ b es, b'] c[ d] es4~
+    es d8. es16 es4 r8 es
+    d([ es)] d c h[ c] d[ e16 f]
+    e2 f8[ es d c]
+    h8. a16 h4 c2~ %35
+    \tempoBenedictusB c4 h8.\trill c16 c2\fermata \bar "||" %36 finis
+  }
+}
+
+BenedictusSopranoLyrics = \lyricmode {
+  Be -- ne -- di -- ctus, qui %28
+  ve -- nit in
+  no -- mi -- ne Do -- %30
+  _ _ _
+  _ mi -- ni, qui
+  ve -- nit in no -- _
+  _ _
+  _ mi -- ne Do -- %35
+  _ mi -- ni. %36 finis
+}
+
+OsannaSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \dorian \time 6/4 \autoBeamOff \tempoOsanna
+      \set Staff.timeSignatureFraction = 3/4
+      \set Score.currentBarNumber = #37
+    R1.*3 %39
+    r4 r \mvTr d'\fE^\tutti es d g8 d %40
+    es4 d g8\p d es4 d r
+    g,^\solo c b! a4.( b8) c4
+    f, b8[ a b c] d[ es d c] b4~
+    b8[ c] a2\trill b \mvTr b4\fE^\tutti
+    b b b8 b b4 b b8\p b %45
+    b4 b r r d\f b
+    g2.~ g8[ a b c d e!]
+    fis[ e] d4 c8 d b([ c]) a2
+    \time 3/4 g4 d' b
+    \time 6/4 g2.~ g8[ a b c d e!] %50
+    fis[ e] d4 c8 d b([ c]) a2
+    \time 3/4 g4 es' d
+    \time 6/4 \tempoOsannaB es2. d2 r4\fermata \bar "|." %53 finis
+  }
+}
+
+OsannaSopranoLyrics = \lyricmode {
+  O -- san -- na in ex -- %40
+  cel -- sis, in ex -- cel -- sis,
+  o -- san -- na in __ ex --
+  cel -- _ _ _
+  _ sis, o --
+  san -- na in ex -- cel -- sis, in ex -- %45
+  cel -- sis, in ex --
+  cel --
+  _ _ sis, in ex -- cel --
+  sis, in ex --
+  cel -- %50
+  _ _ sis, in ex -- cel --
+  sis, in ex --
+  cel -- sis. %53 finis
 }
