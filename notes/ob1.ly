@@ -202,7 +202,8 @@ QuiTollisOboeI = {
     f r8 g g g
     f2 r8 es es es \noBreak
     es4. d16 c d2\fermata \bar "||"
-    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+    \time 6/2 \tempoMiserereA \newSpacingSection
+      \set Staff.timeSignatureFraction = 3/2
       R\breve.*10 \noBreak %103
     \time 9/2 << { \oneVoice R2*9\fermata } \\ { s1. \tempoMiserereB s s } >> \bar "||"
     \time 4/4 \set Staff.timeSignatureFraction = 4/4

@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "ob 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \KyrieViolinoI
+          \set Staff.instrumentName = "Oboe II"
+          \KyrieOboeII
         }
       >>
     }
@@ -21,9 +21,10 @@
   \bookpart {
     \subsection "Christe"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \ChristeViolinoI }
+        \new Staff { \ChristeOboeII }
       >>
     }
   }
@@ -32,7 +33,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \KyrieBViolinoI }
+        \new Staff { \KyrieBOboeII }
       >>
     }
   }
@@ -41,7 +42,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaOboeII }
       >>
     }
   }
@@ -51,45 +52,46 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \DomineFiliViolinoI }
+        \new Staff { \DomineFiliOboeII }
       >>
     }
   }
   \bookpart {
     \subsection "Qui tollis"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \QuiTollisViolinoI }
+        \new Staff { \QuiTollisOboeII }
       >>
     }
   }
   \bookpart {
     \subsection "Quoniam"
     \addTocEntry
+    \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \QuoniamViolinoI }
+        \new Staff { \QuoniamOboeII }
       >>
     }
   }
   \bookpart {
     \subsection "Cum Sancto Spiritu"
     \addTocEntry
-    \paper { page-count = #1 }
     \score {
       <<
-        \new Staff { \CumSanctoViolinoI }
+        \new Staff { \CumSanctoOboeII }
       >>
     }
   }
   \bookpart {
     \section "3" "Credo"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \CredoViolinoI }
+        \new Staff { \CredoOboeII }
       >>
     }
   }
@@ -99,16 +101,17 @@
     \paper { systems-per-page = #2 }
     \score {
       <<
-        \new Staff { \EtIncarnatusViolinoI }
+        \new Staff { \EtIncarnatusOboeII }
       >>
     }
   }
   \bookpart {
     \subsection "Et resurrexit"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \EtResurrexitViolinoI }
+        \new Staff { \EtResurrexitOboeII }
       >>
     }
   }
@@ -117,7 +120,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtVitamViolinoI }
+        \new Staff { \EtVitamOboeII }
       >>
     }
   }
@@ -127,7 +130,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusOboeII }
       >>
     }
   }
@@ -137,17 +140,7 @@
     \paper { systems-per-page = #4 }
     \score {
      <<
-       \new Staff { \OsannaViolinoI }
-     >>
-    }
-  }
-  \bookpart {
-    \section "5" "Agnus Dei"
-    \addTocEntry
-    \paper { systems-per-page = #4 }
-    \score {
-     <<
-       \new Staff { \AgnusViolinoI }
+       \new Staff { \OsannaOboeII }
      >>
     }
   }
@@ -156,7 +149,7 @@
     \addTocEntry
     \score {
      <<
-       \new Staff { \DonaViolinoI }
+       \new Staff { \DonaOboeII }
      >>
     }
   }

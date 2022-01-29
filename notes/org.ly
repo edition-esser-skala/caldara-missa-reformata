@@ -504,7 +504,8 @@ QuiTollisOrgano = {
     h r8 b b b
     a2 r8 as as as \noBreak
     g1\fermata \bar "||"
-    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+    \time 6/2 \tempoMiserereA \newSpacingSection
+      \set Staff.timeSignatureFraction = 3/2
       \mvTr es'1.\p-\solo b \noBreak
     g as %95
     f2 g1 c2 r r

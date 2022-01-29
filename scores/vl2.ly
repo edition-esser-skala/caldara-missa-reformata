@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \KyrieViolinoI
+          \set Staff.instrumentName = "Violino II"
+          \KyrieViolinoII
         }
       >>
     }
@@ -23,7 +23,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \ChristeViolinoI }
+        \new Staff { \ChristeViolinoII }
       >>
     }
   }
@@ -32,7 +32,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \KyrieBViolinoI }
+        \new Staff { \KyrieBViolinoII }
       >>
     }
   }
@@ -41,7 +41,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaViolinoII }
       >>
     }
   }
@@ -51,7 +51,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \DomineFiliViolinoI }
+        \new Staff { \DomineFiliViolinoII }
       >>
     }
   }
@@ -61,7 +61,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \QuiTollisViolinoI }
+        \new Staff { \QuiTollisViolinoII }
       >>
     }
   }
@@ -70,7 +70,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuoniamViolinoI }
+        \new Staff { \QuoniamViolinoII }
       >>
     }
   }
@@ -80,7 +80,7 @@
     \paper { page-count = #1 }
     \score {
       <<
-        \new Staff { \CumSanctoViolinoI }
+        \new Staff { \CumSanctoViolinoII }
       >>
     }
   }
@@ -89,7 +89,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \CredoViolinoI }
+        \new Staff { \CredoViolinoII }
       >>
     }
   }
@@ -99,7 +99,7 @@
     \paper { systems-per-page = #2 }
     \score {
       <<
-        \new Staff { \EtIncarnatusViolinoI }
+        \new Staff { \EtIncarnatusViolinoII }
       >>
     }
   }
@@ -108,7 +108,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtResurrexitViolinoI }
+        \new Staff { \EtResurrexitViolinoII }
       >>
     }
   }
@@ -117,7 +117,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtVitamViolinoI }
+        \new Staff { \EtVitamViolinoII }
       >>
     }
   }
@@ -127,7 +127,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusViolinoII }
       >>
     }
   }
@@ -137,7 +137,7 @@
     \paper { systems-per-page = #4 }
     \score {
      <<
-       \new Staff { \OsannaViolinoI }
+       \new Staff { \OsannaViolinoII }
      >>
     }
   }
@@ -147,7 +147,7 @@
     \paper { systems-per-page = #4 }
     \score {
      <<
-       \new Staff { \AgnusViolinoI }
+       \new Staff { \AgnusViolinoII }
      >>
     }
   }
@@ -156,7 +156,7 @@
     \addTocEntry
     \score {
      <<
-       \new Staff { \DonaViolinoI }
+       \new Staff { \DonaViolinoII }
      >>
     }
   }

@@ -242,7 +242,8 @@ QuiTollisViolinoII = {
     d r8 e e e
     es2 r8 c c c \noBreak
     c2 h\fermata \bar "||"
-    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+    \time 6/2 \tempoMiserereA \newSpacingSection
+      \set Staff.timeSignatureFraction = 3/2
       r2 b,\p b b1 b2 \noBreak
     r b b c as1~ %95
     as2 g2. g4 g1.

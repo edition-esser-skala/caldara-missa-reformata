@@ -242,7 +242,8 @@ QuiTollisViola = {
     as r8 g g g
     c,2 r8 fis fis fis \noBreak
     g2 g\fermata \bar "||"
-    \time 6/2 \tempoMiserereA \set Staff.timeSignatureFraction = 3/2
+    \time 6/2 \tempoMiserereA \newSpacingSection
+      \set Staff.timeSignatureFraction = 3/2
       R\breve.*4 %97
     r1*3/2 r2 \parOn g-\parenthesize-!\mp g-!
     g-! g-! g-! f-! f-! f-!
